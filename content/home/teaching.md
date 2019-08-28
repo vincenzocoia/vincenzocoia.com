@@ -46,7 +46,7 @@ subtitle = "Courses I teach or have taught at UBC."
  css_class = ""
 +++
 
-### [STAT 545](stat545.com)
+### [STAT 545](https://stat545.com)
 
 Data wrangling, exploration, and analysis with R
 
