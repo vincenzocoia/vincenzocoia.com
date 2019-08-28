@@ -47,13 +47,13 @@ user_groups:
 - Example2
 ---
 
-Hi!
+Hi! 
 
 I'm a data scientist at the University of British Columbia, Vancouver. My primary focus is the development and delivery of the Master of Data Science program. 
 
-My hobbies include outdoor recreation such as hiking, birding, skiing, fishing, canoeing, and others. 
+My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. 
 
-Preferred personal pronouns: he/him/his
+Preferred personal pronouns: he/him/his :man:
 
 Some of the things I do:
 

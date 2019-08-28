@@ -1751,10 +1751,10 @@ X, y = make_classification(n_features=4, random_state=0)&lt;/code&gt;&lt;/pre&gt
     </item>
     
     <item>
-      <title>Career Goals</title>
-      <link>/goals/</link>
+      <title>Career Philosophy</title>
+      <link>/career/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/goals/</guid>
+      <guid>/career/</guid>
       <description>
 
 
@@ -2791,7 +2791,6 @@ cowplot::plot_grid(
       <description>
 
 
-&lt;p&gt;This page indicates my teaching philosophy.&lt;/p&gt;
 &lt;p&gt;My teaching takes to heart what I learned from Greg Wilson, that teaching is much more about motivating students than it is knowledge transfer. Students have access to any information they want through the internet, but a classroom environment has the powerful advantage of the presence of peers and a knowledgeable instructor. I take a semi-spontaneous approach to teaching, as inspired by improv comedy – I have a rough guideline that I abide to, but am not afraid to deviate from this where necessary, responding to how the class is feeling about a topic. I use various methods to keep constant awareness of how the class is feeling, through simple methods such as asking questions, to more modern active learning strategies such as think-pair-share, which leverages the knowledge of peers.&lt;/p&gt;
 &lt;p&gt;I believe in quality over quantity, and this is especially important for a program as time-sensitive as the Master of Data Science program at UBC that I currently teach in. Here, I focus on fundamental concepts, asking the question “what must the students absolutely know by the end of this course?” To help answer this, I look to fundamental concepts &lt;em&gt;as they relate to applications&lt;/em&gt;, not necessarily how they are developed in academia. I stick to these core concepts, and show students just how far they can go by exploring deeper concepts and data science methods – again, going back to motivation over knowledge transfer.&lt;/p&gt;
 &lt;p&gt;I believe that teaching is far less effective when done “in a vacuum”, as opposed to collaboratively with the input and feedback from peers. I’m lucky to be involved with open and communicative colleagues who can share their input, to build world-class courses in data science. And I’m happy to be on the other end as well, providing input and feedback to my colleagues.&lt;/p&gt;

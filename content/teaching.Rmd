@@ -5,7 +5,6 @@ output:
     theme: tactile
 ---
 
-This page indicates my teaching philosophy.
 
 My teaching takes to heart what I learned from Greg Wilson, that teaching is much more about motivating students than it is knowledge transfer. Students have access to any information they want through the internet, but a classroom environment has the powerful advantage of the presence of peers and a knowledgeable instructor. I take a semi-spontaneous approach to teaching, as inspired by improv comedy -- I have a rough guideline that I abide to, but am not afraid to deviate from this where necessary, responding to how the class is feeling about a topic. I use various methods to keep constant awareness of how the class is feeling, through simple methods such as asking questions, to more modern active learning strategies such as think-pair-share, which leverages the knowledge of peers.
 
