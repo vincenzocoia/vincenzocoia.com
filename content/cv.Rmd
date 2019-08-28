@@ -12,7 +12,8 @@ email: vincenzo.coia@gmail.com
 ## Work Experience
 
 2017/01 - present    
-**Postdoctoral Teaching and Learning Fellow**    
+**Lecturer of Data Science**    
+(Previously: Postdoctoral Teaching and Learning Fellow)    
 Masters of Data Science Program, the University of British Columbia    
 Vancouver, BC    
 
