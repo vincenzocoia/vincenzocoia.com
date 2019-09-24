@@ -23,11 +23,12 @@ interests:
 - Software Engineering
 - Extreme Quantile Regression
 - Flood Forecasting
-name: Vincenzo Coia
+name: "Vincenzo Coia"
 organizations:
-- name: The University of British Columbia
+- name: "Lecturer of Data Science"
+- name: The University of British Columbia, Vancouver
   url: ""
-role: Lecturer of Data Science
+role: "he/him/his :rainbow: :man:"
 social:
 - icon: envelope
   icon_pack: fas
@@ -52,8 +53,6 @@ Hi!
 I'm a data scientist at the University of British Columbia, Vancouver. My primary focus is the development and delivery of the Master of Data Science program. 
 
 My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. 
-
-Preferred personal pronouns: he/him/his :man:
 
 Some of the things I do:
 
