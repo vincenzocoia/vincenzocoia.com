@@ -26,8 +26,9 @@ interests:
 name: "Vincenzo Coia"
 organizations:
 - name: "Lecturer of Data Science"
-- name: The University of British Columbia, Vancouver
-  url: ""
+- name: "UBC - Vancouver"
+- name: "Image credit: Frank Wang Photography"
+  url: "https://frankwangphoto.wixsite.com/photography"
 role: "he/him/his :rainbow: :man:"
 social:
 - icon: envelope
