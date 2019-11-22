@@ -35,6 +35,18 @@ subtitle = ""
 [[feature]]
   icon = "window-close"
   icon_pack = "fas"
-  name = "[CV of failures]()"
+  name = "[CV of failures](/failures)"
   description = "The things I failed at. __Under development__"
+
+[[feature]]
+  icon = "project-diagram"
+  icon_pack = "fas"
+  name = "[Education in Statistics](/stats_education)"
+  description = "My vision."
+
+[[feature]]
+  icon = "compress-arrows-alt"
+  icon_pack = "fas"
+  name = "[Diversity Statement](/diversity)"
+  description = "My vision of inclusivity."
 +++
