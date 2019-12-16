@@ -62,7 +62,7 @@ Data Visualization I
 
 Business Applications of Machine Learning
 
-### DSCI 551
+### [DSCI 551](https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/)
 
 Descriptive Statistics and Probability for Data Science
 
