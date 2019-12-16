@@ -2999,13 +2999,17 @@ cowplot::plot_grid(
       <description>
 
 
-&lt;p&gt;email: &lt;a href=&#34;mailto:vincenzo.coia@gmail.com&#34;&gt;vincenzo.coia@gmail.com&lt;/a&gt;&lt;/p&gt;
 &lt;div id=&#34;work-experience&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Work Experience&lt;/h2&gt;
 &lt;p&gt;2017/01 - present&lt;br /&gt;
 &lt;strong&gt;Lecturer of Data Science&lt;/strong&gt;&lt;br /&gt;
-(Previously: Postdoctoral Teaching and Learning Fellow)&lt;br /&gt;
-Masters of Data Science Program, the University of British Columbia&lt;br /&gt;
+(Initially: Postdoctoral Teaching and Learning Fellow)&lt;br /&gt;
+Masters of Data Science Program, Department of Statistics&lt;br /&gt;
+The University of British Columbia&lt;br /&gt;
+Vancouver, BC&lt;/p&gt;
+&lt;p&gt;2019/05 - 2019/08&lt;br /&gt;
+&lt;strong&gt;Part-time Flood Forecasting Consultant&lt;/strong&gt;&lt;br /&gt;
+BGC Engineering&lt;br /&gt;
 Vancouver, BC&lt;/p&gt;
 &lt;p&gt;2009/05 - 2014/05&lt;br /&gt;
 &lt;strong&gt;Short-term statistical consulting&lt;/strong&gt; (6 projects)&lt;br /&gt;
@@ -3031,8 +3035,150 @@ Concentration in Statistics&lt;br /&gt;
 2005/09 - 2011/04&lt;br /&gt;
 Brock University&lt;br /&gt;
 Conferred “With First-Class Standing” on June 7, 2011&lt;/p&gt;
-&lt;div id=&#34;volunteer-positions&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Volunteer Positions&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;teaching&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Teaching&lt;/h2&gt;
+&lt;div id=&#34;course-involvement&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Course Involvement&lt;/h3&gt;
+&lt;p&gt;The following is a table of courses that I’ve been either lecture or lab instructor for. They all took place at UBC.&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;35%&#34; /&gt;
+&lt;col width=&#34;22%&#34; /&gt;
+&lt;col width=&#34;41%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Course&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;Involvement&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;BAIT 509&lt;/td&gt;
+&lt;td&gt;Business Applications of Machine Learning&lt;/td&gt;
+&lt;td&gt;Instructor, 2 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;STAT 545A&lt;/td&gt;
+&lt;td&gt;Exploratory Data Analysis, Part I&lt;/td&gt;
+&lt;td&gt;Instructor, 3 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;STAT 547M&lt;/td&gt;
+&lt;td&gt;Exploratory Data Analysis, Part II&lt;/td&gt;
+&lt;td&gt;Instructor, 2 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 511&lt;/td&gt;
+&lt;td&gt;Programming for Data Science&lt;/td&gt;
+&lt;td&gt;Lecture and Lab instructor, 2 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DSCI 531&lt;/td&gt;
+&lt;td&gt;Data Visualization I&lt;/td&gt;
+&lt;td&gt;Lecture instructor, 2 years; lab instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 562&lt;/td&gt;
+&lt;td&gt;Regression II&lt;/td&gt;
+&lt;td&gt;Lecture Instructor, 1 year; Lab Instructor, 3 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DSCI 551&lt;/td&gt;
+&lt;td&gt;Probability for Data Science&lt;/td&gt;
+&lt;td&gt;Lecture Instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 561&lt;/td&gt;
+&lt;td&gt;Regression I&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DSCI 571&lt;/td&gt;
+&lt;td&gt;Supervised Learning I&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 532&lt;/td&gt;
+&lt;td&gt;Data Visualization II&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 2 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DSCI 573&lt;/td&gt;
+&lt;td&gt;Feature and Model Selection&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 563&lt;/td&gt;
+&lt;td&gt;Unsupervised Learning&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DSCI 553&lt;/td&gt;
+&lt;td&gt;Statistical Inference and Computation II (Bayesian Statistics)&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 1 year&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 574&lt;/td&gt;
+&lt;td&gt;Spatial and Temporal Models&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 2 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;DSCI 554&lt;/td&gt;
+&lt;td&gt;Experimentation and Causal Inference&lt;/td&gt;
+&lt;td&gt;Lab Instructor, 2 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;DSCI 591&lt;/td&gt;
+&lt;td&gt;MDS Capstone Project&lt;/td&gt;
+&lt;td&gt;Supervised 8 student teams over 3 years&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;course-re--developments&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Course (Re-) Developments&lt;/h3&gt;
+&lt;p&gt;I’ve been involved with the redevelopment of the following courses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DSCI 561: Here, I lead a team and supervised one graduate student to redevelop the labs.&lt;/li&gt;
+&lt;li&gt;DSCI 562: Both lectures and labs&lt;/li&gt;
+&lt;li&gt;DSCI 531: The lectures one year, then the labs the following year.&lt;/li&gt;
+&lt;li&gt;DSCI 532: Here, I lead a team and supervised two TA’s to redevelop the labs.&lt;/li&gt;
+&lt;li&gt;DSCI 574: The labs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’ve been involved with the development of the following courses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DSCI 591: I helped develop the capstone course with my colleagues.&lt;/li&gt;
+&lt;li&gt;BAIT 509: I used DSCI 571 as inspiration for developing this course.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some courses have been partially redeveloped.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;STAT 545A/547M: Some redevelopment of content; much redevelopment on course website and infrastructure.&lt;/li&gt;
+&lt;li&gt;DSCI 551: Some redevelopment of lectures and lab to accommodate a problem-first approach.&lt;/li&gt;
+&lt;li&gt;DSCI 554: The labs, after some shuffling of content to and from other parts of MDS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;teaching-assistantships&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Teaching Assistantships&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: From the latter part of my undergrad, to the end of my PhD.&lt;/p&gt;
+&lt;p&gt;UBC:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SCIE 300: Communicating Science&lt;/strong&gt; (5x)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Brock University:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MATH 4P82/5P82: Non-parametric Statistics&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATH 3P82: Regression Analysis&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATH 4P81/5P81: Sampling Theory&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATH 3P81: Experimental Design&lt;/strong&gt; (2x)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATH 2F40: Mathematics Integrated w/ Computers and Applications II&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;volunteer-positions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Volunteer Positions&lt;/h2&gt;
 &lt;p&gt;2016/09 - 2016/02&lt;br /&gt;
 &lt;strong&gt;Science World at TELUS World of Science &lt;/strong&gt;&lt;br /&gt;
 Vancouver, BC&lt;br /&gt;
@@ -3050,8 +3196,8 @@ Vancouver, BC&lt;br /&gt;
 Niagara Falls, ON&lt;br /&gt;
 15.0 hours&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;research-assistantships&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Research Assistantships&lt;/h3&gt;
+&lt;div id=&#34;research-assistantships&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Research Assistantships&lt;/h2&gt;
 &lt;p&gt;2013/05 - 2013/08&lt;br /&gt;
 &lt;strong&gt;Robust penalized regression&lt;/strong&gt;&lt;br /&gt;
 Supervisor: Dr. Gabriela Cohen-Freue&lt;br /&gt;
@@ -3073,48 +3219,68 @@ Department of Chemistry and Department of Mathematics&lt;br /&gt;
 Brock University&lt;br /&gt;
 St. Catharines, ON&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;teaching-assistantships&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Teaching Assistantships&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: From the latter part of my undergrad, to the end of my PhD.&lt;/p&gt;
-&lt;p&gt;UBC:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SCIE 300: Communicating Science&lt;/strong&gt; (5x)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Brock University:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;MATH 4P82/5P82: Non-parametric Statistics&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATH 3P82: Regression Analysis&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATH 4P81/5P81: Sampling Theory&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATH 3P81: Experimental Design&lt;/strong&gt; (2x)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;MATH 2F40: Mathematics Integrated w/ Computers and Applications II&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;div id=&#34;publications-and-talks&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Publications and Talks&lt;/h2&gt;
+&lt;div id=&#34;articles-in-preparation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Articles in Preparation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Coia, V., Joe, H., and Nolde, N. (2020?) Extreme Quantile Regression and the Copula-Marginal Composition Method.
+Status: Wrapping up the demonstration analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;div id=&#34;articles-submitted-to-refereed-journals&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Articles Submitted to Refereed Journals&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Huang, M.L., Coia, V., and Brill, P.H. (2013) A cluster truncated Pareto distribution and its applications. ISRN Probability and Statistics 2013: Article ID 265373.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Ayad, M., Coia, V., and Kihel, O. (2014) The number of relatively prime subsets of a finite union of sets of consecutive integers. Journal of Integer Sequences 17: Article 14.3.7&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Coia, V., and Huang, M.L. (2014) A sieve model for extreme values. Journal of Statistical Computation and Simulation. 84(8):16921710.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Huang, M.L., Coia, V., and Brill, P.H. (2013) A cluster truncated
+Pareto distribution and its applications. ISRN Probability and
+Statistics 2013: Article ID 265373.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ayad, M., Coia, V., and Kihel, O. (2014) The number of relatively
+prime subsets of a finite union of sets of consecutive integers.
+Journal of Integer Sequences 17: Article 14.3.7&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V., and Huang, M.L. (2014) A sieve model for extreme
+values. Journal of Statistical Computation and Simulation.
+84(8):16921710.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;articles-submitted-to-conference-proceedings&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Articles Submitted to Conference Proceedings&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Huang, M. L., Coia, V., and Brill, P.H., A mixture truncated Pareto distribution, In JSM Proceedings 2012, Statistical Computing Section, Alexandria, VA: American Statistical Association, pp. 24882498.&lt;/li&gt;
+&lt;li&gt;Huang, M. L., Coia, V., and Brill, P.H., A mixture truncated
+Pareto distribution, In JSM Proceedings 2012, Statistical Computing
+Section, Alexandria, VA: American Statistical Association, pp.
+&lt;ol start=&#34;24882498&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;conference-and-roundtable-contributions&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Conference and Roundtable Contributions&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Coia, V., Nolde, N., and Joe, H. Forecasting Extremes for Flooding (Invited Talk). The 44th Annual Meeting of the Statistical Society of Canada. May 29June 1, 2016 at Brock University, St. Catharines, ON.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Coia, V., and Jeanniard du Dot, T. (Invited Demonstration) “Using the Grammar of Graphics and Interactivity to explore Biologging Data in R”. May 6, 2015. Building a Bioanalytical Theory for Analysis of Marine Mammal Movements: A Peter Wall International Research Roundtable. The University of British Columbia, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Coia, V. “Flood Warning: An Application of High-Quantile Regression” (Contributed Talk). SFU/UBC Joint Graduate Student Seminar (Winter). February 28, 2015 at the SFU Harbour Centre, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Coia, V. “A New Sieve Model for Extreme Values” (Contributed Talk). SFU/UBC Joint Graduate Student Seminar (Fall). September 29, 2012 at the SFU Harbour Centre, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Coia, V., and Huang, M.L. “On Estimation of Heavy Tailed Distributions” (Contributed Talk). The 40th Annual Meeting of the Statistical Society of Canada. June 36, 2012 at the University of Guelph, Guelph, ON.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Huang, M.L., Coia, V., and Brill, P.H. “A Mixture Truncated Pareto Distribution” (Contributed Talk). The 2012 Joint Statistical Meetings. July 28August 2, 2012 at San Diego, California&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V. “&lt;a href=&#34;https://vincenzocoia.com/post/20190316-ubc-sfu/&#34;&gt;The squared error has friends, too!&lt;/a&gt;”
+(Contributed Talk). SFU/UBC Joint Graduate Student Seminar (Winter).
+Spring 2019 at the SFU Harbour Centre, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V., Nolde, N., and Joe, H. Forecasting Extremes for Flooding
+(Invited Talk). The 44th Annual Meeting of the Statistical Society
+of Canada. May 29June 1, 2016 at Brock University, St. Catharines,
+ON.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V., and Jeanniard du Dot, T. (Invited Demonstration) “Using
+the Grammar of Graphics and Interactivity to explore Biologging Data
+in R”. May 6, 2015. Building a Bioanalytical Theory for Analysis of
+Marine Mammal Movements: A Peter Wall International Research
+Roundtable. The University of British Columbia, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V. “Flood Warning: An Application of High-Quantile Regression”
+(Contributed Talk). SFU/UBC Joint Graduate Student Seminar (Winter).
+February 28, 2015 at the SFU Harbour Centre, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V. “A New Sieve Model for Extreme Values” (Contributed Talk).
+SFU/UBC Joint Graduate Student Seminar (Fall). September 29, 2012 at
+the SFU Harbour Centre, Vancouver, BC.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Coia, V., and Huang, M.L. “On Estimation of Heavy Tailed
+Distributions” (Contributed Talk). The 40th Annual Meeting of the
+Statistical Society of Canada. June 36, 2012 at the University of
+Guelph, Guelph, ON.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Huang, M.L., Coia, V., and Brill, P.H. “A Mixture Truncated Pareto
+Distribution” (Contributed Talk). The 2012 Joint Statistical
+Meetings. July 28August 2, 2012 at San Diego, California&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
