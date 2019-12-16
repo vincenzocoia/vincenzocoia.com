@@ -32,21 +32,21 @@ subtitle = ""
   name = "[CV](/cv)"
   description = "The things I've done."
 
-[[feature]]
-  icon = "window-close"
-  icon_pack = "fas"
-  name = "[CV of failures](/failures)"
-  description = "The things I failed at. __Under development__"
-
-[[feature]]
-  icon = "project-diagram"
-  icon_pack = "fas"
-  name = "[Education in Statistics](/stats_education)"
-  description = "My vision."
-
-[[feature]]
-  icon = "compress-arrows-alt"
-  icon_pack = "fas"
-  name = "[Diversity Statement](/diversity)"
-  description = "My vision of inclusivity."
+# [[feature]]
+#   icon = "window-close"
+#   icon_pack = "fas"
+#   name = "[CV of failures](/failures)"
+#   description = "The things I failed at. __Under development__"
+# 
+# [[feature]]
+#   icon = "project-diagram"
+#   icon_pack = "fas"
+#   name = "[Education in Statistics](/stats_education)"
+#   description = "My vision."
+# 
+# [[feature]]
+#   icon = "compress-arrows-alt"
+#   icon_pack = "fas"
+#   name = "[Diversity Statement](/diversity)"
+#   description = "My vision of inclusivity."
 +++
