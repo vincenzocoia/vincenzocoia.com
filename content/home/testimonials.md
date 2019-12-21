@@ -83,7 +83,7 @@ Shawn has helped me with all subjects. My behavier was bad and now it is good. E
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
 [[item]]
-  title = '"He understands his abilities can help those who need it most."'
+  title = '"his abilities can help those who need it most."'
   content = """
   Shawn is a very socially understanding person who comforts people in their worst times. He is a great motivator and makes people feel good even when they are down. His jokes and pranks are uplifting and always makes my day better. Shawn is a man always serving others and helping those who need his help the most. He tends to work with those who suffer from mental illness over those who are just looking for a help; he understands his abilities can help those who need it most. Over the 6 years I've known him, he has helped me with all social and academic issues that have come my way.
 
