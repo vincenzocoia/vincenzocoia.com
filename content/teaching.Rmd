@@ -1,0 +1,48 @@
+---
+title: "Teaching Philosophy"
+output:
+  prettydoc::html_pretty:
+    theme: tactile
+---
+
+
+My philosophy on teaching can best be broken down into four categories: __appropriate course structure__, __responsive teaching__, __motivation__, and __self-improvement__.
+
+### Appropriate Structure
+
+You and I don't really know English. We only know enough for it to be a sufficiently useful tool for our own daily activities. I take this concept to heart as I design and deliver my courses. It's fallacious to design a course around _topics_, but rather on building _skills_ for a certain purpose. To me, these skills formulated as a list of learning objectives (LO's) act as a "true north" that all components of a course point towards, and are the most important structure to the course. For example, course content on the topic "heteroskedasticity" could be developed in many directions. The students, thinking they have to "know heteroskedasticity", get stuck studying its never-ending scope. Instead, a learning objective such as "modify a linear model to appropriately incorporate heteroskedasticity based on data diagnostics" provides direction for the teaching team to create material, and clarity for the students. For concrete examples, take a look at [the DSCI 551 notes](https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/), or my other course materials.
+
+Clarity about the course structure and expectations is important for equipping students with a map of what they need to do to succeed. In addition to discussing how students should use the LO's, describing the summative assessments and a course syllabus is also important, as well as making it easy to navigate course material (see, for example, the [STAT 545A/547M syllabus website](https://stat545.stat.ubc.ca/) -- although the "Learning Outcomes" listed need updating from pre-2017). Informing the students of any changes or of any mistakes, no matter how painful, is also critical for maintaining clarity.
+
+### Responsive teaching
+
+Sticking too close to course structure can stymie a course. This is because, while preparing course material, the instructor is not truly equipped with the clarity of how to most appropriately deliver material until the material has been delivered. For example, a question for the class might have seemed insightful when it was being prepared, but maybe during class the question doesn't end up being insightful. Or, maybe the lecture delivery time was underestimated. The answer to addressing this issue is responsive teaching.
+
+Responsive teaching to me is about staying in touch with the class to get a feel for areas that need more or less attention. For example, it means: taking a break when the energy of the class is low; responding to class confusion by explaining something in a different way on the whiteboard; or spending more time on something after realizing its importance mid-class. In this way, teaching is more akin to improv comedy, where actors must respond to random cues from the audience (I've taken lessons). I believe in embracing a mindset of letting go and trusting in yourself to respond appropriately the moment things go off course, and to also be humble and admit when you don't know something. 
+
+This type of spontaneity sometimes also requires realizing and appropriately acting on your agency in adapting a course on the fly. Understanding that a course is flexible allows you to be nimble during contact hours with students, as opposed to feeling stuck in delivering the course exactly as it was originally laid out. However, it's important to be strategic when making changes so that things remain orderly and as seamless as possible for the students, and to be clear about any changes made. I like using the start of class to check in and return to a roadmap of the course so that everyone remains on board a moving bus.
+
+Contact time with students is critical for adapting teaching to the students, and provides tremendous value for students to actually enrol in a program as opposed to taking an online course. Perhaps the most effective method for doing this is making a point to engage with each student in lab. Equally as powerful are discussion-style office hours. I no longer hold my office hours in my office, because the office hour model whereby students just drop by to ask a question is just not effective. There ends up being a queue of students, usually asking common questions, and these students feel pressured to leave the office so that others can get a turn. Instead, I hold my office hours in a lab-like room suitable for collaboration. I end up leading a whole-group discussion prompted by student questions. This gives me even more insight as to how things are going in class, and allows me the opportunity to modify the course moving forward or make clarifications. Plus, the students express appreciation for this approach.
+
+Some other methods for connecting with the students are:
+
+- being present on the course Slack channel (and sometimes even other course channels) to provide more insight,
+- sending out a 1-minute long early survey about how the course is going,
+- taking the time to talk to students who approach me during the mid-class break or after class,
+- pausing to ask questions and check for insight in the classroom,
+- applying active learning strategies such as think-pair-share or live coding, and
+- checking in to see how things are going at the start of each class, by asking questions like "how are we feeling about the quiz coming up next week", or "how are we feeling this week".
+
+### Motivation
+
+Neither the presence of structure nor responsive teaching will suffice if the students aren't excited or motivated about the course material, because the ultimately, learning happens outside the classroom, as the student engages with the material.
+
+Taking a problem-first approach helps with this. But it also requires some level of entertainment and enthusiasm from the instructor to keep students engaged. It means being aware of the lengthy (usually 80-minute) time frame that students are present for (and that's just for one class), by taking a break mid-class, returning to the big-picture, and providing additional instructions for exercises for people who may have "fallen off the bus". It means telling stories. I'm pleased that I regularly receive ample praise on my instructor evaluations, and I encourage you to take a look.
+
+### Self-Improvement
+
+What's better than effective teaching? Teaching that continually becomes more effective.
+
+Community engagement is one method to become a better teacher. This means keeping an open dialogue and sharing experiences with other teachers, especially my colleagues. Aside from simple acts like sharing ideas and experiences through Slack and gatherings, I'm proud that my team gives and receives formative feedback on our teaching by visiting each other's lectures. I also take the opportunity to partake in workshops, such as UBC's Instructional Skills Workshop, and MDS's annual workshop on Data Science education.
+
+An after-action review is another effective method, involving capturing the insight you gain after teaching. There are three ways I engage in an after-action review. First, I capture regular insight throughout the delivery of the course as GitHub Issues, so that the insight can easily be referred to in the future and by any of my colleagues. Secondly, I find keeping a teaching journal that's not tied to a specific course is useful for becoming a better teacher in general -- and it's even easier now that my team has our lectures recorded. Thirdly, my colleagues and I engage in a "retreat" at the end of each term, to discuss our insight on our courses and the MDS program as a whole.

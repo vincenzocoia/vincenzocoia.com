@@ -14,57 +14,33 @@
     
     <item>
       <title></title>
-      <link>/authors/shawn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/shawn/</guid>
-      <description>&lt;h2 id=&#34;shawns-philosophy&#34;&gt;Shawn&#39;s Philosophy&lt;/h2&gt;
-&lt;p&gt;Shawn provides a treatment strategy that focuses on how your child’s thoughts, beliefs, expectations and attitudes affect their feelings and behaviour.
-He works with your child to develop coping skills that are tailored to your child&#39;s disposition for them to handle different challenges. The treatment strategy combines cognitive therapy (examining the things they think) and behaviour therapy (examining the things they do), as well as extensive academic guidance.&lt;/p&gt;
-&lt;p&gt;Shawn began working with young children in a daycare setting at the age of fifteen and maintained experience as an elementary teacher, learning and behavioural specialist, youth-worker, and thirty years later, he has had hands-on experience working with children with:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;fetal alcohol syndrome disorder&lt;/li&gt;
-&lt;li&gt;autism spectrum disorder&lt;/li&gt;
-&lt;li&gt;attention deficit hyperactivity disorder&lt;/li&gt;
-&lt;li&gt;oppositional defiance disorder&lt;/li&gt;
-&lt;li&gt;bipolar disorder&lt;/li&gt;
-&lt;li&gt;depression/stress-related disorders&lt;/li&gt;
-&lt;li&gt;neurological or physiological conditions&lt;/li&gt;
-&lt;li&gt;prader-willi syndrome&lt;/li&gt;
-&lt;li&gt;difficulties with family or peer relationships&lt;/li&gt;
-&lt;li&gt;psychological effects of physical or sexual abuse&lt;/li&gt;
-&lt;li&gt;psychosis&lt;/li&gt;
-&lt;li&gt;schizophrenic disorder&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Shawn is committed to working with you to determine the level of assistance your child requires and to building a supportive program around it. He bridges the developmental gaps and expands your child&#39;s learning potential. Shawn has experience working with children of varying ages and abilities.&lt;/p&gt;
-&lt;p&gt;Shawn is also available to work with your child at their school or daycare to provide private treatment (designated area). Very often, Shawn observes a child’s behaviour and social
-interaction, and/or consults with the teacher about areas to work on for the child, strategies for teaching, and engaging the child, or equipment to help with the child&#39;s learning experience.
-His pro-active approach encompasses:&lt;/p&gt;
-&lt;p&gt;encouraging responsible behaviour
-sustained education
-managing expectations
-developing the skills and confidence necessary to live an age-appropriate lifestyle.&lt;/p&gt;
-&lt;p&gt;He approaches youth care with a holistic philosophy, which focuses on keeping youths mentally, physically and emotionally engaged.&lt;/p&gt;
-&lt;p&gt;For children under the Spectrum, Shawn provides 1-to-1 applied behaviour methods that assist children and youth in developing skills, specifically in the areas of: communication, social skills, play, behaviour, cognition, joint attention, imitation, fine motor skills, gross motor skills and personal independence.&lt;/p&gt;
-&lt;p&gt;Learning skills at home can be beneficial for the child and can make it easier for them to generalize those skills for various day-to-day tasks. Therapy at home also allows parents to work on therapeutic goals with materials available at home. Beyond the therapeutic benefits, therapy at home provides parents the convenience of having one less appointment to drive their child to and more time to spend with their child.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>/authors/vincenzo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/vincenzo/</guid>
       <description>&lt;p&gt;Hi!&lt;/p&gt;
-&lt;p&gt;I&#39;m a data scientist at the University of British Columbia, Vancouver. My primary focus is the development and delivery of the Master of Data Science program.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a data scientist at the University of British Columbia, Vancouver. My primary focus is the development and delivery of the Master of Data Science program.&lt;/p&gt;
+
 &lt;p&gt;My hobbies include outdoor recreation 🌲 such as hiking 👞, birding 🐦, skiing 🎿, fishing 🎣, canoeing 🚣, and others.&lt;/p&gt;
+
 &lt;p&gt;Some of the things I do:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;I solve problems using statistics, machine learning, and data visualizations.&lt;/li&gt;
 &lt;li&gt;I interact with students to make data science more approachable.&lt;/li&gt;
 &lt;li&gt;I use R, git, and friends to help me do these things.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;I can also identify birds, and other things about nature.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>admin</title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description></description>
     </item>
     
   </channel>
