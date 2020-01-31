@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -10,13 +10,11 @@
   <url>
     <loc>/</loc>
     <lastmod>2019-11-18T23:32:49-08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
     <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -30,15 +28,38 @@
   </url>
   
   <url>
+    <loc>/tags/mean/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/median/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/probabilistic-forecasting/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/project/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/quantile/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/supervised-learning/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -47,33 +68,13 @@
   </url>
   
   <url>
-    <loc>/tags/mean/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/backpack/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/median/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/probabilistic-forecasting/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/quantile/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/supervised-learning/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/tags/efficiency/</loc>
+    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -82,44 +83,28 @@
   </url>
   
   <url>
-    <loc>/tags/backpack/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/efficiency/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/no-fuss/</loc>
     <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/outdoors/</loc>
     <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/2017-12-31-hello_world/</loc>
-    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/blogging/</loc>
     <lastmod>2017-12-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/hello-world/</loc>
     <lastmod>2017-12-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/2017-12-31-hello_world/</loc>
+    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -137,11 +122,6 @@
   </url>
   
   <url>
-    <loc>/notes/stat545cm003/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/notes/binomial/</loc>
     <priority>0</priority>
   </url>
@@ -152,13 +132,17 @@
   </url>
   
   <url>
+    <loc>/notes/stat545cm003/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/notes/yes_and/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -179,7 +163,10 @@
   
   <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/collaboration/</loc>
   </url>
   
   <url>
@@ -192,6 +179,14 @@
   
   <url>
     <loc>/post/kmeans_in_r/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/github/</loc>
   </url>
   
   <url>
@@ -208,12 +203,10 @@
   
   <url>
     <loc>/notes/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -233,37 +226,15 @@
   </url>
   
   <url>
+    <loc>/tags/version-control/</loc>
+  </url>
+  
+  <url>
     <loc>/cv/</loc>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/collaboration/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/github/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/version-control/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/workflow/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
