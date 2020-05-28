@@ -25,7 +25,7 @@ interests:
 - Flood Forecasting
 name: "Vincenzo Coia"
 organizations:
-- name: "Lecturer of Data Science"
+- name: "Assistant Professor of Teaching"
 - name: "UBC - Vancouver"
 - name: "Image credit: Frank Wang Photography"
   url: "https://frankwangphoto.wixsite.com/photography"
@@ -51,7 +51,7 @@ user_groups:
 
 Hi! 
 
-I'm a data scientist at the University of British Columbia, Vancouver. My primary focus is the development and delivery of the Master of Data Science program. 
+I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver. My priority there is to establish the responsible use of statistics for data science.
 
 My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. 
 
