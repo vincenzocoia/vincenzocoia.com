@@ -28,8 +28,8 @@
   
     
   
-  <meta name="description" content="You all know the drill &ndash; you&#39;re asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?
-Regression trees, loess, linear regression&hellip; you name it, they&#39;re all in pursuit of the mean (well, almost all). But the true outcome is random.">
+  <meta name="description" content="You all know the drill &ndash; you&rsquo;re asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?
+Regression trees, loess, linear regression&hellip; you name it, they&rsquo;re all in pursuit of the mean (well, almost all). But the true outcome is random.">
 
   
   <link rel="alternate" hreflang="en-us" href="/project/2018-02-18-mean/">
@@ -83,7 +83,7 @@ Regression trees, loess, linear regression&hellip; you name it, they&#39;re all 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.8a681b97dd4d64609276cb95ed6bb275.css">
+  <link rel="stylesheet" href="/css/academic.min.5cf0e8ca41a9e8e8f11e9b105dbdf0e9.css">
 
   
 
@@ -128,8 +128,8 @@ Regression trees, loess, linear regression&hellip; you name it, they&#39;re all 
   <meta property="og:site_name" content="Vincenzo Coia">
   <meta property="og:url" content="/project/2018-02-18-mean/">
   <meta property="og:title" content="The missing question in supervised learning | Vincenzo Coia">
-  <meta property="og:description" content="You all know the drill &ndash; you&#39;re asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?
-Regression trees, loess, linear regression&hellip; you name it, they&#39;re all in pursuit of the mean (well, almost all). But the true outcome is random."><meta property="og:image" content="/project/2018-02-18-mean/featured.jpeg">
+  <meta property="og:description" content="You all know the drill &ndash; you&rsquo;re asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?
+Regression trees, loess, linear regression&hellip; you name it, they&rsquo;re all in pursuit of the mean (well, almost all). But the true outcome is random."><meta property="og:image" content="/project/2018-02-18-mean/featured.jpeg">
   <meta property="twitter:image" content="/project/2018-02-18-mean/featured.jpeg"><meta property="og:locale" content="en-us">
   
     
@@ -643,21 +643,21 @@ Regression trees, loess, linear regression&hellip; you name it, they&#39;re all 
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      <p>You all know the drill &ndash; you're asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?</p>
-<p><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Regression trees</a>, <a href="https://en.wikipedia.org/wiki/Local_regression">loess</a>, <a href="https://en.wikipedia.org/wiki/Linear_regression">linear regression</a>&hellip; you name it, they're all in pursuit of the <a href="https://en.wikipedia.org/wiki/Expected_value">mean</a> (well, almost all). But the true outcome is random. It has a distribution. Are you sure you want the mean of that distribution?</p>
+      <p>You all know the drill &ndash; you&rsquo;re asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?</p>
+<p><a href="https://en.wikipedia.org/wiki/Decision_tree_learning">Regression trees</a>, <a href="https://en.wikipedia.org/wiki/Local_regression">loess</a>, <a href="https://en.wikipedia.org/wiki/Linear_regression">linear regression</a>&hellip; you name it, they&rsquo;re all in pursuit of the <a href="https://en.wikipedia.org/wiki/Expected_value">mean</a> (well, almost all). But the true outcome is random. It has a distribution. Are you sure you want the mean of that distribution?</p>
 <p>You might say &ldquo;Yes! It ensures my prediction is as close as possible to the outcome!&rdquo; If this is indeed what you want, the mean still might not be your best choice &ndash; it only ensures the <a href="https://en.wikipedia.org/wiki/Mean_squared_error">mean squared error</a> is minimized.</p>
-<p>There are a suite of other options that might be more appropriate than the mean. The good thing is, your favourite supervised learning method probably has a natural extension for estimating these alternatives. Let's investigate the quantities you might care about.</p>
+<p>There are a suite of other options that might be more appropriate than the mean. The good thing is, your favourite supervised learning method probably has a natural extension for estimating these alternatives. Let&rsquo;s investigate the quantities you might care about.</p>
 <h3 id="the-median">The Median</h3>
-<p>No, the median <em>isn't</em> just an inferior version of the mean, to be used under the unfortunate presence of outliers.</p>
-<p>If I randomly pick a data scientist, what do you think their salary would be? This distribution has a right-skew, so chances are, your data scientist earns less than the mean. Predict the <a href="https://en.wikipedia.org/wiki/Median">median</a>, and you'll have a 50% chance that your data scientist <em>does</em> earn at least what you predict.</p>
+<p>No, the median <em>isn&rsquo;t</em> just an inferior version of the mean, to be used under the unfortunate presence of outliers.</p>
+<p>If I randomly pick a data scientist, what do you think their salary would be? This distribution has a right-skew, so chances are, your data scientist earns less than the mean. Predict the <a href="https://en.wikipedia.org/wiki/Median">median</a>, and you&rsquo;ll have a 50% chance that your data scientist <em>does</em> earn at least what you predict.</p>
 <p>In short, use the median when you want your prediction to be exceeded with a coin toss.</p>
 <p>Minimize the <a href="https://en.wikipedia.org/wiki/Mean_absolute_error">mean absolute error</a> to get this prediction.</p>
 <h3 id="higher-or-lower-quantiles">Higher (or lower) Quantiles</h3>
-<p>Want to make it to an interview on time? You add some &ldquo;buffer time&rdquo; to the expected travel time, right? What you're after is a high <a href="https://en.wikipedia.org/wiki/Quantile">quantile</a> of travel time &ndash; something like the 0.99-quantile, so that there is only a small chance you'll be late (1% in this case).</p>
+<p>Want to make it to an interview on time? You add some &ldquo;buffer time&rdquo; to the expected travel time, right? What you&rsquo;re after is a high <a href="https://en.wikipedia.org/wiki/Quantile">quantile</a> of travel time &ndash; something like the 0.99-quantile, so that there is only a small chance you&rsquo;ll be late (1% in this case).</p>
 <p>Use a high (or low) quantile if you want a conservative (or liberal) prediction &ndash; or both, if you want a prediction interval.</p>
 <p>Minimize the mean <a href="https://en.wikipedia.org/wiki/Quantile_regression#Quantiles">rho function</a> to get this prediction.</p>
 <h3 id="the-mean">The Mean</h3>
-<p>The mean is useful when we care about <em>totals</em>. Want to know how much gas a vehicle uses?  You're after the mean, because the total quantity drawn out over time is what matters.</p>
+<p>The mean is useful when we care about <em>totals</em>. Want to know how much gas a vehicle uses?  You&rsquo;re after the mean, because the total quantity drawn out over time is what matters.</p>
 <p>Minimize the mean squared error to get this prediction.</p>
 <h3 id="other-options">Other Options</h3>
 <p>Do you really need to distill your prediction down to a single number? Consider looking at the entire distribution of the outcome as your prediction (typically conditional on predictors) &ndash; after all, this conveys the entire uncertainty about the outcome. This is known as <a href="https://en.wikipedia.org/wiki/Probabilistic_forecasting">probabilistic forecasting</a>.</p>
@@ -712,7 +712,7 @@ Regression trees, loess, linear regression&hellip; you name it, they&#39;re all 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="/">Vincenzo Coia</a></h5>
       <h6 class="card-subtitle">he/him/his 🌈 👨</h6>
-      <p class="card-text" itemprop="description">I'm a data scientist at the University of British Columbia, Vancouver.</p>
+      <p class="card-text" itemprop="description">I&rsquo;m a data scientist at the University of British Columbia, Vancouver.</p>
       <ul class="network-icon" aria-hidden="true">
         
           

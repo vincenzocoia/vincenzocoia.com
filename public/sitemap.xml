@@ -3,28 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/failures/</loc>
-    <lastmod>2019-11-18T23:32:49-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-11-18T23:32:49-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/20190316-ubc-sfu/</loc>
-    <lastmod>2019-03-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/factor_analysis/</loc>
-    <lastmod>2019-01-21T00:00:00+00:00</lastmod>
+    <loc>/cv/</loc>
+    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -68,43 +48,8 @@
   </url>
   
   <url>
-    <loc>/tags/backpack/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/efficiency/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/2018-01-05-backpack/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/no-fuss/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/outdoors/</loc>
-    <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/blogging/</loc>
-    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hello-world/</loc>
-    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/2017-12-31-hello_world/</loc>
-    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -118,43 +63,16 @@
   </url>
   
   <url>
+    <loc>/post/</loc>
+    <lastmod>2017-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/vincenzo/</loc>
   </url>
   
   <url>
-    <loc>/notes/binomial/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/notes/organizing_proj_dir/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/notes/stat545cm003/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/notes/yes_and/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/cart/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/ensembles/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/svm/</loc>
   </url>
   
   <url>
@@ -166,31 +84,7 @@
   </url>
   
   <url>
-    <loc>/tags/collaboration/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/2018-08-14-git_github/</loc>
-  </url>
-  
-  <url>
     <loc>/post/gam_in_r/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/kmeans_in_r/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/github/</loc>
-  </url>
-  
-  <url>
-    <loc>/notes/yes_and/</loc>
   </url>
   
   <url>
@@ -198,43 +92,11 @@
   </url>
   
   <url>
-    <loc>/post/effective_plotting/</loc>
-  </url>
-  
-  <url>
-    <loc>/notes/</loc>
-  </url>
-  
-  <url>
     <loc>/publication_types/</loc>
   </url>
   
   <url>
-    <loc>/post/useful_linalg_results/</loc>
-  </url>
-  
-  <url>
     <loc>/teaching/</loc>
-  </url>
-  
-  <url>
-    <loc>/notes/binomial/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/varimax/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/version-control/</loc>
-  </url>
-  
-  <url>
-    <loc>/cv/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/workflow/</loc>
   </url>
   
 </urlset>

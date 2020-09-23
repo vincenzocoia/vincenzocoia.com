@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Vincenzo Coia</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 Nov 2019 23:32:49 -0800</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 18 Feb 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Vincenzo Coia</title>
@@ -13,144 +13,9 @@
     </image>
     
     <item>
-      <title>CV of Failures</title>
-      <link>/failures/</link>
-      <pubDate>Mon, 18 Nov 2019 23:32:49 -0800</pubDate>
-      <guid>/failures/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;strong&gt;Under Construction&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Why this document? It’s important to recognize a failure when it happens, as a first step towards learning from the failure. That’s what this page is. In addition, I haven’t always done this – there have been times that I’ve been hesitant to call some failures a failure. I’m hoping this page will help me avoid sugar-coating failures in the future so that I can &lt;a href=&#34;https://www.listennotes.com/podcasts/lead-to-win-with/080-how-to-fail-better-0UneBxMHsal/&#34;&gt;“fail better”&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This is definitely not an exhaustive list/discussion. In addition to sugar-coating failures, I’m relying on memory.&lt;/p&gt;
-&lt;p&gt;I’ve made this page public so that I can hopefully inspire others to take ownership over their failures too, but also to show everyone that I’m human, too. I got the idea from &lt;a href=&#34;https://www.mikegelbart.com/&#34;&gt;Mike Gelbart&lt;/a&gt;, but the idea seems to have originally stemmed from &lt;a href=&#34;https://www.nature.com/naturejobs/science/articles/10.1038/nj7322-467a&#34;&gt;Melanie Stefan’s &lt;em&gt;Nature&lt;/em&gt; article&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;No published papers from my PhD&lt;/li&gt;
-&lt;li&gt;I never ended up submitting my first two R packages, &lt;a href=&#34;&#34;&gt;&lt;code&gt;copsupp&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;&lt;code&gt;cnqr&lt;/code&gt;&lt;/a&gt;, to CRAN, because they are a mess and are incomplete.
-&lt;ul&gt;
-&lt;li&gt;I’m turning this around: I’m nearly finished a new-and-improved paper and analysis, and have new framework for new R packages (see &lt;a href=&#34;&#34;&gt;distplyr&lt;/a&gt; and &lt;a href=&#34;&#34;&gt;coperate&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Applied to several positions coming out of my PhD to no avail: including Boeing and Amazon.&lt;/li&gt;
-&lt;li&gt;Scholarships: I failed to get many, but two notable ones that I was not successful for was the Vanier and CGS-D scholarships (although I did get PGS-D).&lt;/li&gt;
-&lt;li&gt;I dropped an oenology and viticulture course in my undergrad because I couldn’t handle the workload of six courses, and I failed the midterm exam.&lt;/li&gt;
-&lt;li&gt;I struggled to get A’s in my biology courses in undergrad.&lt;/li&gt;
-&lt;li&gt;I signed up for a half marathon and didn’t run it because I failed to adequately prepare.&lt;/li&gt;
-&lt;li&gt;Several rejections for submissions to peer reviewed journals.&lt;/li&gt;
-&lt;li&gt;I’ve never won any formal individual fencing competitions in my ~6 years of fencing.&lt;/li&gt;
-&lt;li&gt;I once joined a kettlebell gym ($100+), and failed to go even once.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>/post/</link>
-      <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/project/</link>
-      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>/project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Career Philosophy</title>
-      <link>/career/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/career/</guid>
-      <description>
-
-
-&lt;p&gt;Over the years, I’ve discovered that my ideal career is composed of four interrelated pillars, all with respect to data science. In a roughly “cumulative” order, the pillars are application, research, development, and teaching.&lt;/p&gt;
-&lt;div id=&#34;application&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Application&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;I’m passionate about addressing real problems with data science.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Currently, my main focus is on mentoring MDS students for their capstone projects – a 2-month-long project that students complete in collaboration with various organizations.&lt;/p&gt;
-&lt;p&gt;For the future, I intend to also have long-term collaborations with various organizations, to help them achieve missions that resonate with me.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;research&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Research&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;I’m passionate about discovering better ways to do data science, with application in mind.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Currently, my main focus is on reframing statistics from the perspective of applications. For example, why the typical “assumptions” of linear regression are not actually needed, and (rather) what we gain when the reality more closely reflects these assumptions.&lt;/p&gt;
-&lt;p&gt;Another focus is on bringing to light the importance of finding indicators of extreme events by measuring tail index reduction in the regression context, and not just the typical variance-reduction measurements such as the coefficient of determination. One approach of doing this is through quantile regression using vine copulas.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;development&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Development&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;I’m passionate about turning new research into programs and tools that are accessible to the public.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Currently, my main focus is on developing the Master of Data Science (MDS) program at The University of British Columbia (Vancouver). I’m involved with bettering the teaching and the content of the program, especially focussing on the statistical perspective, often integrated with machine learning. I’m also working on turning our material and lesson plans into a public-facing resource.&lt;/p&gt;
-&lt;p&gt;Another focus is on developing software, currently as packages for the R programming language. Examples include a package to assist in manipulating copulas, and a package for extreme quantile regression.&lt;/p&gt;
-&lt;p&gt;For the future, I intend to also collaborate with software development teams. I also intend to start an organization whose mission reflects the four pillars I define on this page.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;teaching&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Teaching&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;I’m passionate about spreading data literacy to the world.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Currently, my main focus is on teaching in the MDS program.&lt;/p&gt;
-&lt;p&gt;For the future, I intend to also hold data science workshops at research centers and other organizations. I intend to volunteer for data science outreach programs.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Notes</title>
-      <link>/notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching Philosophy</title>
-      <link>/teaching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/teaching/</guid>
-      <description>
-
-
-&lt;p&gt;My philosophy on teaching can best be broken down into four categories: &lt;strong&gt;appropriate course structure&lt;/strong&gt;, &lt;strong&gt;responsive teaching&lt;/strong&gt;, &lt;strong&gt;motivation&lt;/strong&gt;, and &lt;strong&gt;self-improvement&lt;/strong&gt;.&lt;/p&gt;
-&lt;div id=&#34;appropriate-structure&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Appropriate Structure&lt;/h3&gt;
-&lt;p&gt;You and I don’t really know English. We only know enough for it to be a sufficiently useful tool for our own daily activities. I take this concept to heart as I design and deliver my courses. It’s fallacious to design a course around &lt;em&gt;topics&lt;/em&gt;, but rather on building &lt;em&gt;skills&lt;/em&gt; for a certain purpose. To me, these skills formulated as a list of learning objectives (LO’s) act as a “true north” that all components of a course point towards, and are the most important structure to the course. For example, course content on the topic “heteroskedasticity” could be developed in many directions. The students, thinking they have to “know heteroskedasticity”, get stuck studying its never-ending scope. Instead, a learning objective such as “modify a linear model to appropriately incorporate heteroskedasticity based on data diagnostics” provides direction for the teaching team to create material, and clarity for the students. For concrete examples, take a look at &lt;a href=&#34;https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/&#34;&gt;the DSCI 551 notes&lt;/a&gt;, or my other course materials.&lt;/p&gt;
-&lt;p&gt;Clarity about the course structure and expectations is important for equipping students with a map of what they need to do to succeed. In addition to discussing how students should use the LO’s, describing the summative assessments and a course syllabus is also important, as well as making it easy to navigate course material (see, for example, the &lt;a href=&#34;https://stat545.stat.ubc.ca/&#34;&gt;STAT 545A/547M syllabus website&lt;/a&gt; – although the “Learning Outcomes” listed need updating from pre-2017). Informing the students of any changes or of any mistakes, no matter how painful, is also critical for maintaining clarity.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;responsive-teaching&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Responsive teaching&lt;/h3&gt;
-&lt;p&gt;Sticking too close to course structure can stymie a course. This is because, while preparing course material, the instructor is not truly equipped with the clarity of how to most appropriately deliver material until the material has been delivered. For example, a question for the class might have seemed insightful when it was being prepared, but maybe during class the question doesn’t end up being insightful. Or, maybe the lecture delivery time was underestimated. The answer to addressing this issue is responsive teaching.&lt;/p&gt;
-&lt;p&gt;Responsive teaching to me is about staying in touch with the class to get a feel for areas that need more or less attention. For example, it means: taking a break when the energy of the class is low; responding to class confusion by explaining something in a different way on the whiteboard; or spending more time on something after realizing its importance mid-class. In this way, teaching is more akin to improv comedy, where actors must respond to random cues from the audience (I’ve taken lessons). I believe in embracing a mindset of letting go and trusting in yourself to respond appropriately the moment things go off course, and to also be humble and admit when you don’t know something.&lt;/p&gt;
-&lt;p&gt;This type of spontaneity sometimes also requires realizing and appropriately acting on your agency in adapting a course on the fly. Understanding that a course is flexible allows you to be nimble during contact hours with students, as opposed to feeling stuck in delivering the course exactly as it was originally laid out. However, it’s important to be strategic when making changes so that things remain orderly and as seamless as possible for the students, and to be clear about any changes made. I like using the start of class to check in and return to a roadmap of the course so that everyone remains on board a moving bus.&lt;/p&gt;
-&lt;p&gt;Contact time with students is critical for adapting teaching to the students, and provides tremendous value for students to actually enrol in a program as opposed to taking an online course. Perhaps the most effective method for doing this is making a point to engage with each student in lab. Equally as powerful are discussion-style office hours. I no longer hold my office hours in my office, because the office hour model whereby students just drop by to ask a question is just not effective. There ends up being a queue of students, usually asking common questions, and these students feel pressured to leave the office so that others can get a turn. Instead, I hold my office hours in a lab-like room suitable for collaboration. I end up leading a whole-group discussion prompted by student questions. This gives me even more insight as to how things are going in class, and allows me the opportunity to modify the course moving forward or make clarifications. Plus, the students express appreciation for this approach.&lt;/p&gt;
-&lt;p&gt;Some other methods for connecting with the students are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;being present on the course Slack channel (and sometimes even other course channels) to provide more insight,&lt;/li&gt;
-&lt;li&gt;sending out a 1-minute long early survey about how the course is going,&lt;/li&gt;
-&lt;li&gt;taking the time to talk to students who approach me during the mid-class break or after class,&lt;/li&gt;
-&lt;li&gt;pausing to ask questions and check for insight in the classroom,&lt;/li&gt;
-&lt;li&gt;applying active learning strategies such as think-pair-share or live coding, and&lt;/li&gt;
-&lt;li&gt;checking in to see how things are going at the start of each class, by asking questions like “how are we feeling about the quiz coming up next week”, or “how are we feeling this week”.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;motivation&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Motivation&lt;/h3&gt;
-&lt;p&gt;Neither the presence of structure nor responsive teaching will suffice if the students aren’t excited or motivated about the course material, because the ultimately, learning happens outside the classroom, as the student engages with the material.&lt;/p&gt;
-&lt;p&gt;Taking a problem-first approach helps with this. But it also requires some level of entertainment and enthusiasm from the instructor to keep students engaged. It means being aware of the lengthy (usually 80-minute) time frame that students are present for (and that’s just for one class), by taking a break mid-class, returning to the big-picture, and providing additional instructions for exercises for people who may have “fallen off the bus”. It means telling stories. I’m pleased that I regularly receive ample praise on my instructor evaluations, and I encourage you to take a look.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;self-improvement&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Self-Improvement&lt;/h3&gt;
-&lt;p&gt;What’s better than effective teaching? Teaching that continually becomes more effective.&lt;/p&gt;
-&lt;p&gt;Community engagement is one method to become a better teacher. This means keeping an open dialogue and sharing experiences with other teachers, especially my colleagues. Aside from simple acts like sharing ideas and experiences through Slack and gatherings, I’m proud that my team gives and receives formative feedback on our teaching by visiting each other’s lectures. I also take the opportunity to partake in workshops, such as UBC’s Instructional Skills Workshop, and MDS’s annual workshop on Data Science education.&lt;/p&gt;
-&lt;p&gt;An after-action review is another effective method, involving capturing the insight you gain after teaching. There are three ways I engage in an after-action review. First, I capture regular insight throughout the delivery of the course as GitHub Issues, so that the insight can easily be referred to in the future and by any of my colleagues. Secondly, I find keeping a teaching journal that’s not tied to a specific course is useful for becoming a better teacher in general – and it’s even easier now that my team has our lectures recorded. Thirdly, my colleagues and I engage in a “retreat” at the end of each term, to discuss our insight on our courses and the MDS program as a whole.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Vincenzo Coia&#39;s CV</title>
       <link>/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/cv/</guid>
       <description>
 
@@ -506,6 +371,103 @@ Meetings. July 28August 2, 2012 at San Diego, California&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;2014/04 - 2015/05: &lt;strong&gt;Co-founder of the Graduate Writing Forums&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;2013/06 - 2014/05: &lt;strong&gt;Statistics Graduate Student Representative&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/project/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Career Philosophy</title>
+      <link>/career/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/career/</guid>
+      <description>
+
+
+&lt;p&gt;Over the years, I’ve discovered that my ideal career is composed of four interrelated pillars, all with respect to data science. In a roughly “cumulative” order, the pillars are application, research, development, and teaching.&lt;/p&gt;
+&lt;div id=&#34;application&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Application&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;I’m passionate about addressing real problems with data science.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Currently, my main focus is on mentoring MDS students for their capstone projects – a 2-month-long project that students complete in collaboration with various organizations.&lt;/p&gt;
+&lt;p&gt;For the future, I intend to also have long-term collaborations with various organizations, to help them achieve missions that resonate with me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;research&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Research&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;I’m passionate about discovering better ways to do data science, with application in mind.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Currently, my main focus is on reframing statistics from the perspective of applications. For example, why the typical “assumptions” of linear regression are not actually needed, and (rather) what we gain when the reality more closely reflects these assumptions.&lt;/p&gt;
+&lt;p&gt;Another focus is on bringing to light the importance of finding indicators of extreme events by measuring tail index reduction in the regression context, and not just the typical variance-reduction measurements such as the coefficient of determination. One approach of doing this is through quantile regression using vine copulas.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;development&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Development&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;I’m passionate about turning new research into programs and tools that are accessible to the public.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Currently, my main focus is on developing the Master of Data Science (MDS) program at The University of British Columbia (Vancouver). I’m involved with bettering the teaching and the content of the program, especially focussing on the statistical perspective, often integrated with machine learning. I’m also working on turning our material and lesson plans into a public-facing resource.&lt;/p&gt;
+&lt;p&gt;Another focus is on developing software, currently as packages for the R programming language. Examples include a package to assist in manipulating copulas, and a package for extreme quantile regression.&lt;/p&gt;
+&lt;p&gt;For the future, I intend to also collaborate with software development teams. I also intend to start an organization whose mission reflects the four pillars I define on this page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;teaching&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Teaching&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;I’m passionate about spreading data literacy to the world.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Currently, my main focus is on teaching in the MDS program.&lt;/p&gt;
+&lt;p&gt;For the future, I intend to also hold data science workshops at research centers and other organizations. I intend to volunteer for data science outreach programs.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching Philosophy</title>
+      <link>/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/teaching/</guid>
+      <description>
+
+
+&lt;p&gt;My philosophy on teaching can best be broken down into four categories: &lt;strong&gt;appropriate course structure&lt;/strong&gt;, &lt;strong&gt;responsive teaching&lt;/strong&gt;, &lt;strong&gt;motivation&lt;/strong&gt;, and &lt;strong&gt;self-improvement&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;appropriate-structure&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Appropriate Structure&lt;/h3&gt;
+&lt;p&gt;You and I don’t really know English. We only know enough for it to be a sufficiently useful tool for our own daily activities. I take this concept to heart as I design and deliver my courses. It’s fallacious to design a course around &lt;em&gt;topics&lt;/em&gt;, but rather on building &lt;em&gt;skills&lt;/em&gt; for a certain purpose. To me, these skills formulated as a list of learning objectives (LO’s) act as a “true north” that all components of a course point towards, and are the most important structure to the course. For example, course content on the topic “heteroskedasticity” could be developed in many directions. The students, thinking they have to “know heteroskedasticity”, get stuck studying its never-ending scope. Instead, a learning objective such as “modify a linear model to appropriately incorporate heteroskedasticity based on data diagnostics” provides direction for the teaching team to create material, and clarity for the students. For concrete examples, take a look at &lt;a href=&#34;https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/&#34;&gt;the DSCI 551 notes&lt;/a&gt;, or my other course materials.&lt;/p&gt;
+&lt;p&gt;Clarity about the course structure and expectations is important for equipping students with a map of what they need to do to succeed. In addition to discussing how students should use the LO’s, describing the summative assessments and a course syllabus is also important, as well as making it easy to navigate course material (see, for example, the &lt;a href=&#34;https://stat545.stat.ubc.ca/&#34;&gt;STAT 545A/547M syllabus website&lt;/a&gt; – although the “Learning Outcomes” listed need updating from pre-2017). Informing the students of any changes or of any mistakes, no matter how painful, is also critical for maintaining clarity.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;responsive-teaching&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Responsive teaching&lt;/h3&gt;
+&lt;p&gt;Sticking too close to course structure can stymie a course. This is because, while preparing course material, the instructor is not truly equipped with the clarity of how to most appropriately deliver material until the material has been delivered. For example, a question for the class might have seemed insightful when it was being prepared, but maybe during class the question doesn’t end up being insightful. Or, maybe the lecture delivery time was underestimated. The answer to addressing this issue is responsive teaching.&lt;/p&gt;
+&lt;p&gt;Responsive teaching to me is about staying in touch with the class to get a feel for areas that need more or less attention. For example, it means: taking a break when the energy of the class is low; responding to class confusion by explaining something in a different way on the whiteboard; or spending more time on something after realizing its importance mid-class. In this way, teaching is more akin to improv comedy, where actors must respond to random cues from the audience (I’ve taken lessons). I believe in embracing a mindset of letting go and trusting in yourself to respond appropriately the moment things go off course, and to also be humble and admit when you don’t know something.&lt;/p&gt;
+&lt;p&gt;This type of spontaneity sometimes also requires realizing and appropriately acting on your agency in adapting a course on the fly. Understanding that a course is flexible allows you to be nimble during contact hours with students, as opposed to feeling stuck in delivering the course exactly as it was originally laid out. However, it’s important to be strategic when making changes so that things remain orderly and as seamless as possible for the students, and to be clear about any changes made. I like using the start of class to check in and return to a roadmap of the course so that everyone remains on board a moving bus.&lt;/p&gt;
+&lt;p&gt;Contact time with students is critical for adapting teaching to the students, and provides tremendous value for students to actually enrol in a program as opposed to taking an online course. Perhaps the most effective method for doing this is making a point to engage with each student in lab. Equally as powerful are discussion-style office hours. I no longer hold my office hours in my office, because the office hour model whereby students just drop by to ask a question is just not effective. There ends up being a queue of students, usually asking common questions, and these students feel pressured to leave the office so that others can get a turn. Instead, I hold my office hours in a lab-like room suitable for collaboration. I end up leading a whole-group discussion prompted by student questions. This gives me even more insight as to how things are going in class, and allows me the opportunity to modify the course moving forward or make clarifications. Plus, the students express appreciation for this approach.&lt;/p&gt;
+&lt;p&gt;Some other methods for connecting with the students are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;being present on the course Slack channel (and sometimes even other course channels) to provide more insight,&lt;/li&gt;
+&lt;li&gt;sending out a 1-minute long early survey about how the course is going,&lt;/li&gt;
+&lt;li&gt;taking the time to talk to students who approach me during the mid-class break or after class,&lt;/li&gt;
+&lt;li&gt;pausing to ask questions and check for insight in the classroom,&lt;/li&gt;
+&lt;li&gt;applying active learning strategies such as think-pair-share or live coding, and&lt;/li&gt;
+&lt;li&gt;checking in to see how things are going at the start of each class, by asking questions like “how are we feeling about the quiz coming up next week”, or “how are we feeling this week”.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;motivation&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;Neither the presence of structure nor responsive teaching will suffice if the students aren’t excited or motivated about the course material, because the ultimately, learning happens outside the classroom, as the student engages with the material.&lt;/p&gt;
+&lt;p&gt;Taking a problem-first approach helps with this. But it also requires some level of entertainment and enthusiasm from the instructor to keep students engaged. It means being aware of the lengthy (usually 80-minute) time frame that students are present for (and that’s just for one class), by taking a break mid-class, returning to the big-picture, and providing additional instructions for exercises for people who may have “fallen off the bus”. It means telling stories. I’m pleased that I regularly receive ample praise on my instructor evaluations, and I encourage you to take a look.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;self-improvement&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Self-Improvement&lt;/h3&gt;
+&lt;p&gt;What’s better than effective teaching? Teaching that continually becomes more effective.&lt;/p&gt;
+&lt;p&gt;Community engagement is one method to become a better teacher. This means keeping an open dialogue and sharing experiences with other teachers, especially my colleagues. Aside from simple acts like sharing ideas and experiences through Slack and gatherings, I’m proud that my team gives and receives formative feedback on our teaching by visiting each other’s lectures. I also take the opportunity to partake in workshops, such as UBC’s Instructional Skills Workshop, and MDS’s annual workshop on Data Science education.&lt;/p&gt;
+&lt;p&gt;An after-action review is another effective method, involving capturing the insight you gain after teaching. There are three ways I engage in an after-action review. First, I capture regular insight throughout the delivery of the course as GitHub Issues, so that the insight can easily be referred to in the future and by any of my colleagues. Secondly, I find keeping a teaching journal that’s not tied to a specific course is useful for becoming a better teacher in general – and it’s even easier now that my team has our lectures recorded. Thirdly, my colleagues and I engage in a “retreat” at the end of each term, to discuss our insight on our courses and the MDS program as a whole.&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
