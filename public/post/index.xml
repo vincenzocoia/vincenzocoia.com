@@ -237,6 +237,19 @@ which is the black curve in the previous plot.&lt;/li&gt;
     </item>
     
     <item>
+      <title>Communicating Data</title>
+      <link>/post/communicating_data_landing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/communicating_data_landing/</guid>
+      <description>
+
+
+&lt;p&gt;How to communicate data through visuals. Inspired by Claus Wilke’s &lt;a href=&#34;https://clauswilke.com/dataviz&#34;&gt;“Fundamentals of Data Visualization”&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://vincenzocoia.com/communicating_data&#34;&gt;Slides here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Generalized Additive Models</title>
       <link>/post/gam_in_r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

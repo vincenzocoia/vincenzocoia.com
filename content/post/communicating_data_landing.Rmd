@@ -1,0 +1,7 @@
+---
+title: "Communicating Data"
+---
+
+How to communicate data through visuals. Inspired by Claus Wilke's ["Fundamentals of Data Visualization"](https://clauswilke.com/dataviz).
+
+[Slides here](https://vincenzocoia.com/communicating_data)
