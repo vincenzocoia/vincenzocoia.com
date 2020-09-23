@@ -1,8 +1,13 @@
 ---
 title: "Communicating Data"
 author: "Vincenzo Coia"
-slides:
-  theme: black
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    mathjax: null
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
 ---
 
 ```{r, message = FALSE, warning = FALSE, echo = FALSE}
