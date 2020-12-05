@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 25  # Order that this section will appear.
 
 title = "Teaching"
-subtitle = "Courses I teach or have taught at UBC."
+subtitle = "Public Material "
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -58,18 +58,6 @@ Regression II
 
 Data Visualization I
 
-### [BAIT 509](https://bait509-ubc.github.io/BAIT509/)
-
-Business Applications of Machine Learning
-
 ### [DSCI 551](https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/)
 
 Descriptive Statistics and Probability for Data Science
-
-### DSCI 511
-
-Programming for Data Science
-
-### DSCI 591
-
-MDS capstone project
