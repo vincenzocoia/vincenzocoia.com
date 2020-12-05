@@ -7,8 +7,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 25  # Order that this section will appear.
 
-title = "Teaching"
-subtitle = "Public Material "
+title = "Resources"
+subtitle = "Platforms I contribute to."
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -48,16 +48,20 @@ subtitle = "Public Material "
 
 ### [STAT 545](https://stat545.stat.ubc.ca)
 
-Data wrangling, exploration, and analysis with R
+Data wrangling, exploration, and analysis with R.
 
-### [DSCI 562](https://ubc-mds.github.io/DSCI_562_regr-2/)
+- Tutorials (both written and autograded).
+- Lesson plans.
+- Assignments.
 
-Regression II
+### [Probability for Data Science](https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/)
+
+A book on communicating uncertainty in data science. Originally developed for the course _DSCI 551: Descriptive Statistics and Probability for Data Science_, but is being evolved into a more general purpose book. 
+
+### [DSCI 562: Regression II](https://ubc-mds.github.io/DSCI_562_regr-2/)
+
+Contains lesson plans and learning summaries.
 
 ### [DSCI 531](https://ubc-mds.github.io/DSCI_531_viz-1/)
 
 Data Visualization I
-
-### [DSCI 551](https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/)
-
-Descriptive Statistics and Probability for Data Science
