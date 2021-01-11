@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 12  # Order that this section will appear.
 
 title = "Bio"
-subtitle = ""
+subtitle = "(Slides available [here](https://vincenzocoia.com/about_me.pdf))"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
