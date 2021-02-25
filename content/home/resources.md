@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 25  # Order that this section will appear.
 
 title = "Resources"
-subtitle = "Platforms I contribute to."
+subtitle = ""
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -46,6 +46,10 @@ subtitle = "Platforms I contribute to."
  css_class = ""
 +++
 
+### [YouTube Channel](https://www.youtube.com/channel/UCrB-uourf2vxGeBnGjQrA0w)
+
+Short, high-level videos to help data analysts write a clean and modern data analysis. Complements STAT 545.
+
 ### [STAT 545](https://stat545.stat.ubc.ca)
 
 Data wrangling, exploration, and analysis with R.
@@ -54,14 +58,6 @@ Data wrangling, exploration, and analysis with R.
 - Lesson plans.
 - Assignments.
 
-### [Probability for Data Science](https://ubc-mds.github.io/DSCI_551_stat-prob-dsci/lectures/)
+### [Interpreting Regression](https://interpreting-regression.netlify.app)
 
-A book on communicating uncertainty in data science. Originally developed for the course _DSCI 551: Descriptive Statistics and Probability for Data Science_, but is being evolved into a more general purpose book. 
-
-### [DSCI 562: Regression II](https://ubc-mds.github.io/DSCI_562_regr-2/)
-
-Contains lesson plans and learning summaries.
-
-### [DSCI 531](https://ubc-mds.github.io/DSCI_531_viz-1/)
-
-Data Visualization I
+An in-progress book on data-driven problem solving from a probabilistic lens. A modern take to statistics. Title may change.
