@@ -53,3 +53,11 @@ Draw powerful insights using distributions.
 ### [rqdist](https://github.com/vincenzocoia/rqdist)
 
 Build predictive distributions using linear quantile regression.
+
+### [igcop](https://igcop.netlify.app/)
+
+Tools for accessing the IG and IGL family of copulas.
+
+### coperate
+
+Coming soon!

@@ -40,11 +40,6 @@
   weight = 40
 
 [[main]]
-  name = "Opinion"
-  url = "#opinion"
-  weight = 50
-
-[[main]]
   name = "Book"
   url = "https://interpreting-regression.netlify.com/"
   weight = 60
