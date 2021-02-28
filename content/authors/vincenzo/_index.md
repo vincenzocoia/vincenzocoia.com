@@ -62,3 +62,5 @@ Some of the things I do:
 - I use R, git, and friends to help me do these things. 
 
 I can also identify birds, and other things about nature.
+
+[Here are generic slides I use to introduce myself.](about_me.pdf)

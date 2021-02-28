@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>/tags/probabilistic-forecasting/</loc>
+    <loc>/post/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>/tags/probabilistic-forecasting/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,7 +43,7 @@
   </url>
   
   <url>
-    <loc>/project/2018-02-18-mean/</loc>
+    <loc>/post/2018-02-18-mean/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,20 +63,24 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2017-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/vincenzo/</loc>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>/bio/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/career/</loc>
+    <loc>/probabilistic-thinking/readme/</loc>
+  </url>
+  
+  <url>
+    <loc>/probabilistic-thinking/statistics-blog_post/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
   </url>
   
   <url>
@@ -93,6 +97,14 @@
   
   <url>
     <loc>/post/jags/</loc>
+  </url>
+  
+  <url>
+    <loc>/mission/</loc>
+  </url>
+  
+  <url>
+    <loc>/probabilistic-thinking/</loc>
   </url>
   
   <url>

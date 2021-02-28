@@ -19,25 +19,25 @@
 
 
 
-[[main]]
-  name = "About"
-  url = "#about"
-  weight = 10
-
-[[main]]
-  name = "Career"
-  url = "#career"
-  weight = 20
-
-[[main]]
-  name = "Resources"
-  url = "#resources"
-  weight = 30
-
-[[main]]
-  name = "Tutorials"
-  url = "#tutorials"
-  weight = 40
+# [[main]]
+#   name = "About"
+#   url = "#about"
+#   weight = 10
+# 
+# [[main]]
+#   name = "Career"
+#   url = "#career"
+#   weight = 20
+# 
+# [[main]]
+#   name = "Resources"
+#   url = "#resources"
+#   weight = 30
+# 
+# [[main]]
+#   name = "Tutorials"
+#   url = "#tutorials"
+#   weight = 40
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

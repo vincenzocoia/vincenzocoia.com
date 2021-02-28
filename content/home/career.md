@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
-title = "Career"
+title = "More About Me"
 subtitle = ""
 
 # Showcase personal skills or business features.
@@ -17,8 +17,8 @@ subtitle = ""
 [[feature]]
   icon = "rocket"
   icon_pack = "fas"
-  name = "[Career Philosophy](/career)"
-  description = "What is an ideal career to me?"
+  name = "[Mission](/mission)"
+  description = "What I do."
   
 [[feature]]
   icon = "chalkboard-teacher"
