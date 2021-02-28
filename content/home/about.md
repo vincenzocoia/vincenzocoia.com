@@ -1,14 +1,53 @@
 +++
-# About widget.
-widget = "about"  # See https://sourcethemes.com/academic/docs/page-builder/
+# A Skills section created with the Featurette widget.
+widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 10  # Order that this section will appear in.
+weight = 20  # Order that this section will appear.
 
-title = ""
+title = "More About Me"
+subtitle = ""
 
-# Choose the user profile to display
-# This should be the username of a profile in your `content/authors/` folder.
-# See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
-author = "vincenzo"
+# Showcase personal skills or business features.
+# 
+# Add/remove as many `[[feature]]` blocks below as you like.
+# 
+# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
+
+[[feature]]
+  icon = "rocket"
+  icon_pack = "fas"
+  name = "[Mission](/mission)"
+  description = "What I do."
+  
+[[feature]]
+  icon = "chalkboard-teacher"
+  icon_pack = "fas"
+  name = "[Teaching Philosophy](/teaching)"
+  description = "What does being an effective teacher mean to me?"  
+  
+[[feature]]
+  icon = "scroll"
+  icon_pack = "fas"
+  name = "[CV](/cv)"
+  description = "The things I've done."
+
+
+# [[feature]]
+#   icon = "window-close"
+#   icon_pack = "fas"
+#   name = "[CV of failures](/failures)"
+#   description = "The things I failed at. __Under development__"
+# 
+# [[feature]]
+#   icon = "project-diagram"
+#   icon_pack = "fas"
+#   name = "[Education in Statistics](/stats_education)"
+#   description = "My vision."
+# 
+# [[feature]]
+#   icon = "compress-arrows-alt"
+#   icon_pack = "fas"
+#   name = "[Diversity Statement](/diversity)"
+#   description = "My vision of inclusivity."
 +++

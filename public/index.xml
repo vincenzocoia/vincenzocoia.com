@@ -384,21 +384,6 @@ Meetings. July 28August 2, 2012 at San Diego, California&lt;/p&gt;&lt;/li&gt;
     </item>
     
     <item>
-      <title></title>
-      <link>/bio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/bio/</guid>
-      <description>&lt;h1 id=&#34;mission&#34;&gt;Mission&lt;/h1&gt;
-&lt;p&gt;My mission is to promote a probabilistic and trustworthy approach to data science. I do this by developing tools and content, teaching at UBC, and consulting.&lt;/p&gt;
-&lt;p&gt;My favourite application area is earth science and ecology. I love birds, invertebrates, and the polar regions.&lt;/p&gt;
-&lt;h1 id=&#34;motivation&#34;&gt;Motivation&lt;/h1&gt;
-&lt;p&gt;A &amp;ldquo;probabilistic&amp;rdquo; approach to data science means to embrace uncertainty. When we fail to recognize uncertainty, insights are drawn as though an omniscient expert is broadcasting an inevitability: national GDP will increase by 5% next year, or a river will peak to 0.5 meters below the town&amp;rsquo;s levee. Our understanding of each situation, in reality, is far less certain, and effectively communicating that uncertainty can make the difference when making big decisions such as whether to evacuate a town.&lt;/p&gt;
-&lt;p&gt;Conveying uncertainty requires the use of probability distributions. This means more than making an elusive Normal assumption, or fitting a test statistic to a &lt;em&gt;t&lt;/em&gt;-distribution &amp;ndash; it means building realistic distributions as an output, perhaps with machine learning, and converting that output into something that&amp;rsquo;s understandable by non-experts. It also means interpreting statistics such as the mean or median probabilistically.&lt;/p&gt;
-&lt;p&gt;My interpretation of educational leadership means developing tools and materials to make statistical methods more accessible to, and relevant in, the data science community.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Mission</title>
       <link>/mission/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -440,6 +425,14 @@ Meetings. July 28August 2, 2012 at San Diego, California&lt;/p&gt;&lt;/li&gt;
       <link>/probabilistic-thinking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/probabilistic-thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/</guid>
       <description></description>
     </item>
     
