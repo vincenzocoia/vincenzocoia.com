@@ -1,0 +1,15 @@
+---
+title: "Inclusivity"
+date: "2020-02-28"
+output: html_document
+---
+
+It's important to me that I promote an inclusive environment both in and outside of
+the classroom, both in person and online. I will not tolerate discriminatory behaviour.
+
+To promote an inclusive environment, I like to challenge
+myself by asking, "would I respond differently if this person was a different
+gender? race? looked a different way?" -- this helps me identify my own implicit
+biases. Despite my efforts, if I ever do
+discriminate against someone, or make an uncalled for assumption, I welcome
+being called out on it, and I sincerely apologize and would like to right the mistake.

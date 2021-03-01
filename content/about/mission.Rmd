@@ -1,5 +1,6 @@
 ---
 title: "Mission"
+date: "2021-02-21"
 output:
   prettydoc::html_pretty:
     theme: tactile

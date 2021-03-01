@@ -1,6 +1,6 @@
 ---
 title: "Vincenzo Coia's CV"
-date: "`r Sys.Date()`"
+date: "2020-02-01"
 output:
   pdf_document:
     toc: no
