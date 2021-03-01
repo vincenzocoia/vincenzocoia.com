@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <loc>/approach/</loc>
+    <lastmod>2021-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/mission/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+    <loc>/approach/inclusion/</loc>
+    <lastmod>2021-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2021-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/approach/mission/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,12 +38,7 @@
   </url>
   
   <url>
-    <loc>/about/inclusion/</loc>
-    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/about/cv/</loc>
+    <loc>/approach/cv/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -170,7 +170,7 @@
   </url>
   
   <url>
-    <loc>/about/teaching/</loc>
+    <loc>/approach/teaching/</loc>
   </url>
   
   <url>
