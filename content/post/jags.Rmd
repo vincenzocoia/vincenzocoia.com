@@ -1,5 +1,6 @@
 ---
 title: "JAGS Tutorial"
+date: "2018-03-03"
 output: github_document
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Generalized Additive Models"
+date: "2018-02-01"
 output: html_document
 ---
 

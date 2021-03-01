@@ -8,17 +8,32 @@
   </url>
   
   <url>
+    <loc>/post/communicating_data/</loc>
+    <lastmod>2020-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/jags/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/mean/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/median/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,8 +63,8 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+    <loc>/post/gam_in_r/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -83,10 +98,6 @@
   </url>
   
   <url>
-    <loc>/post/communicating_data_landing/</loc>
-  </url>
-  
-  <url>
     <loc>/project/coperate/</loc>
   </url>
   
@@ -95,19 +106,11 @@
   </url>
   
   <url>
-    <loc>/post/gam_in_r/</loc>
-  </url>
-  
-  <url>
     <loc>/project/igcop/</loc>
   </url>
   
   <url>
     <loc>/project/interpreting-regression/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/jags/</loc>
   </url>
   
   <url>
