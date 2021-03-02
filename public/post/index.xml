@@ -5,12 +5,194 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Contour Plots with ggplot2</title>
+      <link>/post/contour_plots/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>/post/contour_plots/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;This is an updated version of the original post from February 22, 2017.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This tutorial introduces contour plots, and how to plot them in ggplot2.&lt;/p&gt;
+&lt;div id=&#34;what-is-a-contour-plot&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;What is a contour plot?&lt;/h1&gt;
+&lt;p&gt;Suppose you have a map of a mountainous region. How might you indicate elevation on that map, so that you get to see the shape of the landscape?&lt;/p&gt;
+&lt;p&gt;The idea is to use &lt;em&gt;contour lines&lt;/em&gt;, which are curves that indicate a constant height.&lt;/p&gt;
+&lt;p&gt;Imagine cutting the tops of the mountains off by removing all land above, say, 900 meters altitude. Then trace (on your map) the shapes formed by the new (flat) mountain tops. These curves are contour lines. Choose a differential such as 50 meters, and draw these curves for altitudes …800m, 850m, 900m, 950m, 1000m, … – the result is a &lt;strong&gt;contour plot&lt;/strong&gt; (or topographic map, if it’s a map).&lt;/p&gt;
+&lt;p&gt;In general, contour plots are useful for functions of two variables (like a bivariate gaussian density).&lt;/p&gt;
+&lt;p&gt;We’ll look at examples in the next section.&lt;/p&gt;
+&lt;p&gt;Notes on contours:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They never cross.&lt;/li&gt;
+&lt;li&gt;The steepest slope at a point is parallel to the contour line.&lt;/li&gt;
+&lt;li&gt;They aren’t entirely ambiguous. For example, you can’t tell whether or not the mountains are actually mountains, or whether they’re holes/valleys! Sometimes you can add colour to indicate depth; other times (like in topographic maps) you can indicate elevation directly as numbers beside contour lines. Other times, this is not required, because the context makes it obvious.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are two ways you can make contour plots in ggplot2 – but they’re both for quite different purposes. Let’s load ggplot2 through the tidyverse:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+theme_set(theme_minimal())&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;method-1-approximate-a-bivariate-density-geom_density2d&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Method 1: Approximate a bivariate density: &lt;code&gt;geom_density2d()&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;This method approximates a bivariate density &lt;strong&gt;from data&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;First, recall how this is done in the univariate case. A little kernel function (like a shrunken bell curve) is placed over each data point, and these are added together to get a density estimate:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(373)
+x &amp;lt;- rnorm(1000)
+tibble(x = x) %&amp;gt;% 
+    ggplot(aes(x)) +
+    geom_density()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can do the same thing to get a bivariate density, except with little bivariate kernel functions (like shrunken bivariate Gaussian densities). But, we can’t just simply put “density height” on the vertical axis – we need that for the second dimension. Instead, we can use contour plots.&lt;/p&gt;
+&lt;p&gt;This is the contour plot that ggplot2’s &lt;code&gt;geom_density2d()&lt;/code&gt; does: builds a bivariate kernel density estimate (based on data), then makes a contour plot out of it:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;y &amp;lt;- rnorm(1000)
+tibble(x = x, y = y) %&amp;gt;% 
+    ggplot(aes(x, y)) + 
+    geom_density2d() +
+    theme(axis.title.y = element_text(angle = 0, vjust = 0.5))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Based on context (this is a density), we know that this is a “hill” and not a “hole”. If you were to start at some point at the “bottom” of the hill, the steepest way up would be perpendicular to the contours. The highest point on the hill is within the middle-most circle.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;method-2-general-contour-plots-geom_contour&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Method 2: General Contour Plots: &lt;code&gt;geom_contour()&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;You can also make contour plots that &lt;em&gt;aren’t&lt;/em&gt; a kernel density estimate (necessarily), using &lt;code&gt;geom_contour()&lt;/code&gt;. This is based off of &lt;strong&gt;any bivariate function&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;basics&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Basics&lt;/h2&gt;
+&lt;p&gt;Suppose we want to make a contour plot of the bivariate function &lt;span class=&#34;math display&#34;&gt;\[f(x, y) = x ^ 2 + \sin(y)\]&lt;/span&gt; over the rectangle &lt;span class=&#34;math inline&#34;&gt;\(-2&amp;lt;x&amp;lt;2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(-5&amp;lt;y&amp;lt;5\)&lt;/span&gt;.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Make a grid over the rectangle. It &lt;em&gt;must&lt;/em&gt; be a grid – &lt;code&gt;geom_contour()&lt;/code&gt; won’t work otherwise. The &lt;code&gt;expand_grid()&lt;/code&gt; function is handy for this, filling in all combinations of its input.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;f &amp;lt;- function(x, y) x ^ 2 + sin(y)
+x &amp;lt;- seq(-2, 2, length.out = 100)
+y &amp;lt;- seq(-5, 5, length.out = 100)
+(dat &amp;lt;- expand_grid(x = x, y = y))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10,000 x 2
+##        x     y
+##    &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1    -2 -5   
+##  2    -2 -4.90
+##  3    -2 -4.80
+##  4    -2 -4.70
+##  5    -2 -4.60
+##  6    -2 -4.49
+##  7    -2 -4.39
+##  8    -2 -4.29
+##  9    -2 -4.19
+## 10    -2 -4.09
+## # … with 9,990 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Evaluate the function at each of the grid points. Make sure you end up with a data frame with three columns: two for the &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; coordinates, and one for the evaluated function (called &lt;code&gt;z&lt;/code&gt; below).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(dat &amp;lt;- mutate(dat, z = f(x, y)))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10,000 x 3
+##        x     y     z
+##    &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1    -2 -5     4.96
+##  2    -2 -4.90  4.98
+##  3    -2 -4.80  5.00
+##  4    -2 -4.70  5.00
+##  5    -2 -4.60  4.99
+##  6    -2 -4.49  4.98
+##  7    -2 -4.39  4.95
+##  8    -2 -4.29  4.91
+##  9    -2 -4.19  4.87
+## 10    -2 -4.09  4.81
+## # … with 9,990 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use this data frame with ggplot2’s &lt;code&gt;geom_contour()&lt;/code&gt;. The &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; aesthetics should be the two grid columns, and the &lt;code&gt;z&lt;/code&gt; aesthetic should be mapped to the column with the evaluated function (&lt;code&gt;z&lt;/code&gt; here).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(dat, aes(x, y)) +
+    geom_contour(aes(z = z)) +
+    theme(axis.title.y = element_text(angle = 0, vjust = 0.5))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Note that finer grids yield plots with higher accuracy. Here’s an example of a rough grid, whose contours are jagged:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- seq(-2, 2, length.out = 10)
+y &amp;lt;- seq(-5, 5, length.out = 10)
+expand_grid(x = x, y = y) %&amp;gt;% 
+    mutate(z = f(x, y)) %&amp;gt;% 
+    ggplot(aes(x, y)) +
+    geom_contour(aes(z = z)) +
+    theme(axis.title.y = element_text(angle = 0, vjust = 0.5))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example-using-the-volcano-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Example using the &lt;code&gt;volcano&lt;/code&gt; data&lt;/h2&gt;
+&lt;p&gt;R comes with a dataset containing the altitudes of a volcano, Maunga Whau (Mt Eden), stored in the datasets variable &lt;code&gt;volcano&lt;/code&gt;. You’ll notice that the dataset is literally a grid of &lt;span class=&#34;math inline&#34;&gt;\(87 \times 61\)&lt;/span&gt; altitudes – here are the first six rows and columns:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;volcano[1:6, 1:6]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4] [,5] [,6]
+## [1,]  100  100  101  101  101  101
+## [2,]  101  101  102  102  102  102
+## [3,]  102  102  103  103  103  103
+## [4,]  103  103  104  104  104  104
+## [5,]  104  104  105  105  105  105
+## [6,]  105  105  105  106  106  106&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you’d like, you can take a look at a 3D rendering of the volcano using the rgl package’s &lt;code&gt;surface3d()&lt;/code&gt; function. The code for doing this is directly in the documentation of the &lt;code&gt;surface3d()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;In order to make a contour plot with ggplot2’s &lt;code&gt;geom_contour()&lt;/code&gt;, we’ll first need to turn this into a tidy data frame with three columns. You &lt;em&gt;could&lt;/em&gt; use &lt;code&gt;as.vector(volcano)&lt;/code&gt; to get a vector of altitudes, and line that up with a grid laid out as two columns, but I’m not going to take any chances here, so I’ll opt to use &lt;code&gt;pivot_longer()&lt;/code&gt;. We don’t know much about the latitude and longitude, so their values are arbitrary.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(volcano_tidy &amp;lt;- as_tibble(volcano, .name_repair = &amp;quot;universal&amp;quot;) %&amp;gt;% 
+    mutate(latitude = 1:n()) %&amp;gt;% 
+    pivot_longer(!latitude, names_to = &amp;quot;longitude&amp;quot;, values_to = &amp;quot;altitude&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5,307 x 3
+##    latitude longitude altitude
+##       &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;        &amp;lt;dbl&amp;gt;
+##  1        1 ...1           100
+##  2        1 ...2           100
+##  3        1 ...3           101
+##  4        1 ...4           101
+##  5        1 ...5           101
+##  6        1 ...6           101
+##  7        1 ...7           101
+##  8        1 ...8           100
+##  9        1 ...9           100
+## 10        1 ...10          100
+## # … with 5,297 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Fix up the longitude (taking the negative to reverse the order, because data are provided as &lt;em&gt;east to west&lt;/em&gt;):&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(volcano_tidy &amp;lt;- volcano_tidy %&amp;gt;% 
+    mutate(longitude = longitude %&amp;gt;% 
+               str_remove(&amp;quot;[\\.]{3}&amp;quot;) %&amp;gt;%
+               as.numeric() %&amp;gt;% 
+               `-`()))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5,307 x 3
+##    latitude longitude altitude
+##       &amp;lt;int&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;
+##  1        1        -1      100
+##  2        1        -2      100
+##  3        1        -3      101
+##  4        1        -4      101
+##  5        1        -5      101
+##  6        1        -6      101
+##  7        1        -7      101
+##  8        1        -8      100
+##  9        1        -9      100
+## 10        1       -10      100
+## # … with 5,297 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now the contour plot comes for free:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(volcano_tidy, aes(longitude, latitude)) +
+    geom_contour(aes(z = altitude)) +
+    theme_void()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;201.6&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;But, you can’t tell that the inner circles actually represent a hole (a caldera), not a peak. Let’s add colour by mapping the &lt;code&gt;..height..&lt;/code&gt; “variable” to the &lt;code&gt;colour&lt;/code&gt; aesthetic of &lt;code&gt;geom_contour()&lt;/code&gt;. This will also create a legend for altitude.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(volcano_tidy, aes(longitude, latitude)) +
+    geom_contour(aes(z = altitude, colour = ..level..)) +
+    theme_void() +
+    scale_color_continuous(&amp;quot;Altitude&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;268.8&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can somewhat tell that the highest point is within the lightest blue area, just below the caldera. But, we would get a better sense of the terrain by adding more contour lines. You can use the &lt;code&gt;bins&lt;/code&gt; argument in the &lt;code&gt;geom_contour()&lt;/code&gt; function to indicate the number of altitudes for which to draw contours, or &lt;code&gt;binwidth&lt;/code&gt; to specify a range of altitudes. Let’s make 20 contours with &lt;code&gt;bins = 20&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;contour_altitudes &amp;lt;- seq(min(volcano), max(volcano), length.out = 20)
+ggplot(volcano_tidy, aes(longitude, latitude)) +
+    geom_contour(aes(z = altitude, colour = ..level..), bins = 20) +
+    theme_void() +
+    scale_color_continuous(&amp;quot;Altitude&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;268.8&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Communicating Data</title>
@@ -369,128 +551,6 @@ summary(fit5)&lt;/code&gt;&lt;/pre&gt;
     xlab(&amp;quot;Prediction (mean)&amp;quot;) + ylab(&amp;quot;Residuals&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/gam_in_r_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For their documentation, see &lt;code&gt;?predict.gam&lt;/code&gt; and &lt;code&gt;?residuals.gam&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Contour Plots</title>
-      <link>/post/contour_plots/</link>
-      <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>/post/contour_plots/</guid>
-      <description>
-
-
-&lt;p&gt;This tutorial introduces contour plots, and how to plot them in &lt;code&gt;ggplot2&lt;/code&gt;.&lt;/p&gt;
-&lt;div id=&#34;what-is-a-contour-plot&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;What is a contour plot?&lt;/h1&gt;
-&lt;p&gt;Suppose you have a map of a mountainous region. How might you indicate elevation on that map, so that you get to see the shape of the landscape?&lt;/p&gt;
-&lt;p&gt;The idea is to use &lt;em&gt;contour lines&lt;/em&gt;, which are curves that indicate a constant height.&lt;/p&gt;
-&lt;p&gt;Imagine cutting the tops of the mountains off by removing all land above, say, 900 meters altitude. Then trace (on your map) the shapes formed by the new (flat) mountain tops. These curves are contour lines. Choose a differential such as 50 meters, and draw these curves for altitudes …800m, 850m, 900m, 950m, 1000m, … – the result is a &lt;strong&gt;contour plot&lt;/strong&gt; (or topographic map, if it’s a map).&lt;/p&gt;
-&lt;p&gt;In general, contour plots are useful for functions of two variables (like a bivariate gaussian density).&lt;/p&gt;
-&lt;p&gt;We’ll look at examples in the next section.&lt;/p&gt;
-&lt;p&gt;Notes on contours:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;They never cross.&lt;/li&gt;
-&lt;li&gt;The steepest slope at a point is parallel to the contour line.&lt;/li&gt;
-&lt;li&gt;They aren’t entirely ambiguous. For example, you can’t tell whether or not the mountains are actually mountains, or whether they’re holes/valleys! Sometimes you can add colour to indicate depth; other times (like in topographic maps) you can indicate elevation directly as numbers beside contour lines. Other times, this is not required, because the context makes it obvious.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;contour-plots-in-ggplot2&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Contour plots in &lt;code&gt;ggplot2&lt;/code&gt;&lt;/h1&gt;
-&lt;p&gt;There are two ways you can make contour plots in &lt;code&gt;ggplot2&lt;/code&gt; – but they’re both for quite different purposes.&lt;/p&gt;
-&lt;div id=&#34;method-1-approximate-a-bivariate-density&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Method 1: Approximate a bivariate density&lt;/h2&gt;
-&lt;p&gt;This method approximates a bivariate density &lt;strong&gt;from data&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;First, recall how this is done in the univariate case. A little kernel function (like a shrunken bell curve) is placed over each data point, and these are added together to get a density estimate:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
-set.seed(373)
-x &amp;lt;- rnorm(1000)
-ggplot(data.frame(x=x), aes(x)) + 
-    geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;We can do the same thing to get a bivariate density, except with little bivariate kernel functions (like shrunken bivariate Gaussian densities). But, we can’t just simply put “density height” on the vertical axis – we need that for the second dimension. Instead, we can use contour plots.&lt;/p&gt;
-&lt;p&gt;This is the contour plot that &lt;code&gt;ggplot2&lt;/code&gt;’s &lt;code&gt;geom_density2d()&lt;/code&gt; does: builds a bivariate kernel density estimate (based on data), then makes a contour plot out of it:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;y &amp;lt;- rnorm(1000)
-ggplot(data.frame(x=x, y=y), aes(x, y)) + 
-    geom_density2d()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Based on context (this is a density), we know that this is a “hill” and not a “hole”. If you were to start at some point at the “bottom” of the hill, the steepest way up would be perpendicular to the contours. The highest point on the hill is within the middle-most circle.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;method-2-general-contour-plots&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Method 2: General Contour Plots&lt;/h2&gt;
-&lt;p&gt;You can also make contour plots that &lt;em&gt;aren’t&lt;/em&gt; a kernel density estimate (necessarily), using &lt;code&gt;geom_contour()&lt;/code&gt;. This is based off of &lt;strong&gt;any bivariate function&lt;/strong&gt;.&lt;/p&gt;
-&lt;div id=&#34;basics&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Basics&lt;/h3&gt;
-&lt;p&gt;Suppose we want to make a contour plot of the bivariate function &lt;span class=&#34;math display&#34;&gt;\[f(x,y) = x^2 + sin(y)\]&lt;/span&gt; over the rectangle &lt;span class=&#34;math inline&#34;&gt;\(-2&amp;lt;x&amp;lt;2\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(-5&amp;lt;y&amp;lt;5\)&lt;/span&gt;. First, make a grid over the rectangle (it &lt;em&gt;must&lt;/em&gt; be a grid – &lt;code&gt;geom_contour()&lt;/code&gt; won’t work otherwise). Then, evaluate the function at each of the grid points. Put all this info into a single data frame with three columns (two for the &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; coordinates, and one for the function evaluation). Then, indicate the function evaluation in &lt;code&gt;geom_contour()&lt;/code&gt; as the aesthetic &lt;code&gt;z&lt;/code&gt;, and the &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; aesthetics are as usual.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;f &amp;lt;- function(x) x[1]^2 + sin(x[2])
-x &amp;lt;- seq(-2, 2, length.out=100)
-y &amp;lt;- seq(-5, 5, length.out=100)
-dat &amp;lt;- expand.grid(x=x, y=y)  # Data frame of 100*100=10000 points.
-dat$z &amp;lt;- apply(dat, 1, f)
-ggplot(dat, aes(x, y)) +
-    geom_contour(aes(z=z))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Notice that &lt;code&gt;expand.grid&lt;/code&gt; is useful for making grids. It returns all pairs from the input vectors. But, this also means that it’s easy for the output to explode!&lt;/p&gt;
-&lt;p&gt;Note that finer grids yield plots with higher accuracy. Here’s an example of a rough grid, whose contours are jagged:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;f &amp;lt;- function(x) x[1]^2 + sin(x[2])
-x &amp;lt;- seq(-2, 2, length.out=10)
-y &amp;lt;- seq(-5, 5, length.out=10)
-dat &amp;lt;- expand.grid(x=x, y=y) # Data frame of 10*10=100 points.
-dat$z &amp;lt;- apply(dat, 1, f)
-ggplot(dat, aes(x, y)) +
-    geom_contour(aes(z=z))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;additional-settings&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Additional Settings&lt;/h3&gt;
-&lt;p&gt;Here, we’ll look at colouring the plots, and adding more/less contours.&lt;/p&gt;
-&lt;p&gt;Here’s another example, with the &lt;code&gt;volcano&lt;/code&gt; data (a matrix of altitudes for a volcano). If you’d like, first take a look at a 3D rendering of the volcano, by running the following code chunk in your R console after un-commenting the last two lines (code taken directly from &lt;code&gt;rgl&lt;/code&gt;’s &lt;code&gt;surface3d()&lt;/code&gt; documentation):&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(volcano)
-z &amp;lt;- 2 * volcano        # Exaggerate the relief
-x &amp;lt;- 10 * (1:nrow(z))   # 10 meter spacing (S to N)
-y &amp;lt;- 10 * (1:ncol(z))   # 10 meter spacing (E to W)
-zlim &amp;lt;- range(y)
-zlen &amp;lt;- zlim[2] - zlim[1] + 1
-colorlut &amp;lt;- terrain.colors(zlen) # height color lookup table
-col &amp;lt;- colorlut[ z - zlim[1] + 1 ] # assign colors to heights for each point
-# open3d()
-# surface3d(x, y, z, color = col, back = &amp;quot;lines&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Feel free to move the image around by clicking and dragging. Neat, eh?&lt;/p&gt;
-&lt;p&gt;We’ll make a contour plot with this.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat &amp;lt;- expand.grid(x=x, y=y)
-dat$z &amp;lt;- as.vector(z)/2   # &amp;quot;De-exaggerate&amp;quot; the relief
-ggplot(dat, aes(x, y)) +
-    geom_contour(aes(z=z)) +
-    xlab(&amp;quot;&amp;quot;) + ylab(&amp;quot;&amp;quot;) +
-    theme(axis.text=element_blank(),
-          axis.ticks=element_blank())&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;528&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;But, you can’t tell that the inner circles actually represent a hole (a caldera), not a peak. Let’s add colour by indicating the “variable” &lt;code&gt;..height..&lt;/code&gt; in the &lt;code&gt;colour&lt;/code&gt; aesthetic of &lt;code&gt;geom_cotour()&lt;/code&gt;, which will also indicate height as a legend:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat &amp;lt;- expand.grid(x=x, y=y)
-dat$z &amp;lt;- as.vector(z)/2   # &amp;quot;De-exaggerate&amp;quot; the relief
-ggplot(dat, aes(x, y)) +
-    geom_contour(aes(z=z, colour=..level..)) +
-    xlab(&amp;quot;&amp;quot;) + ylab(&amp;quot;&amp;quot;) +
-    theme(axis.text=element_blank(),
-          axis.ticks=element_blank()) +
-    scale_color_continuous(&amp;quot;Altitude&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Now we can tell that the highest point is within the lightest blue area, to the left of the caldera.&lt;/p&gt;
-&lt;p&gt;Now let’s add more contour lines, to get a better sense of the terrain. Do so by indicating the altitudes to make contours for via &lt;code&gt;breaks&lt;/code&gt;. Let’s make 5 unit spacing:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dat &amp;lt;- expand.grid(x=x, y=y)
-dat$z &amp;lt;- as.vector(z)/2   # &amp;quot;De-exaggerate&amp;quot; the relief
-ggplot(dat, aes(x, y)) +
-    geom_contour(aes(z=z, colour=..level..),
-                 breaks=seq(100, 200, by=5)) +
-    xlab(&amp;quot;&amp;quot;) + ylab(&amp;quot;&amp;quot;) +
-    theme(axis.text=element_blank(),
-          axis.ticks=element_blank()) +
-    scale_color_continuous(&amp;quot;Altitude&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;576&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Although you can change the contours, it’s best practice to keep the (height) spacing between contour lines equal – otherwise, the contour plot becomes harder to read. In the above plot, for example, we know that crossing &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; contour lines (that are either increasing or decreasing) results in &lt;span class=&#34;math inline&#34;&gt;\(5n\)&lt;/span&gt; units of elevation gain/loss, because the spacing between contours is always 5 units.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
