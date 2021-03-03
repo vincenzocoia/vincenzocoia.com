@@ -168,8 +168,7 @@ ggplot(volcano_tidy, aes(longitude, latitude)) +
 
 We can somewhat tell that the highest point is within the lightest blue area, just below the caldera. But, we would get a better sense of the terrain by adding more contour lines. You can use the `bins` argument in the `geom_contour()` function to indicate the number of altitudes for which to draw contours, or `binwidth` to specify a range of altitudes. Let's make 20 contours with `bins = 20`:
 
-```{r,}
-contour_altitudes <- seq(min(volcano), max(volcano), length.out = 20)
+```{r}
 ggplot(volcano_tidy, aes(longitude, latitude)) +
     geom_contour(aes(z = altitude, colour = ..level..), bins = 20) +
     theme_void() +

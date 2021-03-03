@@ -119,10 +119,9 @@ You’ll need to download and install JAGS. You can interact with JAGS through o
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="twitter:site" content="@VincenzoCoia">
   <meta property="twitter:creator" content="@VincenzoCoia">
@@ -132,8 +131,8 @@ You’ll need to download and install JAGS. You can interact with JAGS through o
   <meta property="og:title" content="JAGS Tutorial | Vincenzo Coia">
   <meta property="og:description" content="JAGS is a language that allows you to run Bayesian analyses. It gets at the posterior by generating samples based on the posterior and statistical model.
 You’ll need to download and install JAGS. You can interact with JAGS through one of three R packages:
- runjags (recommended for this course)  Model written as a single string in R; possibly also allows you to input from file. Quick-start guide vignette: vignette(&#34;"><meta property="og:image" content="/img/icon-192.png">
-  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+ runjags (recommended for this course)  Model written as a single string in R; possibly also allows you to input from file. Quick-start guide vignette: vignette(&#34;"><meta property="og:image" content="/post/jags/featured.png">
+  <meta property="twitter:image" content="/post/jags/featured.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2018-03-03T00:00:00&#43;00:00">
@@ -247,18 +246,24 @@ You’ll need to download and install JAGS. You can interact with JAGS through o
 
 
 
-  
+
+
+
+
+
+
+
 
   
   
-  
+
+
 <div class="article-container pt-3">
   <h1 itemprop="name">JAGS Tutorial</h1>
 
   
 
   
-    
 
 
 
@@ -390,22 +395,29 @@ You’ll need to download and install JAGS. You can interact with JAGS through o
 
 </div>
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 405px; max-height: 571px;">
+  <div style="position: relative">
+    <img src="/post/jags/featured.png" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 
@@ -459,7 +471,7 @@ fit &lt;- run.jags(my_model, monitor=&quot;theta&quot;, n.chains=1, sample=1000)
 <pre><code>## Warning: No data was specified or found in the model file so the simulation was
 ## run withut data</code></pre>
 <pre><code>## Calling the simulation...
-## Welcome to JAGS 4.3.0 on Sun Feb 28 22:12:08 2021
+## Welcome to JAGS 4.3.0 on Tue Mar  2 21:36:41 2021
 ## JAGS is free software and comes with ABSOLUTELY NO WARRANTY
 ## Loading module: basemod: ok
 ## Loading module: bugs: ok
@@ -494,24 +506,24 @@ head(theta)</code></pre>
 ## End = 5007 
 ## Thinning interval = 1 
 ##          theta
-## 5001  1.290950
-## 5002 -1.213580
-## 5003  0.149277
-## 5004  0.103981
-## 5005 -2.887760
-## 5006  2.767070
-## 5007 -0.190131</code></pre>
+## 5001 -2.804800
+## 5002  0.845780
+## 5003 -1.498940
+## 5004  0.217181
+## 5005  0.217985
+## 5006 -1.311370
+## 5007 -0.273720</code></pre>
 <pre class="r"><code>plot(theta)</code></pre>
-<p><img src="/post/jags_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="/post/jags/index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <div id="more-sample-code" class="section level2">
 <h2>More sample code</h2>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
 <pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
 ## ✓ tibble  3.0.3     ✓ dplyr   1.0.2
 ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## x tidyr::extract() masks runjags::extract()
 ## x dplyr::filter()  masks stats::filter()
 ## x dplyr::lag()     masks stats::lag()</code></pre>
@@ -538,7 +550,7 @@ foo &lt;- run.jags(
 <pre><code>## Warning: No initial values were provided - JAGS will use the same initial values
 ## for all chains</code></pre>
 <pre><code>## Calling the simulation...
-## Welcome to JAGS 4.3.0 on Sun Feb 28 22:12:12 2021
+## Welcome to JAGS 4.3.0 on Tue Mar  2 21:36:44 2021
 ## JAGS is free software and comes with ABSOLUTELY NO WARRANTY
 ## Loading module: basemod: ok
 ## Loading module: bugs: ok
@@ -575,7 +587,7 @@ foo &lt;- run.jags(
 ## Finished running the simulation</code></pre>
 <pre class="r"><code>plot(coda::as.mcmc(foo))</code></pre>
 <pre><code>## Warning in as.mcmc.runjags(foo): Combining the 2 mcmc chains together</code></pre>
-<p><img src="/post/jags_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/post/jags/index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
 
     </div>

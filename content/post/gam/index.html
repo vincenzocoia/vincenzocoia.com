@@ -88,7 +88,7 @@ summary(fit3)</code></pre>
 ## GCV = 5.0715  Scale est. = 3.762     n = 32</code></pre>
 <p>Now, each predictor enters the model in a non-parametric, additive form. The nonparametric functions can be accessed by calling <code>plot</code>. For documentation, see <code>?plot.gam</code>. Let’s plot the “bivariate” scatterplots behind these curves too (these bivariate data actually use partial residuals).</p>
 <pre class="r"><code>plot(fit3, residuals=TRUE)</code></pre>
-<p><img src="/post/gam_in_r_files/figure-html/unnamed-chunk-4-1.png" width="480" style="display: block; margin: auto;" /><img src="/post/gam_in_r_files/figure-html/unnamed-chunk-4-2.png" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="/post/gam/index_files/figure-html/unnamed-chunk-4-1.png" width="480" style="display: block; margin: auto;" /><img src="/post/gam/index_files/figure-html/unnamed-chunk-4-2.png" width="480" style="display: block; margin: auto;" /></p>
 <p>Looks like the “weight” variable (<code>wt</code>) is quite linear. We can let it be linear, while the <code>disp</code> variable remains nonparametric. “Wiggliness” of the smoothed fit can be controlled through the <code>k</code> argument of the <code>s</code> function, but this is chosen in a “smart” way by default.</p>
 <pre class="r"><code>fit4 &lt;- gam(mpg ~ s(disp, k=3) + wt, data=mtcars)
 summary(fit4)</code></pre>
@@ -115,7 +115,7 @@ summary(fit4)</code></pre>
 ## R-sq.(adj) =  0.839   Deviance explained = 85.4%
 ## GCV =  6.659  Scale est. = 5.8413    n = 32</code></pre>
 <pre class="r"><code>plot(fit4, residuals=TRUE)</code></pre>
-<p><img src="/post/gam_in_r_files/figure-html/unnamed-chunk-5-1.png" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="/post/gam/index_files/figure-html/unnamed-chunk-5-1.png" width="480" style="display: block; margin: auto;" /></p>
 <p>You can even combine predictors into a common smooth function:</p>
 <pre class="r"><code>fit5 &lt;- gam(mpg ~ s(disp, qsec) + wt, data=mtcars)
 summary(fit5)</code></pre>
@@ -145,6 +145,6 @@ summary(fit5)</code></pre>
 <pre class="r"><code>qplot(predict(fit5), residuals(fit5)) +
     geom_abline(intercept=0, slope=0, linetype=&quot;dashed&quot;) +
     xlab(&quot;Prediction (mean)&quot;) + ylab(&quot;Residuals&quot;)</code></pre>
-<p><img src="/post/gam_in_r_files/figure-html/unnamed-chunk-7-1.png" width="480" style="display: block; margin: auto;" /></p>
+<p><img src="/post/gam/index_files/figure-html/unnamed-chunk-7-1.png" width="480" style="display: block; margin: auto;" /></p>
 <p>For their documentation, see <code>?predict.gam</code> and <code>?residuals.gam</code>.</p>
 </div>

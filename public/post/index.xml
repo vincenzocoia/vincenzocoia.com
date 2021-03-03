@@ -48,7 +48,7 @@ x &amp;lt;- rnorm(1000)
 tibble(x = x) %&amp;gt;% 
     ggplot(aes(x)) +
     geom_density()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We can do the same thing to get a bivariate density, except with little bivariate kernel functions (like shrunken bivariate Gaussian densities). But, we can’t just simply put “density height” on the vertical axis – we need that for the second dimension. Instead, we can use contour plots.&lt;/p&gt;
 &lt;p&gt;This is the contour plot that ggplot2’s &lt;code&gt;geom_density2d()&lt;/code&gt; does: builds a bivariate kernel density estimate (based on data), then makes a contour plot out of it:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;y &amp;lt;- rnorm(1000)
@@ -56,7 +56,7 @@ tibble(x = x, y = y) %&amp;gt;%
     ggplot(aes(x, y)) + 
     geom_density2d() +
     theme(axis.title.y = element_text(angle = 0, vjust = 0.5))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Based on context (this is a density), we know that this is a “hill” and not a “hole”. If you were to start at some point at the “bottom” of the hill, the steepest way up would be perpendicular to the contours. The highest point on the hill is within the middle-most circle.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;method-2-general-contour-plots-geom_contour&#34; class=&#34;section level1&#34;&gt;
@@ -110,7 +110,7 @@ y &amp;lt;- seq(-5, 5, length.out = 100)
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(dat, aes(x, y)) +
     geom_contour(aes(z = z)) +
     theme(axis.title.y = element_text(angle = 0, vjust = 0.5))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Note that finer grids yield plots with higher accuracy. Here’s an example of a rough grid, whose contours are jagged:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- seq(-2, 2, length.out = 10)
 y &amp;lt;- seq(-5, 5, length.out = 10)
@@ -119,7 +119,7 @@ expand_grid(x = x, y = y) %&amp;gt;%
     ggplot(aes(x, y)) +
     geom_contour(aes(z = z)) +
     theme(axis.title.y = element_text(angle = 0, vjust = 0.5))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;384&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;example-using-the-volcano-data&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Example using the &lt;code&gt;volcano&lt;/code&gt; data&lt;/h2&gt;
@@ -175,20 +175,19 @@ expand_grid(x = x, y = y) %&amp;gt;%
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(volcano_tidy, aes(longitude, latitude)) +
     geom_contour(aes(z = altitude)) +
     theme_void()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;201.6&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;201.6&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But, you can’t tell that the inner circles actually represent a hole (a caldera), not a peak. Let’s add colour by mapping the &lt;code&gt;..height..&lt;/code&gt; “variable” to the &lt;code&gt;colour&lt;/code&gt; aesthetic of &lt;code&gt;geom_contour()&lt;/code&gt;. This will also create a legend for altitude.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(volcano_tidy, aes(longitude, latitude)) +
     geom_contour(aes(z = altitude, colour = ..level..)) +
     theme_void() +
     scale_color_continuous(&amp;quot;Altitude&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;268.8&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;268.8&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We can somewhat tell that the highest point is within the lightest blue area, just below the caldera. But, we would get a better sense of the terrain by adding more contour lines. You can use the &lt;code&gt;bins&lt;/code&gt; argument in the &lt;code&gt;geom_contour()&lt;/code&gt; function to indicate the number of altitudes for which to draw contours, or &lt;code&gt;binwidth&lt;/code&gt; to specify a range of altitudes. Let’s make 20 contours with &lt;code&gt;bins = 20&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;contour_altitudes &amp;lt;- seq(min(volcano), max(volcano), length.out = 20)
-ggplot(volcano_tidy, aes(longitude, latitude)) +
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(volcano_tidy, aes(longitude, latitude)) +
     geom_contour(aes(z = altitude, colour = ..level..), bins = 20) +
     theme_void() +
     scale_color_continuous(&amp;quot;Altitude&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/contour_plots_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;268.8&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/contour_plots/index_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;268.8&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -253,7 +252,7 @@ fit &amp;lt;- run.jags(my_model, monitor=&amp;quot;theta&amp;quot;, n.chains=1, 
 &lt;pre&gt;&lt;code&gt;## Warning: No data was specified or found in the model file so the simulation was
 ## run withut data&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Calling the simulation...
-## Welcome to JAGS 4.3.0 on Sun Feb 28 22:12:08 2021
+## Welcome to JAGS 4.3.0 on Tue Mar  2 21:36:41 2021
 ## JAGS is free software and comes with ABSOLUTELY NO WARRANTY
 ## Loading module: basemod: ok
 ## Loading module: bugs: ok
@@ -288,24 +287,24 @@ head(theta)&lt;/code&gt;&lt;/pre&gt;
 ## End = 5007 
 ## Thinning interval = 1 
 ##          theta
-## 5001  1.290950
-## 5002 -1.213580
-## 5003  0.149277
-## 5004  0.103981
-## 5005 -2.887760
-## 5006  2.767070
-## 5007 -0.190131&lt;/code&gt;&lt;/pre&gt;
+## 5001 -2.804800
+## 5002  0.845780
+## 5003 -1.498940
+## 5004  0.217181
+## 5005  0.217985
+## 5006 -1.311370
+## 5007 -0.273720&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(theta)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/jags_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/jags/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;more-sample-code&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;More sample code&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
 ## ✓ tibble  3.0.3     ✓ dplyr   1.0.2
 ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## x tidyr::extract() masks runjags::extract()
 ## x dplyr::filter()  masks stats::filter()
 ## x dplyr::lag()     masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
@@ -332,7 +331,7 @@ foo &amp;lt;- run.jags(
 &lt;pre&gt;&lt;code&gt;## Warning: No initial values were provided - JAGS will use the same initial values
 ## for all chains&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Calling the simulation...
-## Welcome to JAGS 4.3.0 on Sun Feb 28 22:12:12 2021
+## Welcome to JAGS 4.3.0 on Tue Mar  2 21:36:44 2021
 ## JAGS is free software and comes with ABSOLUTELY NO WARRANTY
 ## Loading module: basemod: ok
 ## Loading module: bugs: ok
@@ -369,16 +368,16 @@ foo &amp;lt;- run.jags(
 ## Finished running the simulation&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(coda::as.mcmc(foo))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning in as.mcmc.runjags(foo): Combining the 2 mcmc chains together&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/jags_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/jags/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>The missing question in supervised learning</title>
-      <link>/post/2018-02-18-mean/</link>
+      <link>/post/missing_question/</link>
       <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>/post/2018-02-18-mean/</guid>
+      <guid>/post/missing_question/</guid>
       <description>&lt;p&gt;You all know the drill &amp;ndash; you&amp;rsquo;re asked to make predictions of a continuous variable, so you turn to your favourite supervised learning method to do the trick. But have you ever suspected that you could be after the wrong type of output before you even begin?&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Decision_tree_learning&#34;&gt;Regression trees&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Local_regression&#34;&gt;loess&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Linear_regression&#34;&gt;linear regression&lt;/a&gt;&amp;hellip; you name it, they&amp;rsquo;re all in pursuit of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Expected_value&#34;&gt;mean&lt;/a&gt; (well, almost all). But the true outcome is random. It has a distribution. Are you sure you want the mean of that distribution?&lt;/p&gt;
 &lt;p&gt;You might say &amp;ldquo;Yes! It ensures my prediction is as close as possible to the outcome!&amp;rdquo; If this is indeed what you want, the mean still might not be your best choice &amp;ndash; it only ensures the &lt;a href=&#34;https://en.wikipedia.org/wiki/Mean_squared_error&#34;&gt;mean squared error&lt;/a&gt; is minimized.&lt;/p&gt;
@@ -404,9 +403,9 @@ foo &amp;lt;- run.jags(
     
     <item>
       <title>Generalized Additive Models</title>
-      <link>/post/gam_in_r/</link>
+      <link>/post/gam/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>/post/gam_in_r/</guid>
+      <guid>/post/gam/</guid>
       <description>
 
 
@@ -492,7 +491,7 @@ summary(fit3)&lt;/code&gt;&lt;/pre&gt;
 ## GCV = 5.0715  Scale est. = 3.762     n = 32&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now, each predictor enters the model in a non-parametric, additive form. The nonparametric functions can be accessed by calling &lt;code&gt;plot&lt;/code&gt;. For documentation, see &lt;code&gt;?plot.gam&lt;/code&gt;. Let’s plot the “bivariate” scatterplots behind these curves too (these bivariate data actually use partial residuals).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit3, residuals=TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/gam_in_r_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;img src=&#34;/post/gam_in_r_files/figure-html/unnamed-chunk-4-2.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-4-2.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Looks like the “weight” variable (&lt;code&gt;wt&lt;/code&gt;) is quite linear. We can let it be linear, while the &lt;code&gt;disp&lt;/code&gt; variable remains nonparametric. “Wiggliness” of the smoothed fit can be controlled through the &lt;code&gt;k&lt;/code&gt; argument of the &lt;code&gt;s&lt;/code&gt; function, but this is chosen in a “smart” way by default.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit4 &amp;lt;- gam(mpg ~ s(disp, k=3) + wt, data=mtcars)
 summary(fit4)&lt;/code&gt;&lt;/pre&gt;
@@ -519,7 +518,7 @@ summary(fit4)&lt;/code&gt;&lt;/pre&gt;
 ## R-sq.(adj) =  0.839   Deviance explained = 85.4%
 ## GCV =  6.659  Scale est. = 5.8413    n = 32&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit4, residuals=TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/gam_in_r_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You can even combine predictors into a common smooth function:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit5 &amp;lt;- gam(mpg ~ s(disp, qsec) + wt, data=mtcars)
 summary(fit5)&lt;/code&gt;&lt;/pre&gt;
@@ -549,7 +548,7 @@ summary(fit5)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;qplot(predict(fit5), residuals(fit5)) +
     geom_abline(intercept=0, slope=0, linetype=&amp;quot;dashed&amp;quot;) +
     xlab(&amp;quot;Prediction (mean)&amp;quot;) + ylab(&amp;quot;Residuals&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/gam_in_r_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For their documentation, see &lt;code&gt;?predict.gam&lt;/code&gt; and &lt;code&gt;?residuals.gam&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
 </description>
@@ -585,7 +584,7 @@ for (i in 1:1000) {
     }
 }
 (p &amp;lt;- qplot(X, ..density.., geom=&amp;quot;histogram&amp;quot;, bins=30))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Let’s try to reason our way to figuring out the overall density. Keep in mind that this density (like all densities) is &lt;em&gt;one curve&lt;/em&gt;. We’ll say we’ve succeeded at finding the density if our density is close to the histogram.&lt;/p&gt;
 &lt;p&gt;It looks like the histogram is made up of two normal distributions “superimposed”. These ought to be related to the &lt;code&gt;N(0,1)&lt;/code&gt; and &lt;code&gt;N(4,1)&lt;/code&gt; distributions, so to start, let’s plot these two Gaussian densities overtop of the histogram.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data.frame(X=X), aes(X)) +
@@ -595,7 +594,7 @@ for (i in 1:1000) {
     stat_function(fun=function(x) dnorm(x, mean=4, sd=1), 
                   mapping=aes(colour=&amp;quot;Tails&amp;quot;)) +
     scale_color_discrete(&amp;quot;Coin Flip&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Well, the two Gaussian distributions are in the correct location, and it even looks like they have the correct spread, but they’re too tall.&lt;/p&gt;
 &lt;p&gt;Something to note at this point: the two curves plotted above are &lt;em&gt;separate (component) distributions&lt;/em&gt;. We’re trying to figure out the distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; – which, again, is a single curve, and is estimated by the histogram. At this point, we only suspect that the distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is some combination of these two Gaussian distributions.&lt;/p&gt;
 &lt;p&gt;So, why are the Gaussian curves too tall? Because each one represents the distribution &lt;em&gt;if we only ever flip either heads or tails&lt;/em&gt; (for example, the red distribution happens when we only ever flip heads). But since we flip heads half of the time, and tails half of the time, these probabilities (more accurately, densities) ought to be reduced by half. Let’s add these “semi” component distributions to the plot:&lt;/p&gt;
@@ -611,13 +610,13 @@ for (i in 1:1000) {
                   mapping=aes(colour=&amp;quot;Tails&amp;quot;, linetype=&amp;quot;Full&amp;quot;)) +
     scale_color_discrete(&amp;quot;Coin Flip&amp;quot;) +
     scale_linetype_discrete(&amp;quot;Distribution&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Looks like they line up quite nicely!&lt;/p&gt;
 &lt;p&gt;But these two curves are still separate – we need &lt;em&gt;one&lt;/em&gt; overall curve if we are to find the distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;. So we need to combine them somehow. It might look at first that we can just take the upper-most of the ‘semi’ curves (i.e., the maximum of the two), but looking in between the two curves reveals that the histogram is actually larger than either curve here. It turns out that the two ‘semi’ curves are &lt;em&gt;added&lt;/em&gt; to get the final curve:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + stat_function(fun=function(x) dnorm(x, mean=0, sd=1)*0.5 + 
                       dnorm(x, mean=4, sd=1)*0.5,
                   mapping=aes(linetype=&amp;quot;Full&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The intuition behind adding the densities is that an outcome for &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; comes from &lt;em&gt;both&lt;/em&gt; components, so both contribute some density.&lt;/p&gt;
 &lt;p&gt;Even though the random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is made up of two components, at the end of the day, it’s still overall just a random variable with some density. And like all densities, the density of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is just one curve. But, this density happens to be &lt;em&gt;made up of&lt;/em&gt; the components, as we’ll see next.&lt;/p&gt;
 &lt;/div&gt;
