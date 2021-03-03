@@ -6,7 +6,7 @@ tags:
 #date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: http://distplyr.netlify.app
+external_link: http://igcop.netlify.app
 
 image:
   caption: .
