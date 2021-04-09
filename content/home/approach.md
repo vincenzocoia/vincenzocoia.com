@@ -23,7 +23,7 @@ subtitle = ""
 [[feature]]
   icon = "chalkboard-teacher"
   icon_pack = "fas"
-  name = "[Teaching Philosophy](/teaching)"
+  name = "[Teaching Philosophy](/approach/teaching)"
   description = "Course structure, responsive teaching, motivation, and self-improvement."  
   
 [[feature]]

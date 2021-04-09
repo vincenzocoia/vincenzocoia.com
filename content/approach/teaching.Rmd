@@ -1,5 +1,6 @@
 ---
 title: "Teaching Philosophy"
+date: "2020-02-28"
 output:
   prettydoc::html_pretty:
     theme: tactile
