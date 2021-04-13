@@ -18,11 +18,12 @@ education:
     year: 2011
 email: "vincenzo.coia@gmail.com"
 interests:
-- Distributional Forecasting
-- Repurposing Statistics for Data Science
-- Software Engineering
-- Extreme Quantile Regression
-- Flood Forecasting
+- Data Science
+- Probabilistic Forecasting
+- Extreme Value Analysis
+- Time Series Analysis
+- Human-centered R packages
+- Environmental applications
 name: "Vincenzo Coia"
 organizations:
 - name: "Assistant Professor of Teaching"
@@ -51,7 +52,7 @@ user_groups:
 
 Hi! 
 
-I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver. My priority there is to establish the responsible use of statistics for data science.
+I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver. My priority here is to develop data science initiatives through the Department of Statistics.
 
 My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. 
 
