@@ -31,15 +31,15 @@ The documentation of JAGS code is not as nice as R. You have to look things up f
 
 For this week's lab assignment (3), you'll only be using it to generate observations from a distribution. Let's generate data from a N(0,2) distribution (that is, variance=2), and ignore the warning messages for this week. 
 
-```{r}
-suppressPackageStartupMessages(library(runjags))
+```{r, message = FALSE, warning = FALSE}
+library(runjags)
 my_model <- "
 model{
     # This is a comment.
     theta ~ dnorm(0, 1/2)
 }
 "
-fit <- run.jags(my_model, monitor="theta", n.chains=1, sample=1000)
+fit <- run.jags(my_model, monitor = "theta", n.chains = 1, sample = 1000)
 theta <- coda::as.mcmc(fit)
 head(theta)
 plot(theta)
@@ -52,9 +52,9 @@ plot(theta)
 library(tidyverse)
 library(runjags)
 n <- 50
-dat <- tibble(x=rnorm(n),
-              y=x + rnorm(n))
-jagsdat <- c(as.list(dat), n=nrow(dat))
+dat <- tibble(x = rnorm(n),
+              y = x + rnorm(n))
+jagsdat <- c(as.list(dat), n = nrow(dat))
 model <- "model{
     for (i in 1:n) {
         y[i] ~ dnorm(beta*x[i], tau)
@@ -64,9 +64,9 @@ model <- "model{
     beta ~ dnorm(0, 0.001)
 }"
 foo <- run.jags(
-    model=model, 
-    monitor=c("beta0", "beta1", "sigma"), 
-    data=jagsdat
+    model = model, 
+    monitor = c("beta0", "beta1", "sigma"), 
+    data = jagsdat
 )
 plot(coda::as.mcmc(foo))
 ```

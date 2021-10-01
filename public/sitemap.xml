@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>/approach/teaching/</loc>
-    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/jags/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
   </url>
@@ -158,6 +153,10 @@
   
   <url>
     <loc>/tags/statistics/</loc>
+  </url>
+  
+  <url>
+    <loc>/approach/teaching/</loc>
   </url>
   
   <url>

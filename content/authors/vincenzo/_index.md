@@ -19,11 +19,12 @@ education:
 email: "vincenzo.coia@gmail.com"
 interests:
 - Data Science
-- Probabilistic Forecasting
-- Extreme Value Analysis
-- Time Series Analysis
+- Predictive Distributions
+- Extreme Value Modelling
+- Time Series Modelling
 - Human-centered R packages
 - Environmental applications
+- Reproducible Workflows
 name: "Vincenzo Coia"
 organizations:
 - name: "Assistant Professor of Teaching"

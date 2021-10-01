@@ -4,6 +4,7 @@ date: "2018-02-01"
 output: html_document
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <div id="generalized-additive-models" class="section level2">
@@ -16,11 +17,11 @@ output: html_document
 <p>Differences between the two functions are discussed in the “Details” section of the <code>gam</code> documentation in the <code>mgcv</code> package. Choose one, but don’t load both! <code>mgcv</code> tends to be updated more frequently, and is generally more flexible (compare the Index pages), so that’s what is used in this tutorial. But the <code>gam</code> package has similar workings.</p>
 <p>The <code>gam</code> function works similarly to other regression functions, but the formula specification is different. Let’s go through different formula specifications, doing regression on the <code>mtcars</code> dataset in R.</p>
 <p>The formula <code>mpg ~ disp + wt</code> gives you a <em>linear model</em>. It indicates that <code>disp</code> and <code>wt</code> both enter the model in a linear fashion.</p>
-<pre class="r"><code>library(mgcv)</code></pre>
-<pre><code>## Loading required package: nlme</code></pre>
-<pre><code>## This is mgcv 1.8-31. For overview type &#39;help(&quot;mgcv-package&quot;)&#39;.</code></pre>
-<pre class="r"><code>fit1 &lt;- gam(mpg ~ disp + wt, data=mtcars)
-fit2 &lt;- lm(mpg ~ disp + wt, data=mtcars)
+<pre class="r"><code>library(tidyverse)
+library(broom)
+library(mgcv)
+fit1 &lt;- gam(mpg ~ disp + wt, data = mtcars)
+fit2 &lt;- lm(mpg ~ disp + wt, data = mtcars)
 summary(fit1)</code></pre>
 <pre><code>## 
 ## Family: gaussian 
@@ -61,8 +62,8 @@ summary(fit1)</code></pre>
 ## Multiple R-squared:  0.7809, Adjusted R-squared:  0.7658 
 ## F-statistic: 51.69 on 2 and 29 DF,  p-value: 2.744e-10</code></pre>
 <p>Notice that the coefficient estimates are the same.</p>
-<p>To make a term non-parametric, wrap the <code>s</code> function around the term (for <em>splines</em>; comes with the <code>mgcv</code> package). The <code>gam</code> package also has a <code>lo</code> function, for <em>loess</em> smoothing.</p>
-<pre class="r"><code>fit3 &lt;- gam(mpg ~ s(disp) + s(wt), data=mtcars)
+<p>To make a term non-parametric, wrap the <code>s()</code> function around the term (for <em>splines</em>; comes with the <code>mgcv</code> package). The <code>gam</code> package also has a <code>lo</code> function, for <em>loess</em> smoothing.</p>
+<pre class="r"><code>fit3 &lt;- gam(mpg ~ s(disp) + s(wt), data = mtcars)
 summary(fit3)</code></pre>
 <pre><code>## 
 ## Family: gaussian 
@@ -86,11 +87,11 @@ summary(fit3)</code></pre>
 ## 
 ## R-sq.(adj) =  0.896   Deviance explained = 92.1%
 ## GCV = 5.0715  Scale est. = 3.762     n = 32</code></pre>
-<p>Now, each predictor enters the model in a non-parametric, additive form. The nonparametric functions can be accessed by calling <code>plot</code>. For documentation, see <code>?plot.gam</code>. Let’s plot the “bivariate” scatterplots behind these curves too (these bivariate data actually use partial residuals).</p>
-<pre class="r"><code>plot(fit3, residuals=TRUE)</code></pre>
+<p>Now, each predictor enters the model in a non-parametric, additive form. The nonparametric functions can be accessed by calling <code>plot()</code>. For documentation, see <code>?plot.gam</code>. Let’s plot the “bivariate” scatterplots behind these curves too (these bivariate data actually use partial residuals).</p>
+<pre class="r"><code>plot(fit3, residuals = TRUE)</code></pre>
 <p><img src="/post/gam/index_files/figure-html/unnamed-chunk-4-1.png" width="480" style="display: block; margin: auto;" /><img src="/post/gam/index_files/figure-html/unnamed-chunk-4-2.png" width="480" style="display: block; margin: auto;" /></p>
-<p>Looks like the “weight” variable (<code>wt</code>) is quite linear. We can let it be linear, while the <code>disp</code> variable remains nonparametric. “Wiggliness” of the smoothed fit can be controlled through the <code>k</code> argument of the <code>s</code> function, but this is chosen in a “smart” way by default.</p>
-<pre class="r"><code>fit4 &lt;- gam(mpg ~ s(disp, k=3) + wt, data=mtcars)
+<p>Looks like the “weight” variable (<code>wt</code>) is quite linear. We can let it be linear, while the <code>disp</code> variable remains nonparametric. “Wiggliness” of the smoothed fit can be controlled through the <code>k</code> argument of the <code>s()</code> function, but this is chosen in a “smart” way by default.</p>
+<pre class="r"><code>fit4 &lt;- gam(mpg ~ s(disp, k = 3) + wt, data = mtcars)
 summary(fit4)</code></pre>
 <pre><code>## 
 ## Family: gaussian 
@@ -114,10 +115,10 @@ summary(fit4)</code></pre>
 ## 
 ## R-sq.(adj) =  0.839   Deviance explained = 85.4%
 ## GCV =  6.659  Scale est. = 5.8413    n = 32</code></pre>
-<pre class="r"><code>plot(fit4, residuals=TRUE)</code></pre>
+<pre class="r"><code>plot(fit4, residuals = TRUE)</code></pre>
 <p><img src="/post/gam/index_files/figure-html/unnamed-chunk-5-1.png" width="480" style="display: block; margin: auto;" /></p>
 <p>You can even combine predictors into a common smooth function:</p>
-<pre class="r"><code>fit5 &lt;- gam(mpg ~ s(disp, qsec) + wt, data=mtcars)
+<pre class="r"><code>fit5 &lt;- gam(mpg ~ s(disp, qsec) + wt, data = mtcars)
 summary(fit5)</code></pre>
 <pre><code>## 
 ## Family: gaussian 
@@ -141,10 +142,14 @@ summary(fit5)</code></pre>
 ## 
 ## R-sq.(adj) =  0.903   Deviance explained =   93%
 ## GCV = 5.0335  Scale est. = 3.5181    n = 32</code></pre>
-<p>For each, the <code>predict</code> and <code>residuals</code> functions work in the same old way. Let’s use them to make a residual plot:</p>
-<pre class="r"><code>qplot(predict(fit5), residuals(fit5)) +
-    geom_abline(intercept=0, slope=0, linetype=&quot;dashed&quot;) +
-    xlab(&quot;Prediction (mean)&quot;) + ylab(&quot;Residuals&quot;)</code></pre>
+<p>For each, the <code>predict()</code> and <code>residuals()</code> functions work in the same old way, but let’s use the <code>augment()</code> function from the broom package instead, and make a residual plot:</p>
+<pre class="r"><code>augment(fit5, newdata = mtcars) %&gt;% 
+    mutate(Residuals = mpg - .fitted) %&gt;% 
+    ggplot(aes(.fitted, Residuals)) +
+    geom_point() +
+    geom_abline(intercept = 0, slope = 0, linetype = &quot;dashed&quot;) +
+    xlab(&quot;Prediction (mean)&quot;) +
+    theme_minimal()</code></pre>
 <p><img src="/post/gam/index_files/figure-html/unnamed-chunk-7-1.png" width="480" style="display: block; margin: auto;" /></p>
 <p>For their documentation, see <code>?predict.gam</code> and <code>?residuals.gam</code>.</p>
 </div>

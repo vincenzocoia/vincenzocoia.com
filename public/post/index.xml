@@ -207,6 +207,7 @@ expand_grid(x = x, y = y) %&amp;gt;%
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       <guid>/post/jags/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;JAGS is a language that allows you to run Bayesian analyses. It gets at the posterior by generating samples based on the posterior and statistical model.&lt;/p&gt;
@@ -241,18 +242,16 @@ The documentation of JAGS code is not as nice as R. You have to look things up f
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For this week’s lab assignment (3), you’ll only be using it to generate observations from a distribution. Let’s generate data from a N(0,2) distribution (that is, variance=2), and ignore the warning messages for this week.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages(library(runjags))
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(runjags)
 my_model &amp;lt;- &amp;quot;
 model{
     # This is a comment.
     theta ~ dnorm(0, 1/2)
 }
 &amp;quot;
-fit &amp;lt;- run.jags(my_model, monitor=&amp;quot;theta&amp;quot;, n.chains=1, sample=1000)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: No data was specified or found in the model file so the simulation was
-## run withut data&lt;/code&gt;&lt;/pre&gt;
+fit &amp;lt;- run.jags(my_model, monitor = &amp;quot;theta&amp;quot;, n.chains = 1, sample = 1000)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Calling the simulation...
-## Welcome to JAGS 4.3.0 on Tue Mar  2 21:36:41 2021
+## Welcome to JAGS 4.3.0 on Thu Sep 30 22:16:26 2021
 ## JAGS is free software and comes with ABSOLUTELY NO WARRANTY
 ## Loading module: basemod: ok
 ## Loading module: bugs: ok
@@ -277,42 +276,41 @@ fit &amp;lt;- run.jags(my_model, monitor=&amp;quot;theta&amp;quot;, n.chains=1, 
 ## Note: the model did not require adaptation
 ## Simulation complete.  Reading coda files...
 ## Coda files loaded successfully
-## Calculating summary statistics...&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Warning: Convergence cannot be assessed with only 1 chain&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Finished running the simulation&lt;/code&gt;&lt;/pre&gt;
+## Calculating summary statistics...
+## Finished running the simulation&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;theta &amp;lt;- coda::as.mcmc(fit)
 head(theta)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Markov Chain Monte Carlo (MCMC) output:
 ## Start = 5001 
 ## End = 5007 
 ## Thinning interval = 1 
-##          theta
-## 5001 -2.804800
-## 5002  0.845780
-## 5003 -1.498940
-## 5004  0.217181
-## 5005  0.217985
-## 5006 -1.311370
-## 5007 -0.273720&lt;/code&gt;&lt;/pre&gt;
+##           theta
+## 5001  1.2975400
+## 5002  0.7812320
+## 5003  0.7415140
+## 5004  2.0970800
+## 5005 -0.0261437
+## 5006 -2.1801300
+## 5007 -0.9571290&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(theta)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/jags/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;more-sample-code&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;More sample code&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## ── Attaching packages ──────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
 ## ✓ tibble  3.0.3     ✓ dplyr   1.0.2
 ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## ── Conflicts ─────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ## x tidyr::extract() masks runjags::extract()
 ## x dplyr::filter()  masks stats::filter()
 ## x dplyr::lag()     masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(runjags)
 n &amp;lt;- 50
-dat &amp;lt;- tibble(x=rnorm(n),
-              y=x + rnorm(n))
-jagsdat &amp;lt;- c(as.list(dat), n=nrow(dat))
+dat &amp;lt;- tibble(x = rnorm(n),
+              y = x + rnorm(n))
+jagsdat &amp;lt;- c(as.list(dat), n = nrow(dat))
 model &amp;lt;- &amp;quot;model{
     for (i in 1:n) {
         y[i] ~ dnorm(beta*x[i], tau)
@@ -322,16 +320,16 @@ model &amp;lt;- &amp;quot;model{
     beta ~ dnorm(0, 0.001)
 }&amp;quot;
 foo &amp;lt;- run.jags(
-    model=model, 
-    monitor=c(&amp;quot;beta0&amp;quot;, &amp;quot;beta1&amp;quot;, &amp;quot;sigma&amp;quot;), 
-    data=jagsdat
+    model = model, 
+    monitor = c(&amp;quot;beta0&amp;quot;, &amp;quot;beta1&amp;quot;, &amp;quot;sigma&amp;quot;), 
+    data = jagsdat
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: No initial value blocks found and n.chains not specified: 2 chains were
 ## used&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: No initial values were provided - JAGS will use the same initial values
 ## for all chains&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Calling the simulation...
-## Welcome to JAGS 4.3.0 on Tue Mar  2 21:36:44 2021
+## Welcome to JAGS 4.3.0 on Thu Sep 30 22:16:29 2021
 ## JAGS is free software and comes with ABSOLUTELY NO WARRANTY
 ## Loading module: basemod: ok
 ## Loading module: bugs: ok
@@ -407,6 +405,7 @@ foo &amp;lt;- run.jags(
       <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/post/gam/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;generalized-additive-models&#34; class=&#34;section level2&#34;&gt;
@@ -419,11 +418,11 @@ foo &amp;lt;- run.jags(
 &lt;p&gt;Differences between the two functions are discussed in the “Details” section of the &lt;code&gt;gam&lt;/code&gt; documentation in the &lt;code&gt;mgcv&lt;/code&gt; package. Choose one, but don’t load both! &lt;code&gt;mgcv&lt;/code&gt; tends to be updated more frequently, and is generally more flexible (compare the Index pages), so that’s what is used in this tutorial. But the &lt;code&gt;gam&lt;/code&gt; package has similar workings.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;gam&lt;/code&gt; function works similarly to other regression functions, but the formula specification is different. Let’s go through different formula specifications, doing regression on the &lt;code&gt;mtcars&lt;/code&gt; dataset in R.&lt;/p&gt;
 &lt;p&gt;The formula &lt;code&gt;mpg ~ disp + wt&lt;/code&gt; gives you a &lt;em&gt;linear model&lt;/em&gt;. It indicates that &lt;code&gt;disp&lt;/code&gt; and &lt;code&gt;wt&lt;/code&gt; both enter the model in a linear fashion.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(mgcv)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading required package: nlme&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## This is mgcv 1.8-31. For overview type &amp;#39;help(&amp;quot;mgcv-package&amp;quot;)&amp;#39;.&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit1 &amp;lt;- gam(mpg ~ disp + wt, data=mtcars)
-fit2 &amp;lt;- lm(mpg ~ disp + wt, data=mtcars)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(broom)
+library(mgcv)
+fit1 &amp;lt;- gam(mpg ~ disp + wt, data = mtcars)
+fit2 &amp;lt;- lm(mpg ~ disp + wt, data = mtcars)
 summary(fit1)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## Family: gaussian 
@@ -464,8 +463,8 @@ summary(fit1)&lt;/code&gt;&lt;/pre&gt;
 ## Multiple R-squared:  0.7809, Adjusted R-squared:  0.7658 
 ## F-statistic: 51.69 on 2 and 29 DF,  p-value: 2.744e-10&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Notice that the coefficient estimates are the same.&lt;/p&gt;
-&lt;p&gt;To make a term non-parametric, wrap the &lt;code&gt;s&lt;/code&gt; function around the term (for &lt;em&gt;splines&lt;/em&gt;; comes with the &lt;code&gt;mgcv&lt;/code&gt; package). The &lt;code&gt;gam&lt;/code&gt; package also has a &lt;code&gt;lo&lt;/code&gt; function, for &lt;em&gt;loess&lt;/em&gt; smoothing.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit3 &amp;lt;- gam(mpg ~ s(disp) + s(wt), data=mtcars)
+&lt;p&gt;To make a term non-parametric, wrap the &lt;code&gt;s()&lt;/code&gt; function around the term (for &lt;em&gt;splines&lt;/em&gt;; comes with the &lt;code&gt;mgcv&lt;/code&gt; package). The &lt;code&gt;gam&lt;/code&gt; package also has a &lt;code&gt;lo&lt;/code&gt; function, for &lt;em&gt;loess&lt;/em&gt; smoothing.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit3 &amp;lt;- gam(mpg ~ s(disp) + s(wt), data = mtcars)
 summary(fit3)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## Family: gaussian 
@@ -489,11 +488,11 @@ summary(fit3)&lt;/code&gt;&lt;/pre&gt;
 ## 
 ## R-sq.(adj) =  0.896   Deviance explained = 92.1%
 ## GCV = 5.0715  Scale est. = 3.762     n = 32&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, each predictor enters the model in a non-parametric, additive form. The nonparametric functions can be accessed by calling &lt;code&gt;plot&lt;/code&gt;. For documentation, see &lt;code&gt;?plot.gam&lt;/code&gt;. Let’s plot the “bivariate” scatterplots behind these curves too (these bivariate data actually use partial residuals).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit3, residuals=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, each predictor enters the model in a non-parametric, additive form. The nonparametric functions can be accessed by calling &lt;code&gt;plot()&lt;/code&gt;. For documentation, see &lt;code&gt;?plot.gam&lt;/code&gt;. Let’s plot the “bivariate” scatterplots behind these curves too (these bivariate data actually use partial residuals).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit3, residuals = TRUE)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-4-2.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Looks like the “weight” variable (&lt;code&gt;wt&lt;/code&gt;) is quite linear. We can let it be linear, while the &lt;code&gt;disp&lt;/code&gt; variable remains nonparametric. “Wiggliness” of the smoothed fit can be controlled through the &lt;code&gt;k&lt;/code&gt; argument of the &lt;code&gt;s&lt;/code&gt; function, but this is chosen in a “smart” way by default.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit4 &amp;lt;- gam(mpg ~ s(disp, k=3) + wt, data=mtcars)
+&lt;p&gt;Looks like the “weight” variable (&lt;code&gt;wt&lt;/code&gt;) is quite linear. We can let it be linear, while the &lt;code&gt;disp&lt;/code&gt; variable remains nonparametric. “Wiggliness” of the smoothed fit can be controlled through the &lt;code&gt;k&lt;/code&gt; argument of the &lt;code&gt;s()&lt;/code&gt; function, but this is chosen in a “smart” way by default.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit4 &amp;lt;- gam(mpg ~ s(disp, k = 3) + wt, data = mtcars)
 summary(fit4)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## Family: gaussian 
@@ -517,10 +516,10 @@ summary(fit4)&lt;/code&gt;&lt;/pre&gt;
 ## 
 ## R-sq.(adj) =  0.839   Deviance explained = 85.4%
 ## GCV =  6.659  Scale est. = 5.8413    n = 32&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit4, residuals=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(fit4, residuals = TRUE)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You can even combine predictors into a common smooth function:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit5 &amp;lt;- gam(mpg ~ s(disp, qsec) + wt, data=mtcars)
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fit5 &amp;lt;- gam(mpg ~ s(disp, qsec) + wt, data = mtcars)
 summary(fit5)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## 
 ## Family: gaussian 
@@ -544,10 +543,14 @@ summary(fit5)&lt;/code&gt;&lt;/pre&gt;
 ## 
 ## R-sq.(adj) =  0.903   Deviance explained =   93%
 ## GCV = 5.0335  Scale est. = 3.5181    n = 32&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;For each, the &lt;code&gt;predict&lt;/code&gt; and &lt;code&gt;residuals&lt;/code&gt; functions work in the same old way. Let’s use them to make a residual plot:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;qplot(predict(fit5), residuals(fit5)) +
-    geom_abline(intercept=0, slope=0, linetype=&amp;quot;dashed&amp;quot;) +
-    xlab(&amp;quot;Prediction (mean)&amp;quot;) + ylab(&amp;quot;Residuals&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For each, the &lt;code&gt;predict()&lt;/code&gt; and &lt;code&gt;residuals()&lt;/code&gt; functions work in the same old way, but let’s use the &lt;code&gt;augment()&lt;/code&gt; function from the broom package instead, and make a residual plot:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;augment(fit5, newdata = mtcars) %&amp;gt;% 
+    mutate(Residuals = mpg - .fitted) %&amp;gt;% 
+    ggplot(aes(.fitted, Residuals)) +
+    geom_point() +
+    geom_abline(intercept = 0, slope = 0, linetype = &amp;quot;dashed&amp;quot;) +
+    xlab(&amp;quot;Prediction (mean)&amp;quot;) +
+    theme_minimal()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/gam/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For their documentation, see &lt;code&gt;?predict.gam&lt;/code&gt; and &lt;code&gt;?residuals.gam&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -560,8 +563,10 @@ summary(fit5)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
       <guid>/post/mixture_distributions/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
+&lt;p&gt;&lt;em&gt;UPDATE: For a clean implementation of mixture distributions, check out the &lt;a href=&#34;https://distplyr.netlify.app&#34;&gt;distplyr&lt;/a&gt; R package.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This tutorial introduces the concept of a &lt;em&gt;mixture distribution&lt;/em&gt;. We’ll look at a basic example first, using intuition, and then describe mixture distributions mathematically. See the very end for a summary of the learning points.&lt;/p&gt;
 &lt;div id=&#34;intuition&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Intuition&lt;/h2&gt;
@@ -571,51 +576,53 @@ summary(fit5)&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;If the outcome is heads, generate a &lt;code&gt;N(0,1)&lt;/code&gt; random variable. If the outcome is tails, generate a &lt;code&gt;N(4,1)&lt;/code&gt; random variable. We’ll let &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; denote the final result.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is a random variable with some distribution (spoiler: it’s a mixture distribution). Let’s perform the experiment 1000 times to get 1000 realizations of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, and make a histogram to get a sense of the distribution &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; follows. To make sure the histogram represents an estimate of the density, we’ll make sure the area of the bars add to 1 (with the &lt;code&gt;..density..&lt;/code&gt; option).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressMessages(library(ggplot2))
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 set.seed(44)
 X &amp;lt;- numeric(0)
 coin &amp;lt;- integer(0)
 for (i in 1:1000) {
-    coin[i] &amp;lt;- rbinom(1, size=1, prob=0.5)  # flip a coin. 0=heads, 1=tails.
+    coin[i] &amp;lt;- rbinom(1, size = 1, prob = 0.5)  # flip a coin. 0=heads, 1=tails.
     if (coin[i] == 0) {   # heads
-        X[i] &amp;lt;- rnorm(1, mean=0, sd=1)
+        X[i] &amp;lt;- rnorm(1, mean = 0, sd = 1)
     } else {           # tails
-        X[i] &amp;lt;- rnorm(1, mean=4, sd=1)
+        X[i] &amp;lt;- rnorm(1, mean = 4, sd = 1)
     }
 }
-(p &amp;lt;- qplot(X, ..density.., geom=&amp;quot;histogram&amp;quot;, bins=30))&lt;/code&gt;&lt;/pre&gt;
+(p &amp;lt;- qplot(X, ..density.., geom = &amp;quot;histogram&amp;quot;, bins = 30))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Let’s try to reason our way to figuring out the overall density. Keep in mind that this density (like all densities) is &lt;em&gt;one curve&lt;/em&gt;. We’ll say we’ve succeeded at finding the density if our density is close to the histogram.&lt;/p&gt;
 &lt;p&gt;It looks like the histogram is made up of two normal distributions “superimposed”. These ought to be related to the &lt;code&gt;N(0,1)&lt;/code&gt; and &lt;code&gt;N(4,1)&lt;/code&gt; distributions, so to start, let’s plot these two Gaussian densities overtop of the histogram.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data.frame(X=X), aes(X)) +
-    geom_histogram(aes(y=..density..), bins=30) +
-    stat_function(fun=function(x) dnorm(x, mean=0, sd=1), 
-                  mapping=aes(colour=&amp;quot;Heads&amp;quot;)) +
-    stat_function(fun=function(x) dnorm(x, mean=4, sd=1), 
-                  mapping=aes(colour=&amp;quot;Tails&amp;quot;)) +
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tibble(X = X) %&amp;gt;% 
+    ggplot(aes(X)) +
+    geom_histogram(aes(y = ..density..), bins = 30) +
+    stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1), 
+                  mapping = aes(colour = &amp;quot;Heads&amp;quot;)) +
+    stat_function(fun = function(x) dnorm(x, mean = 4, sd = 1), 
+                  mapping = aes(colour = &amp;quot;Tails&amp;quot;)) +
     scale_color_discrete(&amp;quot;Coin Flip&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Well, the two Gaussian distributions are in the correct location, and it even looks like they have the correct spread, but they’re too tall.&lt;/p&gt;
 &lt;p&gt;Something to note at this point: the two curves plotted above are &lt;em&gt;separate (component) distributions&lt;/em&gt;. We’re trying to figure out the distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; – which, again, is a single curve, and is estimated by the histogram. At this point, we only suspect that the distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is some combination of these two Gaussian distributions.&lt;/p&gt;
 &lt;p&gt;So, why are the Gaussian curves too tall? Because each one represents the distribution &lt;em&gt;if we only ever flip either heads or tails&lt;/em&gt; (for example, the red distribution happens when we only ever flip heads). But since we flip heads half of the time, and tails half of the time, these probabilities (more accurately, densities) ought to be reduced by half. Let’s add these “semi” component distributions to the plot:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(p &amp;lt;- ggplot(data.frame(X=X), aes(X)) +
-    geom_histogram(aes(y=..density..), bins=30) +
-    stat_function(fun=function(x) dnorm(x, mean=0, sd=1)*0.5, 
-                  mapping=aes(colour=&amp;quot;Heads&amp;quot;, linetype=&amp;quot;Semi&amp;quot;)) +
-    stat_function(fun=function(x) dnorm(x, mean=4, sd=1)*0.5, 
-                  mapping=aes(colour=&amp;quot;Tails&amp;quot;, linetype=&amp;quot;Semi&amp;quot;)) +
-    stat_function(fun=function(x) dnorm(x, mean=0, sd=1), 
-                  mapping=aes(colour=&amp;quot;Heads&amp;quot;, linetype=&amp;quot;Full&amp;quot;)) +
-    stat_function(fun=function(x) dnorm(x, mean=4, sd=1), 
-                  mapping=aes(colour=&amp;quot;Tails&amp;quot;, linetype=&amp;quot;Full&amp;quot;)) +
-    scale_color_discrete(&amp;quot;Coin Flip&amp;quot;) +
-    scale_linetype_discrete(&amp;quot;Distribution&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;(p &amp;lt;- tibble(X = X) %&amp;gt;% 
+     ggplot(aes(X)) +
+     geom_histogram(aes(y = ..density..), bins = 30) +
+     stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1)*0.5, 
+                   mapping = aes(colour = &amp;quot;Heads&amp;quot;, linetype = &amp;quot;Semi&amp;quot;)) +
+     stat_function(fun = function(x) dnorm(x, mean = 4, sd = 1)*0.5, 
+                   mapping = aes(colour = &amp;quot;Tails&amp;quot;, linetype = &amp;quot;Semi&amp;quot;)) +
+     stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1), 
+                   mapping = aes(colour = &amp;quot;Heads&amp;quot;, linetype = &amp;quot;Full&amp;quot;)) +
+     stat_function(fun = function(x) dnorm(x, mean = 4, sd = 1), 
+                   mapping = aes(colour = &amp;quot;Tails&amp;quot;, linetype = &amp;quot;Full&amp;quot;)) +
+     scale_color_discrete(&amp;quot;Coin Flip&amp;quot;) +
+     scale_linetype_discrete(&amp;quot;Distribution&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Looks like they line up quite nicely!&lt;/p&gt;
 &lt;p&gt;But these two curves are still separate – we need &lt;em&gt;one&lt;/em&gt; overall curve if we are to find the distribution of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;. So we need to combine them somehow. It might look at first that we can just take the upper-most of the ‘semi’ curves (i.e., the maximum of the two), but looking in between the two curves reveals that the histogram is actually larger than either curve here. It turns out that the two ‘semi’ curves are &lt;em&gt;added&lt;/em&gt; to get the final curve:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + stat_function(fun=function(x) dnorm(x, mean=0, sd=1)*0.5 + 
-                      dnorm(x, mean=4, sd=1)*0.5,
-                  mapping=aes(linetype=&amp;quot;Full&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;p + stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1) * 0.5 + 
+                      dnorm(x, mean = 4, sd = 1) * 0.5,
+                  mapping = aes(linetype = &amp;quot;Full&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/mixture_distributions/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;480&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The intuition behind adding the densities is that an outcome for &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; comes from &lt;em&gt;both&lt;/em&gt; components, so both contribute some density.&lt;/p&gt;
 &lt;p&gt;Even though the random variable &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is made up of two components, at the end of the day, it’s still overall just a random variable with some density. And like all densities, the density of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; is just one curve. But, this density happens to be &lt;em&gt;made up of&lt;/em&gt; the components, as we’ll see next.&lt;/p&gt;

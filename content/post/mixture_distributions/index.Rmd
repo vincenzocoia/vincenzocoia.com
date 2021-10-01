@@ -9,6 +9,8 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE, fig.width=5, fig.height=3, fig.align='center')
 ```
 
+_UPDATE: For a clean implementation of mixture distributions, check out the [distplyr](https://distplyr.netlify.app) R package._
+
 This tutorial introduces the concept of a _mixture distribution_. We'll look at a basic example first, using intuition, and then describe mixture distributions mathematically. See the very end for a summary of the learning points.
 
 ## Intuition
@@ -20,20 +22,20 @@ Let's start by looking at a basic experiment:
 
 $X$ is a random variable with some distribution (spoiler: it's a mixture distribution). Let's perform the experiment 1000 times to get 1000 realizations of $X$, and make a histogram to get a sense of the distribution $X$ follows. To make sure the histogram represents an estimate of the density, we'll make sure the area of the bars add to 1 (with the `..density..` option).
 
-```{r}
-suppressMessages(library(ggplot2))
+```{r, message = FALSE, warning = FALSE}
+library(tidyverse)
 set.seed(44)
 X <- numeric(0)
 coin <- integer(0)
 for (i in 1:1000) {
-    coin[i] <- rbinom(1, size=1, prob=0.5)  # flip a coin. 0=heads, 1=tails.
+    coin[i] <- rbinom(1, size = 1, prob = 0.5)  # flip a coin. 0=heads, 1=tails.
     if (coin[i] == 0) {   # heads
-        X[i] <- rnorm(1, mean=0, sd=1)
+        X[i] <- rnorm(1, mean = 0, sd = 1)
     } else {           # tails
-        X[i] <- rnorm(1, mean=4, sd=1)
+        X[i] <- rnorm(1, mean = 4, sd = 1)
     }
 }
-(p <- qplot(X, ..density.., geom="histogram", bins=30))
+(p <- qplot(X, ..density.., geom = "histogram", bins = 30))
 ```
 
 Let's try to reason our way to figuring out the overall density. Keep in mind that this density (like all densities) is _one curve_. We'll say we've succeeded at finding the density if our density is close to the histogram. 
@@ -41,12 +43,13 @@ Let's try to reason our way to figuring out the overall density. Keep in mind th
 It looks like the histogram is made up of two normal distributions "superimposed". These ought to be related to the `N(0,1)` and `N(4,1)` distributions, so to start, let's plot these two Gaussian densities overtop of the histogram.
 
 ```{r}
-ggplot(data.frame(X=X), aes(X)) +
-    geom_histogram(aes(y=..density..), bins=30) +
-    stat_function(fun=function(x) dnorm(x, mean=0, sd=1), 
-                  mapping=aes(colour="Heads")) +
-    stat_function(fun=function(x) dnorm(x, mean=4, sd=1), 
-                  mapping=aes(colour="Tails")) +
+tibble(X = X) %>% 
+    ggplot(aes(X)) +
+    geom_histogram(aes(y = ..density..), bins = 30) +
+    stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1), 
+                  mapping = aes(colour = "Heads")) +
+    stat_function(fun = function(x) dnorm(x, mean = 4, sd = 1), 
+                  mapping = aes(colour = "Tails")) +
     scale_color_discrete("Coin Flip")
 ```
 
@@ -57,18 +60,19 @@ Something to note at this point: the two curves plotted above are _separate (com
 So, why are the Gaussian curves too tall? Because each one represents the distribution _if we only ever flip either heads or tails_ (for example, the red distribution happens when we only ever flip heads). But since we flip heads half of the time, and tails half of the time, these probabilities (more accurately, densities) ought to be reduced by half. Let's add these "semi" component distributions to the plot:
 
 ```{r}
-(p <- ggplot(data.frame(X=X), aes(X)) +
-    geom_histogram(aes(y=..density..), bins=30) +
-    stat_function(fun=function(x) dnorm(x, mean=0, sd=1)*0.5, 
-                  mapping=aes(colour="Heads", linetype="Semi")) +
-    stat_function(fun=function(x) dnorm(x, mean=4, sd=1)*0.5, 
-                  mapping=aes(colour="Tails", linetype="Semi")) +
-    stat_function(fun=function(x) dnorm(x, mean=0, sd=1), 
-                  mapping=aes(colour="Heads", linetype="Full")) +
-    stat_function(fun=function(x) dnorm(x, mean=4, sd=1), 
-                  mapping=aes(colour="Tails", linetype="Full")) +
-    scale_color_discrete("Coin Flip") +
-    scale_linetype_discrete("Distribution"))
+(p <- tibble(X = X) %>% 
+     ggplot(aes(X)) +
+     geom_histogram(aes(y = ..density..), bins = 30) +
+     stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1)*0.5, 
+                   mapping = aes(colour = "Heads", linetype = "Semi")) +
+     stat_function(fun = function(x) dnorm(x, mean = 4, sd = 1)*0.5, 
+                   mapping = aes(colour = "Tails", linetype = "Semi")) +
+     stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1), 
+                   mapping = aes(colour = "Heads", linetype = "Full")) +
+     stat_function(fun = function(x) dnorm(x, mean = 4, sd = 1), 
+                   mapping = aes(colour = "Tails", linetype = "Full")) +
+     scale_color_discrete("Coin Flip") +
+     scale_linetype_discrete("Distribution"))
 ```
 
 Looks like they line up quite nicely! 
@@ -76,9 +80,9 @@ Looks like they line up quite nicely!
 But these two curves are still separate -- we need _one_ overall curve if we are to find the distribution of $X$. So we need to combine them somehow. It might look at first that we can just take the upper-most of the 'semi' curves (i.e., the maximum of the two), but looking in between the two curves reveals that the histogram is actually larger than either curve here. It turns out that the two 'semi' curves are _added_ to get the final curve:
 
 ```{r}
-p + stat_function(fun=function(x) dnorm(x, mean=0, sd=1)*0.5 + 
-                      dnorm(x, mean=4, sd=1)*0.5,
-                  mapping=aes(linetype="Full"))
+p + stat_function(fun = function(x) dnorm(x, mean = 0, sd = 1) * 0.5 + 
+                      dnorm(x, mean = 4, sd = 1) * 0.5,
+                  mapping = aes(linetype = "Full"))
 ```
 
 The intuition behind adding the densities is that an outcome for $X$ comes from _both_ components, so both contribute some density. 

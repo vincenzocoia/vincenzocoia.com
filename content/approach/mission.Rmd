@@ -8,23 +8,21 @@ output:
 
 I aim to promote a probabilistic and trustworthy approach to data science. I do this by developing tools and content, teaching at UBC, and consulting. 
 
-My favourite application area is earth science and ecology. I love birds, invertebrates, and the polar regions.
+My favourite application area is hydrology, geomorphology, and ecology. I love invertebrates, oceans, and the polar regions.
 
-## Motivation
+## A Probabilistic Approach to Data Science
 
-A probabilistic approach to data science means to embrace uncertainty. When we fail to recognize uncertainty, insights are drawn as though an omniscient expert is broadcasting an inevitability: national GDP will increase by 5% next year, or a river will peak to 0.5 meters below the town's levee. Our understanding of each situation, in reality, is far less certain, and effectively communicating that uncertainty can make the difference when making big decisions such as whether to evacuate a town.
+A probabilistic approach to data science means embracing and communicating uncertainty. When we fail to recognize uncertainty, insights are drawn as though an omniscient expert is broadcasting an inevitability: national GDP will increase by 5% next year, or a river will peak to 0.5 meters below the town's levee. Our understanding of each situation, in reality, is far less certain, and effectively communicating that uncertainty can make the difference when making big decisions such as whether to evacuate a town.
 
 Conveying uncertainty requires the use of probability distributions. This means more than making an elusive Normal assumption, or fitting a test statistic to a _t_-distribution -- it means:
 
-1. Building realistic distributions. 
-	- This can be done using machine learning, simulation, or other techniques.
-2. Interpreting these distributions in multiple ways, so that a more complete picture of the scenario can be given as opposed to providing a single value such as a mean.
-	- This can be done using quantiles, plots, and relevant depictions of probability distributions.
+1. Building realistic data-driven distributions 
+2. Interpreting these distributions in ways that paint a more complete picture of the scenario.
 
 ## Educational Leadership
 
 A major part of my role at UBC is in _educational leadership_. For me, educational leadership means connecting data scientists -- both aspiring and otherwise -- with appropriate statistical tools and methods for creating responsible data analyses. My contributions lie mostly in three domains:
 
 - writing material to introduce statistical topics from a problem-first and probabilistic perspective;
-- developing R packages to make probabilistic tools tangible; and
+- developing R packages to make probabilistic tools approachable; and
 - consulting with and teaching students, colleagues, and organizations.
