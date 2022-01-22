@@ -22,7 +22,7 @@ interests:
 - Predictive Distributions
 - Extreme Value Modelling
 - Time Series Modelling
-- Human-centered R packages
+- R packages for domain-specific languages
 - Environmental applications
 - Reproducible Workflows
 name: "Vincenzo Coia"
@@ -53,16 +53,8 @@ user_groups:
 
 Hi! 
 
-I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver. My priority here is to develop data science initiatives through the Department of Statistics.
+I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver in the Department of Statistics. I lead a research program focusing on predictive distributions: adapting methods in quantile regression, integrating extreme value modelling, and producing R packages with domain-specific languages. I apply these in consulting, especially in environmental applications such as flood forecasting. 
 
-My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. 
-
-Some of the things I do:
-
-- I solve problems using statistics, machine learning, and data visualizations.
-- I interact with students to make data science more approachable.
-- I use R, git, and friends to help me do these things. 
-
-I can also identify birds, and other things about nature.
+My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. I can also identify birds, and other things about nature.
 
 [Here are generic slides I use to introduce myself.](about_me.pdf)
