@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: I'm a data scientist at the University of British Columbia, Vancouver. 
+bio: I'm a statistical data scientist at the University of British Columbia, Vancouver. 
 education:
   courses:
   - course: PhD in Statistics
@@ -19,11 +19,11 @@ education:
 email: "vincenzo.coia@gmail.com"
 interests:
 - Data Science
-- Predictive Distributions
-- Extreme Value Modelling
-- Time Series Modelling
+- Evaluating uncertainty
+- Risk assessment
+- Hydrology and other environmental applications
+- Time series modelling
 - R packages for domain-specific languages
-- Environmental applications
 - Reproducible Workflows
 name: "Vincenzo Coia"
 organizations:
@@ -51,9 +51,7 @@ user_groups:
 - Example2
 ---
 
-Hi! 
-
-I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver in the Department of Statistics. I lead a research program focusing on predictive distributions: adapting methods in quantile regression, integrating extreme value modelling, and producing R packages with domain-specific languages. I apply these in consulting, especially in environmental applications such as flood forecasting. 
+Hello! I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver in the Department of Statistics. I lead a research program and a consulting company focusing on evaluating uncertainty, especially in the context of risk. I use modern R packages, including my own, to generate insight. My application area tends to be in hydrology, but I work more generally in the space of environmental applications. 
 
 My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. I can also identify birds, and other things about nature.
 
