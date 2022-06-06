@@ -31,7 +31,7 @@ organizations:
 - name: "UBC - Vancouver"
 - name: "Image credit: Frank Wang Photography"
   url: "https://frankwangphoto.wixsite.com/photography"
-role: "he/him/his :rainbow: :man:"
+role: "he/him/his"
 social:
 - icon: envelope
   icon_pack: fas
