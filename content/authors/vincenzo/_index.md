@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: I'm a statistical data scientist at the University of British Columbia, Vancouver. 
+bio: Statistical data scientist in applied earth sciences at BGC Engineering Inc. 
 education:
   courses:
   - course: PhD in Statistics
@@ -18,24 +18,23 @@ education:
     year: 2011
 email: "vincenzo.coia@gmail.com"
 interests:
-- Data Science
-- Evaluating uncertainty
-- Risk assessment
-- Hydrology and other environmental applications
-- Time series modelling
+- Flood frequency analysis
+- Uncertainty and probabilistic analysis
+- Hazard and risk assessment
+- Climate modelling
+- Dependence modelling
 - R packages for domain-specific languages
-- Reproducible Workflows
 name: "Vincenzo Coia"
 organizations:
-- name: "Assistant Professor of Teaching"
-- name: "UBC - Vancouver"
+- name: "Senior Data Scientist"
+- name: "BGC Engineering Inc."
 - name: "Image credit: Frank Wang Photography"
   url: "https://frankwangphoto.wixsite.com/photography"
 role: "he/him/his"
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'vincenzo DOT coia AT stat DOT ubc DOT ca'
+  link: 'vcoia@bgcengineering.ca'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/VincenzoCoia
@@ -51,8 +50,12 @@ user_groups:
 - Example2
 ---
 
-Hello! I'm an Assistant Professor of Teaching at the University of British Columbia, Vancouver in the Department of Statistics. I lead a research program and a consulting company focusing on evaluating uncertainty, especially in the context of risk. I use modern R packages, including my own, to generate insight. My application area tends to be in hydrology, but I work more generally in the space of environmental applications. 
+Hello! I'm a statistical data scientist in the applied earth sciences at BGC Engineering Inc. based out of Vancouver; formerly, an Assistant Professor of Teaching at UBC.
+
+Statistically, I specialize in evaluating uncertainty and dependence modelling. That means fitting probabilistic models when many variables are involved, including space and time. I focus on characterizing extremes from these models, to inform risk assessments. Some methods I use include copula models, extreme value theory, and quantile learning.
+
+In the earth sciences, my project work includes flood frequency assessments, climate modelling, and evaluation of aerial imagery for hydrotechnical hazard identification.
+
+I mostly use R to conduct my analyses, but occasionally use python or C++ when needed. I emphasize workflows that are robust and readable on top of being accurate and reproducible -- features I have found are best obtained using domain-specific languages, which abound in the tidyverse. I advocate for domain-specific languages for manipulating and evaluating probability distributions, and have made an R package to this end (distplyr; see below).
 
 My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. I can also identify birds, and other things about nature.
-
-[Here are generic slides I use to introduce myself.](about_me.pdf)
