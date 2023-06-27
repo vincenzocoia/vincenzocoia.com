@@ -18,18 +18,16 @@ education:
     year: 2011
 email: "vincenzo.coia@gmail.com"
 interests:
-- Flood frequency analysis
-- Uncertainty and probabilistic analysis
-- Hazard and risk assessment
+- Probabilistic models
+- Frequency analyses
 - Climate modelling
 - Dependence modelling
-- R packages for domain-specific languages
+- Machine learning
+- R package development
 name: "Vincenzo Coia"
 organizations:
 - name: "Senior Data Scientist"
 - name: "BGC Engineering Inc."
-- name: "Image credit: Frank Wang Photography"
-  url: "https://frankwangphoto.wixsite.com/photography"
 role: "he/him/his"
 social:
 - icon: envelope
