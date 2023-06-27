@@ -1,10 +1,7 @@
 ---
 title: Frequency-Magnitude Relationship for the Coldwater River
 summary: A flood frequency assessment I partook in with BGC Engineering, for a mixed regime river under climate change. 
-tags:
-- R
-- hydrology
-- uncertainty
+#tags:
 #date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

@@ -2,10 +2,10 @@
 # Hero widget.
 widget = "hero"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
-weight = 15  # Order that this section will appear.
+active = true  # Activate this widget? true/false
+weight = 26  # Order that this section will appear.
 
-title = "Watch my lessons on YouTube."
+title = "YouTube R Lessons"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
 hero_media = "logo-youtube.png"
@@ -48,4 +48,4 @@ hero_media = "logo-youtube.png"
 #  label = 'Registered students can access the videos through [UBC Canvas](https://canvas.ubc.ca), so that you can be guaranteed to have access.'
 +++
 
-Made for everyone.
+Brief videos providing high-level overviews of the modern R landscape.
