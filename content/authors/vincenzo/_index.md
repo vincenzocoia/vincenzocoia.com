@@ -50,12 +50,10 @@ user_groups:
 - Example2
 ---
 
-Hello! I'm a statistical data scientist in the applied earth sciences at BGC Engineering Inc. based out of Vancouver; formerly, an Assistant Professor of Teaching at UBC.
+Vincenzo is a senior data scientist at BGC Engineering Vancouver specializing in probabilistic and dependence modelling in statistical hydrology. He completed his Ph.D. in Statistics at The University of British Columbia in 2017, where he established a tail-focussed approach to estimating extreme flow quantiles using vine copulas and a composite quantile evaluation metric. 
 
-Statistically, I specialize in evaluating uncertainty and dependence modelling. That means fitting probabilistic models when many variables are involved, including space and time. I focus on characterizing extremes from these models, to inform risk assessments. Some methods I use include copula models, extreme value theory, and quantile learning.
+At BGC, Vincenzo develops advanced statistical and machine learning models with an eye towards practicality and communication so that results can be relied and acted upon. Special focus is on multiple variable frequency analyses, such as for mixed regime watersheds, floodplain mapping, and statistically consistent IDF curves. Results are adjusted for climate change using statistically downscaled models such as VIC-GL. 
 
-In the earth sciences, my project work includes flood frequency assessments, climate modelling, and evaluation of aerial imagery for hydrotechnical hazard identification.
+Computationally, Vincenzo focusses on producing robust, reproducible, and readable code primarily in the R Project for Statistical Computing, often using R packages that he developed, and knows when to bring in python and C++ when needed. 
 
-I mostly use R to conduct my analyses, but occasionally use python or C++ when needed. I emphasize workflows that are robust and readable on top of being accurate and reproducible -- features I have found are best obtained using domain-specific languages, which abound in the tidyverse. I advocate for domain-specific languages for manipulating and evaluating probability distributions, and have made an R package to this end (distplyr; see below).
-
-My hobbies include outdoor recreation :evergreen_tree: such as hiking :mans_shoe:, birding :bird:, skiing :ski:, fishing :fishing_pole_and_fish:, canoeing :rowboat:, and others. I can also identify birds, and other things about nature.
+Vincenzo was previously an Assistant Professor of Teaching at The University of British Columbia until 2022, where he trained students in data science and statistical modelling, and was recognized by both his students and the Dean for his approachable and refreshing teaching style.
