@@ -52,6 +52,6 @@ Vincenzo is a senior data scientist at BGC Engineering Vancouver specializing in
 
 At BGC, Vincenzo develops advanced statistical and machine learning models with an eye towards practicality and communication so that results can be relied and acted upon. Special focus is on multiple variable frequency analyses, such as for mixed regime watersheds, floodplain mapping, and statistically consistent IDF curves. Results are adjusted for climate change using statistically downscaled models such as VIC-GL. 
 
-Computationally, Vincenzo focusses on producing robust, reproducible, and readable code primarily in the R Project for Statistical Computing, often using R packages that he developed, and knows when to bring in python and C++ when needed. 
+Computationally, Vincenzo focusses on producing robust, reproducible, and readable code primarily in the R Project for Statistical Computing, often using R packages that he developed, and knows when to bring in python and C++. 
 
 Vincenzo was previously an Assistant Professor of Teaching at The University of British Columbia until 2022, where he trained students in data science and statistical modelling, and was recognized by both his students and the Dean for his approachable and refreshing teaching style.
