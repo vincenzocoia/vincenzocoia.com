@@ -18,7 +18,7 @@ The first challenge was that it's unrealistic to model a 200-year flood occurrin
 
 The second challenge was that floods in both watersheds are the result of two very different patterns: flooding due to snowmelt in the spring, and rainfall in the fall/winter. In other words, the watersheds have mixed regimes. To capture these distinct behaviours, I built a copula-based dependence model for each type of peak, and combined them to obtain the conditional distribution of corresponding flows that we were after.
 
-The figure below is one way to visualize the copulas fit to each process, as a joint distribution between flows expressed in terms of return period. The isolines represent the probability density function.
+A copula is a joint distribution between variables expressed in terms of return period, as depicted in the figure below for the snowmelt and rainfall-related copulas (isolines represent the probability density function). Relating flows in terms of their return periods restricts the amount of possible relationships since the data must have a fixed spacing on the x and y axes, and this also means that there's likely a pre-defined copula model like Gumbel or Frank that closely approximates the data (just like there are distributions that explain one variable, like the Normal, Exponential, or Poisson).
 
 ![](copulas.png)
 
