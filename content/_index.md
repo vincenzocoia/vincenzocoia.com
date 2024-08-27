@@ -3,7 +3,7 @@ date: "2022-10-24"
 design:
   spacing: 6rem
 sections:
-- block: resume-biography-3
+- block: resume-biography
   content:
     button:
       text: Download CV
@@ -17,19 +17,25 @@ sections:
         filename: stacked-peaks.svg
         filters:
           brightness: 1
-        parallax: false
+        parallax: true
         position: center
         size: cover
     css_class: dark
 - block: markdown
   content:
     subtitle: ""
-    text: "Use this area to speak to your mission. I'm a research scientist in the
-      Moonshot team at DeepMind. I blog about machine learning, deep learning, and
-      moonshots.\n\nI apply a range of qualitative and quantitative methods to comprehensively
-      investigate the role of science and technology in the economy.\n\nPlease reach
-      out to collaborate \U0001F603"
-    title: "\U0001F4DA My Research"
+    text: "I combine advanced statistical and data science techniques to build large probabilistic models, particularly for extreme events. My work involves creating innovative methodologies to address gaps in the literature and applying these techniques in practical, real-world scenarios. My goal is to collaborate on projects that demand innovation and to bring clarity to complex problems.
+    
+- Applies a broad range of methodologies, including probability theory, machine learning, extreme value theory, copula models, and uncertainty analysis to tackle unique challenges.
+
+- Ensures high standards of computational hygiene with well-documented, reproducible codebases; utilizes defensive programming, version control, and data provenance to maintain organized and reliable work.   
+
+- Builds comprehensive solutions that explore multiple approaches and components, integrating diverse methodologies to provide a nuanced understanding of complex scenarios.   
+
+- Engages with domain experts to align models with practical needs and demonstrates meticulous attention to detail in all technical work.
+
+    "
+    title: "Approach"
   design:
     columns: "1"
 - block: collection

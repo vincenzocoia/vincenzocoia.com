@@ -28,7 +28,7 @@ interests:
 - Dependence Modelling
 - Probabilistic Modelling
 last_name: Coia
-name_pronunciation: Vin-CHEN-zo KOY-ah
+#name_pronunciation: Vin-CHEN-zo KOY-ah
 organizations:
 - name: BGC Engineering Inc.
   url: https://bgcengineering.ca/
@@ -101,7 +101,5 @@ work:
     - Teach content in an engaging and understandable way.
     - Manage teams of teaching assistants and student needs.
 ---
-
-## About Me
-
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+<p>
+<h1>Expertise in Predicting Rare, High-Impact Events</h1>
