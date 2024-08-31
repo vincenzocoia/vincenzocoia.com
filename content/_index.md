@@ -3,6 +3,7 @@ date: "2022-10-24"
 design:
   spacing: 6rem
 sections:
+
 - block: resume-biography
   content:
     button:
@@ -21,6 +22,7 @@ sections:
         position: center
         size: cover
     css_class: dark
+
 - block: markdown
   content:
     subtitle: ""
@@ -33,11 +35,38 @@ sections:
 - Builds comprehensive solutions that explore multiple approaches and components, integrating diverse methodologies to provide a nuanced understanding of complex scenarios.   
 
 - Engages with domain experts to align models with practical needs and demonstrates meticulous attention to detail in all technical work.
-
     "
     title: "Approach"
   design:
     columns: "1"
+
+- block: collection
+  content:
+    count: 6
+    filters:
+      author: ""
+      category: ""
+      exclude_featured: false
+      exclude_future: false
+      exclude_past: false
+      publication_type: ""
+      tag: ""
+    offset: 0
+    order: desc
+    page_type: project
+    subtitle: ""
+    text: ""
+    title: Featured Work
+  design:
+    spacing:
+      padding:
+      - 0
+      - 0
+      - 0
+      - 0
+    view: article-grid
+  id: news
+
 - block: collection
   content:
     filters:
@@ -46,29 +75,10 @@ sections:
       - publication
     title: Featured Publications
   design:
-    columns: 2
-    view: article-grid
+    #columns: 2
+    view: citation #article-grid
   id: papers
-- block: collection
-  content:
-    filters:
-      exclude_featured: false
-      folders:
-      - publication
-    text: ""
-    title: Recent Publications
-  design:
-    view: citation
-- block: collection
-  content:
-    filters:
-      folders:
-      - event
-    title: Recent & Upcoming Talks
-  design:
-    columns: 1
-    view: article-grid
-  id: talks
+
 - block: collection
   content:
     count: 5
@@ -85,7 +95,7 @@ sections:
     page_type: post
     subtitle: ""
     text: ""
-    title: Recent News
+    title: Tutorials
   design:
     spacing:
       padding:
@@ -95,6 +105,7 @@ sections:
       - 0
     view: date-title-summary
   id: news
+
 - block: cta-card
   content:
     button:
