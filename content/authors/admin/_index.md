@@ -60,7 +60,7 @@ role: Senior Data Scientist
 superuser: true
 title: Vincenzo Coia, PhD
 work:
-- company_logo: ""
+- company_logo: "custom/bgc_whitebg"
   company_name: BGC Engineering Inc.
   company_url: "https://bgcengineering.ca/"
   date_end: ""
@@ -71,7 +71,7 @@ work:
     - Probabilistic modelling lead for advanced earth science applications.
     - Collaborate with Engineers and Geoscientists.
     - Produce robust and reproducible codebases using R, git, and friends.
-- company_logo: ""
+- company_logo: "icons/ubc_whitebg"
   company_name: The University of British Columbia
   company_url: ""
   date_end: "2018-02-22"
@@ -80,7 +80,7 @@ work:
   summary: |
     Responsibilities include:
     - lorem ipsum
-- company_logo: ""
+- company_logo: "icons/ubc_whitebg.jpg"
   company_name: The University of British Columbia
   company_url: ""
   date_end: "2018-02-22"
@@ -89,7 +89,7 @@ work:
   summary: |
     Responsibilities include:
     - lorem ipsum
-- company_logo: ""
+- company_logo: "ubc_whitebg.jpg"
   company_name: The University of British Columbia
   company_url: ""
   date_end: "2018-02-22"
