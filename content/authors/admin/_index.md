@@ -1,4 +1,57 @@
 ---
+# Display name
+title: Vincenzo Coia, PhD
+
+# Name pronunciation (optional)
+#name_pronunciation: Chien Shiung Wu
+
+# Full name (for SEO)
+first_name: Vincenzo Coia
+last_name: Coia
+
+# Status emoji
+#status:
+#  icon: ☕️
+
+# Is this the primary user of the site?
+superuser: true
+
+# Role/position/tagline
+role: Senior Data Scientist
+
+# Organizations/Affiliations to show in About widget
+organizations:
+- name: BGC Engineering Inc.
+  url: https://bgcengineering.ca/
+
+# Short bio (displayed in user profile at end of posts)
+bio: My research interests include distributed robotics, mobile computing and programmable matter.
+
+# Social Networking
+# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+profiles:
+- icon: brands/github
+  url: https://github.com/vincenzocoia
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/vincenzocoia/
+- icon: academicons/google-scholar
+  url: https://scholar.google.ca/citations?hl=en&user=X-9iVQoAAAAJ
+- icon: academicons/orcid
+  url: https://orcid.org/0000-0002-2930-0723
+  # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
+#- icon: academicons/cv
+#  url: uploads/resume.pdf
+#  label: Download my resume
+- icon: rss
+  url: ./post/index.xml
+  label: Subscribe to my blog via RSS feed
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
+
+# Author's website URL
+website: "https://vincenzocoia.com/"
+
 education:
 - area: PhD Statistics
   button:
@@ -27,21 +80,7 @@ interests:
 - Extreme Hazard and Risk Modelling
 - Dependence Modelling
 - Probabilistic Modelling
-last_name: Coia
-#name_pronunciation: Vin-CHEN-zo KOY-ah
-organizations:
-- name: BGC Engineering Inc.
-  url: https://bgcengineering.ca/
-profiles:
-- icon: brands/github
-  url: https://github.com/vincenzocoia
-- icon: brands/linkedin
-  url: https://www.linkedin.com/in/vincenzocoia/
-- icon: academicons/google-scholar
-  url: https://scholar.google.ca/citations?hl=en&user=X-9iVQoAAAAJ
-- icon: academicons/orcid
-  url: https://orcid.org/0000-0002-2930-0723
-role: Senior Data Scientist
+
 #skills:
 #- items:
 #  - description: ""
@@ -57,8 +96,7 @@ role: Senior Data Scientist
 #    name: SQL
 #    percent: 40
 #  name: Technical Skills
-superuser: true
-title: Vincenzo Coia, PhD
+
 work:
 - company_logo: "custom/bgc_whitebg"
   company_name: BGC Engineering Inc.
@@ -101,5 +139,3 @@ work:
     - Teach content in an engaging and understandable way.
     - Manage teams of teaching assistants and student needs.
 ---
-<p>
-<h1>Expertise in Predicting Rare, High-Impact Events</h1>

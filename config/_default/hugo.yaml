@@ -1,12 +1,40 @@
+theme: "theme-landing-page"
 # Configuration of Hugo
 # Guide: https://docs.hugoblox.com/tutorial/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Website name
-title: Hugo Academic CV Theme
-# Website URL
-baseURL: 'https://example.com/'
+title: Creator's Landing Page | Hugo Theme # Website name
+baseURL: 'https://example.com/' # Website URL
+
+############################
+## PAGE OPTIONS
+############################
+
+cascade:
+  # Blog post options
+  - _target:
+      path: /blog/**
+      kind: page
+    pager: true
+    editable: true
+    hide_date: false
+    show_date_updated: true
+    reading_time: true
+    commentable: true
+    show_related: true
+    share: true
+    # Just use Breadcrumb for navigation on blog post pages?
+    show_breadcrumb: false
+    header:
+      navbar:
+        enable: true
+  # Blog section options
+  - _target:
+      path: /blog/*
+      kind: section
+    # Set the listing view
+    view: date-title-summary
 
 ############################
 ## LANGUAGE
@@ -32,19 +60,21 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   authors: '/author/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS, headers, redirects]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 80
+  quality: 95
   anchor: smart
 timeout: 600000
 taxonomies:
-  author: authors
   tag: tags
-  publication_type: publication_types
+  category: categories
+  author: authors
 markup:
   _merge: deep
   highlight:
