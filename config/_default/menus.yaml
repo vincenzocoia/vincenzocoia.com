@@ -6,10 +6,7 @@ main:
   - name: Home
     url: /#top
     weight: 10
-  - name: Content
-    url: /post
-    weight: 20
-  - name: About
+  - name: Vincenzo
     url: /about
     weight: 30
   - name: Probaverse

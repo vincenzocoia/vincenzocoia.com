@@ -70,7 +70,7 @@ sections:
   ## ------- SECTION: Recent Posts -------
   - block: collection
     content:
-      count: 3
+      count: 2
       filters:
         author: ""
         category: ""
@@ -92,7 +92,7 @@ sections:
         - 0
         - 0
         - 0
-      view: article #date-title-summary
+      view: article-grid # article date-title-summary
     id: news
 
   ## ------- SECTION: Featured Publications -------

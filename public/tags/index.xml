@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Creator&#39;s Landing Page | Hugo Theme</title>
-    <link>http://localhost:7208/tags/</link>
-      <atom:link href="http://localhost:7208/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:5920/tags/</link>
+      <atom:link href="http://localhost:5920/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:7208/media/logo.svg</url>
+      <url>http://localhost:5920/media/logo.svg</url>
       <title>Tags</title>
-      <link>http://localhost:7208/tags/</link>
+      <link>http://localhost:5920/tags/</link>
     </image>
     
   </channel>
