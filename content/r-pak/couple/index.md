@@ -1,7 +1,9 @@
 ---
 title: couple
-summary: Complex systems often demand insight into multiple variables and their relationships. This package enables realistic multivariate distributions by piecing together copulas and one-dimensional distributions like building blocks. 
-weight: 999
+summary: |-
+  Complex systems often demand insight into multiple variables and their relationships. couple enables you to construct realistic multivariate distributions by combining copulas and univariate distributions, creating a more nuanced picture of interconnected data.
+#weight: 4
+date: "2024-05-11"
 #tags:
 #- R
 

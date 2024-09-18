@@ -2,175 +2,189 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:5920/tag/conditional-distribution/</loc>
+    <loc>http://localhost:4377/r-pak/distionary/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4377/r-pak/</loc>
+    <lastmod>2024-09-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4377/r-pak/distplyr/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4377/r-pak/famish/</loc>
+    <lastmod>2024-07-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4377/r-pak/couple/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:4377/tag/conditional-distribution/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/copula/</loc>
+    <loc>http://localhost:4377/tag/copula/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/coia-2024-copula/</loc>
+    <loc>http://localhost:4377/publication/coia-2024-copula/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/bale-2024-probability/</loc>
+    <loc>http://localhost:4377/publication/bale-2024-probability/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/</loc>
+    <loc>http://localhost:4377/publication/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/regular-variation/</loc>
+    <loc>http://localhost:4377/tag/regular-variation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tags/</loc>
+    <loc>http://localhost:4377/tags/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/tail-index/</loc>
+    <loc>http://localhost:4377/tag/tail-index/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/vine/</loc>
+    <loc>http://localhost:4377/tag/vine/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/privacy/</loc>
+    <loc>http://localhost:4377/privacy/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/terms/</loc>
+    <loc>http://localhost:4377/terms/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/about/</loc>
+    <loc>http://localhost:4377/about/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/</loc>
+    <loc>http://localhost:4377/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/probaverse/</loc>
+    <loc>http://localhost:4377/probaverse/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/project/ubc_mds_rffa/</loc>
+    <loc>http://localhost:4377/project/ubc_mds_rffa/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/project/</loc>
+    <loc>http://localhost:4377/project/</loc>
     <lastmod>2023-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/project/copula_floodplain/</loc>
+    <loc>http://localhost:4377/project/copula_floodplain/</loc>
     <lastmod>2023-06-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/vidal-2023-non/</loc>
+    <loc>http://localhost:4377/publication/vidal-2023-non/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/project/erickson_crk_flows/</loc>
+    <loc>http://localhost:4377/project/erickson_crk_flows/</loc>
     <lastmod>2022-11-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/vidal-2022-non/</loc>
+    <loc>http://localhost:4377/publication/vidal-2022-non/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/</loc>
+    <loc>http://localhost:4377/post/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/contour_plots/</loc>
+    <loc>http://localhost:4377/post/contour_plots/</loc>
     <lastmod>2021-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/coia-2021-tail/</loc>
+    <loc>http://localhost:4377/publication/coia-2021-tail/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/communicating_data/</loc>
+    <loc>http://localhost:4377/post/communicating_data/</loc>
     <lastmod>2020-09-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/ggplot2/</loc>
+    <loc>http://localhost:4377/post/ggplot2/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/jags/</loc>
+    <loc>http://localhost:4377/post/jags/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/mean/</loc>
+    <loc>http://localhost:4377/tag/mean/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/median/</loc>
+    <loc>http://localhost:4377/tag/median/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/probabilistic-forecasting/</loc>
+    <loc>http://localhost:4377/tag/probabilistic-forecasting/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/quantile/</loc>
+    <loc>http://localhost:4377/tag/quantile/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/tag/supervised-learning/</loc>
+    <loc>http://localhost:4377/tag/supervised-learning/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/missing_question/</loc>
+    <loc>http://localhost:4377/post/missing_question/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/gam/</loc>
+    <loc>http://localhost:4377/post/gam/</loc>
     <lastmod>2018-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/post/mixture_distributions/</loc>
+    <loc>http://localhost:4377/post/mixture_distributions/</loc>
     <lastmod>2017-02-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/coia-2017-forecasting/</loc>
+    <loc>http://localhost:4377/publication/coia-2017-forecasting/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/coia-2014-sieve/</loc>
+    <loc>http://localhost:4377/publication/coia-2014-sieve/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/ayad-2014-number/</loc>
+    <loc>http://localhost:4377/publication/ayad-2014-number/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/huang-2013-cluster/</loc>
+    <loc>http://localhost:4377/publication/huang-2013-cluster/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/publication/coia-2012-estimation/</loc>
+    <loc>http://localhost:4377/publication/coia-2012-estimation/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/categories/</loc>
+    <loc>http://localhost:4377/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/project/distionary/</loc>
+    <loc>http://localhost:4377/project/coldwater_ffa/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:5920/project/distplyr/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:5920/project/coldwater_ffa/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:5920/project/igcop/</loc>
+    <loc>http://localhost:4377/project/igcop/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

@@ -2,96 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Creator&#39;s Landing Page | Hugo Theme</title>
-    <link>http://localhost:5920/publication/</link>
-      <atom:link href="http://localhost:5920/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4377/publication/</link>
+      <atom:link href="http://localhost:4377/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:5920/media/logo.svg</url>
+      <url>http://localhost:4377/media/logo.svg</url>
       <title>Publications</title>
-      <link>http://localhost:5920/publication/</link>
+      <link>http://localhost:4377/publication/</link>
     </image>
     
     <item>
       <title>Copula-based conditional tail indices</title>
-      <link>http://localhost:5920/publication/coia-2024-copula/</link>
+      <link>http://localhost:4377/publication/coia-2024-copula/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/coia-2024-copula/</guid>
+      <guid>http://localhost:4377/publication/coia-2024-copula/</guid>
       <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Probability Distributions of Tailings Dam Breach Volumes by Failure Mode as Part of a Risk Screening-Level Tool</title>
-      <link>http://localhost:5920/publication/bale-2024-probability/</link>
+      <link>http://localhost:4377/publication/bale-2024-probability/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/bale-2024-probability/</guid>
+      <guid>http://localhost:4377/publication/bale-2024-probability/</guid>
       <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Non-Crossing Dual Neural Network: Joint Value at Risk and Conditional Tail Expectation Regression with Non-Crossing Conditions</title>
-      <link>http://localhost:5920/publication/vidal-2023-non/</link>
+      <link>http://localhost:4377/publication/vidal-2023-non/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/vidal-2023-non/</guid>
+      <guid>http://localhost:4377/publication/vidal-2023-non/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Non-Crossing Dual Neural Network: Joint Value at Risk and Conditional Tail Expectation estimations with non-crossing conditions</title>
-      <link>http://localhost:5920/publication/vidal-2022-non/</link>
+      <link>http://localhost:4377/publication/vidal-2022-non/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/vidal-2022-non/</guid>
+      <guid>http://localhost:4377/publication/vidal-2022-non/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tail Behavior for Bivariate Distributions Based on Pareto Mixtures</title>
-      <link>http://localhost:5920/publication/coia-2021-tail/</link>
+      <link>http://localhost:4377/publication/coia-2021-tail/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/coia-2021-tail/</guid>
+      <guid>http://localhost:4377/publication/coia-2021-tail/</guid>
       <description>&lt;p&gt;Add the &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; for the publication here using Markdown formatting.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Forecasting of nonlinear extreme quantiles using copula models</title>
-      <link>http://localhost:5920/publication/coia-2017-forecasting/</link>
+      <link>http://localhost:4377/publication/coia-2017-forecasting/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/coia-2017-forecasting/</guid>
+      <guid>http://localhost:4377/publication/coia-2017-forecasting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Sieve model for extreme values</title>
-      <link>http://localhost:5920/publication/coia-2014-sieve/</link>
+      <link>http://localhost:4377/publication/coia-2014-sieve/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/coia-2014-sieve/</guid>
+      <guid>http://localhost:4377/publication/coia-2014-sieve/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Number of Relatively Prime Subsets of a Finite Union of Sets of Consecutive Integers.</title>
-      <link>http://localhost:5920/publication/ayad-2014-number/</link>
+      <link>http://localhost:4377/publication/ayad-2014-number/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/ayad-2014-number/</guid>
+      <guid>http://localhost:4377/publication/ayad-2014-number/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A cluster truncated pareto distribution and its applications</title>
-      <link>http://localhost:5920/publication/huang-2013-cluster/</link>
+      <link>http://localhost:4377/publication/huang-2013-cluster/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/huang-2013-cluster/</guid>
+      <guid>http://localhost:4377/publication/huang-2013-cluster/</guid>
       <description></description>
     </item>
     
     <item>
       <title>On estimation of extreme value distributions</title>
-      <link>http://localhost:5920/publication/coia-2012-estimation/</link>
+      <link>http://localhost:4377/publication/coia-2012-estimation/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/publication/coia-2012-estimation/</guid>
+      <guid>http://localhost:4377/publication/coia-2012-estimation/</guid>
       <description></description>
     </item>
     

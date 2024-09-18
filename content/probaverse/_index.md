@@ -20,9 +20,9 @@ sections:
           image: probaverse-large.png
           feature_icon: check
           features:
-            - "Easily integrate your own distribution families."
-            - "Manipulate distributions to create new ones."
-            - "Flexible parameterization."
+            - Build flexible distributions that capture system behaviour.
+            - Transform and refine distributions to reflect observations.
+            - Assemble multivariate models for deeper insights.
           button:
             text: Find it on GitHub
             url: https://github.com/probaverse/
@@ -61,11 +61,12 @@ sections:
         tag: ""
       offset: 0
       order: desc
+      sort_by: 'Date'
       page_type: r-pak
       subtitle: ""
       text: |-
         {{% callout warning %}}
-        Packages will be under active development throughout fall 2024. Early versions are still available for installation through github.
+        Packages will be under active development throughout fall 2024. In some cases, prototypes are available for installation through github.
         {{% /callout %}}
       title: Packages
     design:
@@ -111,7 +112,13 @@ sections:
   - block: cta-card
     content:
       title: Get started with the probaverse.
-      #text: As easy as 1, 2, 3!
+      text: |-
+        Currently, the probaverse can be installed by each package individually, although only three packages are available as prototypes:
+        ```
+        remotes::install_github("probaverse/distionary")
+        remotes::install_github("probaverse/distplyr")
+        remotes::install_github("probaverse/famish")
+        ```
       button:
         text: Find it on GitHub
         url: https://github.com/probaverse/

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Creator&#39;s Landing Page | Hugo Theme</title>
-    <link>http://localhost:5920/project/</link>
-      <atom:link href="http://localhost:5920/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4377/project/</link>
+      <atom:link href="http://localhost:4377/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:5920/media/logo.svg</url>
+      <url>http://localhost:4377/media/logo.svg</url>
       <title>Projects</title>
-      <link>http://localhost:5920/project/</link>
+      <link>http://localhost:4377/project/</link>
     </image>
     
     <item>
       <title>Advances in Regional Flood Frequency Analysis (RFFA)</title>
-      <link>http://localhost:5920/project/ubc_mds_rffa/</link>
+      <link>http://localhost:4377/project/ubc_mds_rffa/</link>
       <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/project/ubc_mds_rffa/</guid>
+      <guid>http://localhost:4377/project/ubc_mds_rffa/</guid>
       <description>&lt;p&gt;When flood frequencies are needed at an ungauged watershed, flow data from other watersheds are translated over based on watershed characteristics like shape and hydroclimate variables. This process is called RFFA, and takes machine learning to the next level, because we don&amp;rsquo;t need a &amp;ldquo;best guess&amp;rdquo; that typical machine learning algorithms produce &amp;ndash; we need an entire predictive distribution that can be extrapolated to high quantiles.&lt;/p&gt;
 &lt;p&gt;This past spring, I spearheaded a 2-month project with four students from the University of British Columbia&amp;rsquo;s Master of Data Science program for their capstone project. We explored improvements to two RFFA approaches on watersheds in Canada: the index flood method and the direct quantile estimation method.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;index flood method&lt;/strong&gt; assumes that the &amp;ldquo;flood ratios&amp;rdquo; of annual maximum flows to their watershed&amp;rsquo;s index flood (such as the mean or median) has the same distribution as flood ratios of similar watersheds. We found that a machine learning model estimated the index flood (mean log flow, in our case) better than a linear model did, especially when weighting the data to avoid preferential fitting to high or low flows. We also found that estimating the common distribution of flood ratios by pooling the flood ratios instead of averaging models watershed-by-watershed improved performance as well. Performance was ultimately evaluated using the mean quantile score (see the featured photo made by the students), which evaluates how good an estimate is at being a quantile. Another improvement for future research is to account for correlation between gauges when pooling the data (e.g., through a mixed effects model) so as to avoid potential bias that arises from pooling.&lt;/p&gt;
@@ -26,9 +26,9 @@
     
     <item>
       <title>A Tale of Two Tributaries: Floodplain mapping in the Nicola Valley with Copulas</title>
-      <link>http://localhost:5920/project/copula_floodplain/</link>
+      <link>http://localhost:4377/project/copula_floodplain/</link>
       <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/project/copula_floodplain/</guid>
+      <guid>http://localhost:4377/project/copula_floodplain/</guid>
       <description>&lt;p&gt;The Coldwater River and Spius Creek are two tributaries of the Nicola River in British Columbia, Canada, an area identified by the provincial government for floodplain mapping. My role in this project was to identify the 200-year floodplain hazard map, and that involved overcoming two main statistical challenges.&lt;/p&gt;
 &lt;p&gt;The first challenge was that it&amp;rsquo;s unrealistic to model a 200-year flood occurring in both tributaries at the same time because they are unlikely to flood to the same extent simultaneously. The solution here was to model a 200-year flood in the Coldwater River, and calculate a realistic corresponding flow (such as the median or mode) in Spius Creek from its conditional distribution &amp;ndash; and vice versa.&lt;/p&gt;
 &lt;p&gt;The second challenge was that floods in both watersheds are the result of two very different patterns: flooding due to snowmelt in the spring, and rainfall in the fall/winter. In other words, the watersheds have mixed regimes. To capture these distinct behaviours, I built a copula-based dependence model for each type of peak, and combined them to obtain the conditional distribution of corresponding flows that we were after.&lt;/p&gt;
@@ -55,7 +55,7 @@
                /project/copula_floodplain/copulas_hu12353879256421744953.webp 400w,
                /project/copula_floodplain/copulas_hu2359995626770620271.webp 760w,
                /project/copula_floodplain/copulas_hu1043348957564939631.webp 1200w&#34;
-               src=&#34;http://localhost:5920/project/copula_floodplain/copulas_hu12353879256421744953.webp&#34;
+               src=&#34;http://localhost:4377/project/copula_floodplain/copulas_hu12353879256421744953.webp&#34;
                width=&#34;760&#34;
                height=&#34;421&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -66,9 +66,9 @@
     
     <item>
       <title>Error-correcting flow measurements from a level logger</title>
-      <link>http://localhost:5920/project/erickson_crk_flows/</link>
+      <link>http://localhost:4377/project/erickson_crk_flows/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/project/erickson_crk_flows/</guid>
+      <guid>http://localhost:4377/project/erickson_crk_flows/</guid>
       <description>&lt;p&gt;Erickson Creek is a small watercourse in the Elk Valley in British Columbia, Canada. To measure the creek&amp;rsquo;s discharge, a level logger was installed to collect data frequently and automatically, alongside the occasional manual measurement. The goal of this analysis was to use the manual measurements whenever available, and to fill in the gaps by stringing the level logger measurements through the manual measurements. In other words, a manual measurement should have a say as to what the discharge was both soon after and before the measurement was taken.
 The featured photo shows the result for 2017 in blue, with the points representing the manual measurements, and the upper black line representing the level logger measurements.&lt;/p&gt;
 &lt;p&gt;The first step was to adjust for the obvious bias occurring in 2017, as shown in the figure below. A period of bias was assumed (dashed lines), and a LOESS regression fit to the difference between the two measurement types (solid line). Unbiased level logger measurements can be obtained after adjusting for this bias.&lt;/p&gt;
@@ -94,7 +94,7 @@ The featured photo shows the result for 2017 in blue, with the points representi
                /project/erickson_crk_flows/discharge-systematic_bias_hu9349956794831966964.webp 400w,
                /project/erickson_crk_flows/discharge-systematic_bias_hu11325459908153524052.webp 760w,
                /project/erickson_crk_flows/discharge-systematic_bias_hu4296143806976846104.webp 1200w&#34;
-               src=&#34;http://localhost:5920/project/erickson_crk_flows/discharge-systematic_bias_hu9349956794831966964.webp&#34;
+               src=&#34;http://localhost:4377/project/erickson_crk_flows/discharge-systematic_bias_hu9349956794831966964.webp&#34;
                width=&#34;760&#34;
                height=&#34;380&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -124,7 +124,7 @@ The featured photo shows the result for 2017 in blue, with the points representi
                /project/erickson_crk_flows/discharge-semivariogram_hu16970649937026835300.webp 400w,
                /project/erickson_crk_flows/discharge-semivariogram_hu10731509302022521103.webp 760w,
                /project/erickson_crk_flows/discharge-semivariogram_hu7929949807015954588.webp 1200w&#34;
-               src=&#34;http://localhost:5920/project/erickson_crk_flows/discharge-semivariogram_hu16970649937026835300.webp&#34;
+               src=&#34;http://localhost:4377/project/erickson_crk_flows/discharge-semivariogram_hu16970649937026835300.webp&#34;
                width=&#34;760&#34;
                height=&#34;608&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -135,17 +135,17 @@ The featured photo shows the result for 2017 in blue, with the points representi
     
     <item>
       <title>Frequency-Magnitude Relationship for the Coldwater River</title>
-      <link>http://localhost:5920/project/coldwater_ffa/</link>
+      <link>http://localhost:4377/project/coldwater_ffa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/project/coldwater_ffa/</guid>
+      <guid>http://localhost:4377/project/coldwater_ffa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>igcop</title>
-      <link>http://localhost:5920/project/igcop/</link>
+      <link>http://localhost:4377/project/igcop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:5920/project/igcop/</guid>
+      <guid>http://localhost:4377/project/igcop/</guid>
       <description></description>
     </item>
     

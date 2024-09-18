@@ -1,6 +1,8 @@
 ---
 title: distplyr
-summary: Distributions are more useful when they can be modified, so distplyr morphs distributions into new ones. Modify distributions with parameters to get new distribution families. Whether stretching, grafting, maximizing, or something else, distplyr breathes life into distributions.
+summary: "Distributions become alive when they can be transformed. distplyr lets you modify and reshape distributions—whether you're stretching, grafting, maximizing, or something else—giving you the tools to create entirely new families of distributions and expand the possibilities of your analysis."
+#weight: 2
+date: "2024-09-10" 
 #tags:
 #- R
 
