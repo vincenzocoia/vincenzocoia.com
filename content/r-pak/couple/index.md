@@ -8,7 +8,7 @@ date: "2024-05-11"
 #- R
 
 # Optional external URL for project (replaces project detail page).
-external_link: http://github.com/probaverse/couple
+external_link: http://r-couple.netlify.app/
 
 image:
   #caption: .

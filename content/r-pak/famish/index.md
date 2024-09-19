@@ -7,7 +7,7 @@ date: "2024-07-03"
 #- R
 
 # Optional external URL for project (replaces project detail page).
-external_link: http://github.com/probaverse/distionaryfit
+external_link: http://famish.netlify.app/
 
 image:
   #caption: .
