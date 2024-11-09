@@ -32,7 +32,7 @@ sections:
     content:
       items:
         - title: Vincenzo Coia
-          text: Combining research and practice for probabilistic modelling in the earth sciences.
+          text: Statistician, combining research and practice for probabilistic and risk modelling in the earth sciences.
           # Upload image to `assets/media/` and reference the filename here
           image: vincenzo-smiley-short.jpg
     design:
@@ -43,7 +43,7 @@ sections:
   - block: hero
     content:
       title: About
-      text: Vincenzo is a statistical data scientist specializing in innovative probabilistic modelling. He creates solutions in the applied earth sciences at BGC Engineering and develops human-centric software in R. 
+      text: Vincenzo Coia is a statistical data scientist at BGC Engineering, specializing in practical and innovative probabilistic modeling. He combines advanced statistical methods with real-world applications, focusing on earth systems modelling, extreme events, and communication.
       #primary_action:
       #  text: Get Started
       #  url: https://hugoblox.com/templates/
@@ -75,7 +75,7 @@ sections:
     content:
       title: Research Vision
       subtitle: ""
-      text: I combine advanced statistical and data science techniques to build large probabilistic models, particularly for extreme events. My work involves creating innovative methodologies to address gaps in the literature and applying these techniques in practical, real-world scenarios. My goal is to collaborate on projects that demand innovation and to bring clarity to complex problems. 
+      text: I aim to advance probabilistic modeling in ways that bridge theoretical innovation and practical impact. My research focuses on developing methodologies for understanding and predicting extreme events and modeling complex, interdependent systems.
       count: 4
       filters:
         author: ""
@@ -105,24 +105,24 @@ sections:
       title: Approach
       #text: 
       items:
-        - name: Statistics
-          icon: magnifying-glass
-          description: Employ a broad range of methodologies, including probability theory, machine learning, extreme value theory, copula models, and uncertainty analysis to tackle unique challenges.
-        - name: Computation
-          icon: bolt
-          description: Maintain high standards of computational hygiene with defensive programming, version control, and data provenance for well-documented, reproducible codebases.
-        - name: Project Management
-          icon: sparkles
-          description: Tailor model complexity to project needs, starting simple and adding layers only as necessary to achieve optimal solutions.
-        - name: Communication
+        - name: Innovative Statistical Solutions
+          icon: hero/light-bulb
+          description: Leverage a robust foundation in probability theory, extreme value modeling, and machine learning to craft novel methods tailored to real-world challenges.
+        - name: Comprehensive Uncertainty Analysis
+          icon: hero/presentation-chart-line
+          description: Isolate and communicate multiple sources of uncertainty using a tailored mix of approaches.
+        - name: Practical Data Science
+          icon: hero/wrench-screwdriver
+          description: Ensure that all models are grounded in reality, considering data availability, domain expertise, and end-user needs, avoiding over-engineered solutions.
+        - name: Reproducible and Efficient Code
           icon: code-bracket
-          description: Engage in two-way transfer of knowledge with domain experts to align models with practical needs and communicate the results meaningfully.
-        - name: Software
-          icon: code-bracket
-          description: Develop designs to facilitate a type of data analysis, implemented as R packages.
-        - name: Visualization
-          icon: code-bracket
-          description: Advanced visualization techniques for visualizing data, with an interactive scope using R Shiny.
+          description: Uphold best practices in computation, using version control, defensive programming, and clear documentation to deliver projects that are both reproducible and scalable.
+        - name: Dynamic Communication and Collaboration
+          icon: hero/chat-bubble-left-right
+          description: Foster knowledge exchange with domain experts to understand the problem space deeply, ensuring that model results are interpretable, actionable, and presented clearly.
+        - name: Cutting-Edge Software Development
+          icon: hero/computer-desktop
+          description: Design intuitive R packages and Shiny applications, making complex analyses accessible and empowering teams to conduct probabilistic modeling seamlessly.
 
 
 
@@ -142,7 +142,7 @@ sections:
       order: desc
       page_type: project
       subtitle: ""
-      text: "Vincenzo works on real-world projects for clients, and conducts research for applications. Here are some examples."
+      #text: 
       title: Featured Work
     design:
       spacing:
@@ -153,41 +153,6 @@ sections:
         - 0
       view: article-grid
     id: news
-
-  ## ------ SECTION: work with me ------
-  - block: cta-image-paragraph
-    id: solutions
-    content:
-      items:
-        - title: Need an innovative solution?
-          text: I am always interested in hearing about a need for innovative solutions. Reach out on LinkedIn.
-          feature_icon: check
-          features:
-            - "Multivariate extremes"
-            - "Risk-informed decision making"
-            - "Mutliple application areas"
-          # Upload image to `assets/media/` and reference the filename here
-          image: build-website.png
-          button:
-            text: Get Started
-            url: https://hugoblox.com/templates/
-        - title: For applications in the applied earth sciences
-          text: I work on applications such as hydrology, climate science, and geohazards with BGC Engineering. Reach out to me there. 
-          #feature_icon: bolt
-          #features:
-          #  - "Dedicated support channel"
-          #  - "3,000+ users on Discord"
-          #  - "Share your site and get feedback"
-          # Upload image to `assets/media/` and reference the filename here
-          image: coffee.jpg
-          button:
-            text: Join Discord
-            url: https://discord.gg/z8wNYzb
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
-
-
 
   ## ------- SECTION: Publications -------
   - block: collection
@@ -210,36 +175,24 @@ sections:
       date_format: January 2006
       is_education_first: false
 
-
-
-
-  - block: hero
+  ## ------ SECTION: work with me ------
+  - block: cta-image-paragraph
+    id: solutions
     content:
-      title: Let's Connect
-      text: Vincenzo is keen to get involved in innovative projects, either through BGC Engineering for earth science applications, or through private consulting for all other applications.
-      primary_action:
-        text: LinkedIn
-        url: https://www.linkedin.com/in/vincenzocoia/
-        icon: rocket-launch
-      #announcement:
-      #  text: "Announcing the release of version 1."
-      #  link:
-      #    text: "Read more"
-      #    url: "/blog/"
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: "dark"
-      background:
-        color: "navy"
-        image:
-          # Add your image background to `assets/media/`.
-          filename: bg-triangles.svg
-          filters:
-            brightness: 0.5
-
+      items:
+        - title: Have a unique challenge or project?
+          text: I'm curious about projects that push boundaries and could benefit from a fresh, statistically-driven approach. If that sounds like what you have in mind, I encourage you to connect with me.
+          feature_icon: check
+          #features:
+          #  - "Multivariate extremes"
+          #  - "Risk-informed decision making"
+          #  - "Mutliple application areas"
+          # Upload image to `assets/media/` and reference the filename here
+          image: network_city.jpeg
+          button:
+            text: Email
+            url: mailto:vincenzo.coia@gmail.com
+            
   #  - block: stats
   #  content:
   #    items:
