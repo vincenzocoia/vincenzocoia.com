@@ -25,7 +25,7 @@ organizations:
   url: https://bgcengineering.ca/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Statistician, Innovating probabilistic and dependence models in the earth sciences.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
