@@ -31,7 +31,7 @@ sections:
     id: intro
     content:
       items:
-        - title: Vincenzo Coia
+        - title: Vincenzo Coia, PhD
           text: Statistician, combining research and practice for probabilistic and risk modelling in the earth sciences.
           # Upload image to `assets/media/` and reference the filename here
           image: vincenzo-smiley-short.jpg
@@ -43,7 +43,7 @@ sections:
   - block: hero
     content:
       title: About
-      text: Vincenzo Coia is a statistical data scientist at BGC Engineering, specializing in practical and innovative probabilistic modeling. He combines advanced statistical methods with real-world applications, focusing on earth systems modelling, extreme events, and communication.
+      text: I am a senior data scientist at BGC Engineering, specializing in practical and innovative probabilistic modeling. I combine advanced statistical methods with real-world applications, focusing on earth systems modelling, extreme events, and communication.
       #primary_action:
       #  text: Get Started
       #  url: https://hugoblox.com/templates/
@@ -73,9 +73,12 @@ sections:
   ## ------- SECTION: research vision -------
   - block: collection
     content:
-      title: Research Vision
+      title: Research Initiatives
       subtitle: ""
-      text: I aim to advance probabilistic modeling in ways that bridge theoretical innovation and practical impact. My research focuses on developing methodologies for understanding and predicting extreme events and modeling complex, interdependent systems.
+      text: |-
+        My research focuses on expanding how we answer the question, "What's possible?"--not just "What's most likely?" I draw on the strengths of both classical statistics and machine learning, building probabilistic models of complex, interdependent systems. My work often centers on understanding extremes in climate and hydrology, where I bridge theoretical innovation with practical application.   
+        
+        The following are research initiatives I'm leading.
       count: 4
       filters:
         author: ""
@@ -95,7 +98,7 @@ sections:
         - 0
         - 0
         - 0
-      view: article-grid
+      view: card #card showcase article-grid compact citation list
     id: news
 
   ## ------- SECTION: bullets -------
@@ -167,13 +170,13 @@ sections:
     design:
       view: citation
 
-  ## ------- SECTION: Experience -------
-  - block: resume-experience
-    content:
-      username: admin
-    design:
-      date_format: January 2006
-      is_education_first: false
+#  ## ------- SECTION: Experience -------
+#  - block: resume-experience
+#    content:
+#      username: admin
+#    design:
+#      date_format: January 2006
+#      is_education_first: false
 
   ## ------ SECTION: work with me ------
   - block: cta-image-paragraph

@@ -13,11 +13,11 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'Vincenzo Coia Solutions'
+    description: 'A data science and statistical research expert specializing in probabilistic modeling, extreme value analysis, and practical solutions for real-world challenges.'
+    #twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-057C5TFBSQ'
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -36,18 +36,18 @@ header:
     logo:
       text: ""
       # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
-    button:
-      enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
+      filename: "V-logo.png"
+    #button:
+    #  enable: true
+    #  text: "Get Started"
+    #  url: "https://hugoblox.com/templates/"
     show_search: true
     show_theme_chooser: true
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} Vincenzo Coia'
 
 # Localization
 locale:

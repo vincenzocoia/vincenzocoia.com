@@ -4,8 +4,8 @@ theme: "theme-landing-page"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Creator's Landing Page | Hugo Theme # Website name
-baseURL: 'https://example.com/' # Website URL
+title: Vincenzo Coia | Statistician, combining research and practice for probabilistic and risk modelling in the earth sciences. # Website name
+baseURL: 'https://vincenzocoia.com/' # Website URL
 
 ############################
 ## PAGE OPTIONS
