@@ -35,6 +35,9 @@ sections:
           text: Statistician, combining research and practice for probabilistic and risk modelling in the earth sciences.
           # Upload image to `assets/media/` and reference the filename here
           image: vincenzo-smiley-short.jpg
+          button:
+            text: View CV
+            url: Vincenzo-Coia-public.pdf
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
