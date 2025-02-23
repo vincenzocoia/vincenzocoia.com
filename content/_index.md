@@ -173,13 +173,13 @@ sections:
     design:
       view: citation
 
-#  ## ------- SECTION: Experience -------
-#  - block: resume-experience
-#    content:
-#      username: admin
-#    design:
-#      date_format: January 2006
-#      is_education_first: false
+  ## ------- SECTION: Experience -------
+  - block: resume-experience
+    content:
+      username: admin
+    design:
+      date_format: January 2006
+      is_education_first: false
 
   ## ------ SECTION: work with me ------
   - block: cta-image-paragraph
