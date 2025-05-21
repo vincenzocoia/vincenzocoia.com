@@ -48,6 +48,21 @@ header:
 footer:
   copyright:
     notice: '© {year} Vincenzo Coia'
+  widgets:
+    - id: links
+      text: ""
+      links:
+        - icon: github
+          icon_pack: fab
+          text: GitHub
+          url: https://github.com/vincenzocoia
+        - icon: envelope
+          icon_pack: fas
+          text: Email
+          url: mailto:vincenzo.coia@gmail.com
+  background:
+    color: "white"
+    text_color_light: false
 
 # Localization
 locale:
