@@ -46,15 +46,15 @@ sections:
       items:
         - name: Custom Risk Models
           icon: chart-bar
-          description: I work with organizations to quantify the likelihood of rare compound events like rain-on-snow flooding, customized to your location and data.
+          description: I build custom models of complex stochastic systems, capturing meaningful structure and rare events for grounded decision making.
           css_class: bg-blue-100
-        - name: Advanced Statistical Tools
-          icon: calculator
-          description: From classic return periods to joint extremes, I use interpretable, cutting-edge methods to answer complex questions about climate risk.
+        - name: Integrate with a team
+          icon: user-plus
+          description: Join your team as a statistical data science collaborator — contributing review, model development, and documented workflows your team can trust, reuse, and extend.
           css_class: bg-green-100
-        - name: Open-Source Foundations
+        - name: Insightful Reporting
           icon: puzzle-piece
-          description: I build and maintain Probaverse, a powerful package for working with probability distributions.
+          description: Even complex models can be clearly explained. I focus on conveying the essential ideas simply, delivering reports that are clear, practical, and backed by detail when needed.
           css_class: bg-red-100
 
   ## ------- SECTION: FEATURE PROJECT / TOOL HIGHLIGHT -------
