@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-date: 2023-10-24
+date: 2025-06-08
 type: landing
 
 design:
@@ -57,44 +57,59 @@ sections:
           description: Even complex models can be clearly explained. I focus on conveying the essential ideas simply, delivering reports that are clear, practical, and backed by detail when needed.
           css_class: bg-red-100
 
-  ## ------- SECTION: FEATURE PROJECT / TOOL HIGHLIGHT -------
-  - block: cta-image-paragraph
-    id: probaverse
-    content:
-      items:
-        - title: "Probaverse: Next-Gen Probability Modeling"
-          text: A modern, flexible toolkit for real-world distribution modeling.
-          # Upload image to `assets/media/` and reference the filename here
-          image: probaverse_arrangement.png
-          button:
-            text: Learn How It Works
-            url: "/probaverse"
-    design:
-      # Alternate the side that the image appears on
-      flip_alt: true
-      css_class: "bg-white dark:bg-gray-950"
-
-  ## ------- SECTION: WHO I WORK WITH -------
+  ## ------- SECTION: HOW WE CAN PARTNER -------
   - block: features
-    id: clients
+    id: how-we-partner
     content:
-      title: Who I Work With
-      text: "This is for anyone who needs to build trustworthy models of rare, high-impact events with limited data."
+      title: How We Can Partner
+      text: "I offer flexible engagement models to best suit your project needs, from targeted advice to integrated project support. Here are common ways I collaborate:"
       items:
-        - name: Mining Operators
-          icon: chart-bar
-          description: Helping mining companies assess and mitigate environmental risks through statistical modeling of rare events.
-        - name: Engineering Consultancies
+        - name: Targeted Advice & Expert Review
+          icon: lightbulb
+          description: "Need a second opinion, specialized statistical guidance on a complex problem, or a rigorous review of an existing model? Engage me for short, focused consultations by the hour or project."
+        - name: Project-Based Model Development
+          icon: tools
+          description: "For defined projects requiring custom probabilistic model development, deep data analysis, or in-depth risk assessments, we can scope a clear deliverable-based agreement."
+        - name: Integrated Team Augmentation
+          icon: users
+          description: "I can join your existing technical team as a specialized statistical data science collaborator, providing ongoing support, enhancing workflows, and building internal capabilities."
+    design:
+      spacing:
+        padding: ["4rem", 0, "4rem", 0]
+
+  ## ------- SECTION: WHO I COLLABORATE WITH -------
+  - block: features
+    id: collaborators
+    content:
+      title: Who I Collaborate With
+      text: "I partner with organizations that need specialized statistical and probabilistic modeling expertise to strengthen their projects, tackle complex data challenges, and manage environmental risks. My focus is on providing targeted, flexible support to:"
+      items:
+        - name: Consulting & Engineering Firms
           icon: building-office
-          description: Providing specialized statistical expertise to complement engineering knowledge for comprehensive risk assessments.
-        - name: Researchers & Risk Modelers
-          icon: academic
-          description: Collaborating with academic and industry researchers to develop and implement advanced modeling techniques.
-        - name: Environmental Teams
-          icon: globe-alt
-          description: Supporting environmental professionals with tools to understand and quantify climate-related risks and uncertainties.
+          description: "Firms seeking advanced statistical validation, extreme event analysis, or custom risk models to enhance their project deliverables for clients in mining, infrastructure, and water management."
+        - name: Corporate Data Science & R&D Teams
+          icon: chart-line
+          description: "Internal teams developing new methodologies for risk assessment, climate adaptation, or resource management who require deep statistical insight for complex data."
+        - name: Entities Requiring Expert Validation
+          icon: search
+          description: "Any organization needing independent peer review of their existing risk models, statistical analyses, or environmental assessments for scientific soundness and defensibility."
 
-
+  ## ------- SECTION: FEATURE PROJECT / TOOL HIGHLIGHT -------
+  # - block: cta-image-paragraph
+  #   id: probaverse
+  #   content:
+  #     items:
+  #       - title: "Probaverse: Next-Gen Probability Modeling"
+  #         text: A modern, flexible toolkit for real-world distribution modeling.
+  #         # Upload image to `assets/media/` and reference the filename here
+  #         image: probaverse_arrangement.png
+  #         button:
+  #           text: Learn How It Works
+  #           url: "/probaverse"
+  #   design:
+  #     # Alternate the side that the image appears on
+  #     flip_alt: true
+  #     css_class: "bg-white dark:bg-gray-950"
 
   ## ------- SECTION: featured work -------
   - block: collection
