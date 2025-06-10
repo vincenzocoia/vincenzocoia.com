@@ -13,7 +13,7 @@ sections:
     id: hero
     content:
       title: "Modeling compound climate risks"
-      text: "Helping clients build interpretable risk models for extremes and uncertainty"
+      text: "Specialized probabilistic modelling expertise for complex systems to manage environmental risks."
       primary_action:
         text: Work With Me
         url: "#contact"
@@ -77,40 +77,6 @@ sections:
       spacing:
         padding: ["4rem", 0, "4rem", 0]
 
-  ## ------- SECTION: WHO I COLLABORATE WITH -------
-  - block: features
-    id: collaborators
-    content:
-      title: Who I Collaborate With
-      text: "I partner with organizations that need specialized statistical and probabilistic modeling expertise to strengthen their projects, tackle complex data challenges, and manage environmental risks. My focus is on providing targeted, flexible support to:"
-      items:
-        - name: Consulting & Engineering Firms
-          icon: building-office
-          description: "Firms seeking advanced statistical validation, extreme event analysis, or custom risk models to enhance their project deliverables for clients in mining, infrastructure, and water management."
-        - name: Corporate Data Science & R&D Teams
-          icon: chart-line
-          description: "Internal teams developing new methodologies for risk assessment, climate adaptation, or resource management who require deep statistical insight for complex data."
-        - name: Entities Requiring Expert Validation
-          icon: search
-          description: "Any organization needing independent peer review of their existing risk models, statistical analyses, or environmental assessments for scientific soundness and defensibility."
-
-  ## ------- SECTION: FEATURE PROJECT / TOOL HIGHLIGHT -------
-  # - block: cta-image-paragraph
-  #   id: probaverse
-  #   content:
-  #     items:
-  #       - title: "Probaverse: Next-Gen Probability Modeling"
-  #         text: A modern, flexible toolkit for real-world distribution modeling.
-  #         # Upload image to `assets/media/` and reference the filename here
-  #         image: probaverse_arrangement.png
-  #         button:
-  #           text: Learn How It Works
-  #           url: "/probaverse"
-  #   design:
-  #     # Alternate the side that the image appears on
-  #     flip_alt: true
-  #     css_class: "bg-white dark:bg-gray-950"
-
   ## ------- SECTION: featured work -------
   - block: collection
     content:
@@ -138,6 +104,24 @@ sections:
         - 0
       view: article-grid
     id: projects
+
+  ## ------- SECTION: WHO I COLLABORATE WITH -------
+  - block: features
+    id: collaborators
+    content:
+      title: Who I Collaborate With
+      text: "My focus is on providing flexible support to:"
+      items:
+        - name: Consulting & Engineering Firms
+          icon: building-office
+          description: "Firms seeking advanced statistical validation, extreme event analysis, or custom risk models to enhance their project deliverables for clients in mining, infrastructure, and water management."
+        - name: Corporate Data Science & R&D Teams
+          icon: chart-line
+          description: "Internal teams developing new methodologies for risk assessment, climate adaptation, or resource management who require deep statistical insight for complex data."
+        - name: Entities Requiring Expert Validation
+          icon: search
+          description: "Any organization needing independent peer review of their existing risk models, statistical analyses, or environmental assessments for scientific soundness and defensibility."
+
 
   ## ------ SECTION: CONTACT / WORK WITH ME ------
   - block: cta-image-paragraph
