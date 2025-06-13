@@ -98,6 +98,16 @@ interests:
 #  name: Technical Skills
 
 work:
+- company_name: Politecnico di Milano
+  company_url: "https://www.polimi.it/"
+  date_end: ""
+  date_start: "2025-09-15"
+  position: Research Sabbatical
+  summary: |-
+    Responsibilities include:
+    - Compound event modelling for climate extremes using satellite data.
+    - Developing probabilistic model for rain-on-snow flooding in the Alps.
+    - Partnership with the European Space Agency.
 - company_logo: "custom/bgc_whitebg"
   company_name: BGC Engineering Inc.
   company_url: "https://bgcengineering.ca/"
@@ -115,18 +125,18 @@ work:
   date_end: "2018-02-22"
   date_start: "2017-02-22"
   position: Assistant Professor of Teaching (Dept. of Statistics)
-  summary: |
-    Responsibilities include:
-    - lorem ipsum
+  # summary: |
+  #   Responsibilities include:
+  #   - lorem ipsum
 - company_logo: "icons/ubc_whitebg.jpg"
   company_name: The University of British Columbia
   company_url: ""
   date_end: "2018-02-22"
   date_start: "2017-02-22"
   position: Lecturer (Dept. of Statistics)
-  summary: |
-    Responsibilities include:
-    - lorem ipsum
+  # summary: |
+  #   Responsibilities include:
+  #   - lorem ipsum
 - company_logo: "ubc_whitebg.jpg"
   company_name: The University of British Columbia
   company_url: ""

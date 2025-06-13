@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-date: 2023-10-24
+date: 2025-06-08
 type: landing
 
 design:
@@ -8,129 +8,74 @@ design:
   spacing: "6rem"
 
 sections:
-  ## ------- SECTION: my picture -------
-  #- block: resume-biography
-  #  content:
-  #    button:
-  #      text: Download CV
-  #      url: uploads/resume.pdf
-  #    text: ""
-  #    username: admin
-  #  design:
-  #    background:
-  #      color: white
-  #      image:
-  #        filename: abstract_plants.jpg
-  #        filters:
-  #          brightness: 1
-  #        parallax: true
-  #        position: bottom
-  #        size: cover
-  #    css_class: light
-  - block: cta-image-paragraph
-    id: intro
-    content:
-      items:
-        - title: Vincenzo Coia, Ph.D., P.Stat. (Canada)
-          text: Statistician, combining research and practice for probabilistic and risk modelling in the earth sciences.
-          # Upload image to `assets/media/` and reference the filename here
-          image: vincenzo-smiley-short.jpg
-          button:
-            text: View CV
-            url: Vincenzo-Coia-public.pdf
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
-  
-  ## ------- SECTION: slogan -------
+  ## ------- SECTION: HERO -------
   - block: hero
+    id: hero
     content:
-      title: About
-      text: I am a senior data scientist at BGC Engineering, specializing in practical and innovative probabilistic modeling. I combine advanced statistical methods with real-world applications, focusing on earth systems modelling, extreme events, and communication.
-      #primary_action:
-      #  text: Get Started
-      #  url: https://hugoblox.com/templates/
-      #  icon: rocket-launch
-      #secondary_action:
-      #  text: Read the docs
-      #  url: https://docs.hugoblox.com
-      #announcement:
-      #  text: "Announcing the release of version 1."
-      #  link:
-      #    text: "Read more"
-      #    url: "/blog/"
-    #design:
-    #  spacing:
-    #    padding: ["1rem", 0, "1rem", 0] # [0, 0, 0, 0] ["5rem", 0, "5rem", 0]
-    #    #margin: [0, 0, 0, 0]
-    #  # For full-screen, add `min-h-screen` below
-    #  css_class: "dark"
-    #  background:
-    #    color: "navy"
-    #    image:
-    #      # Add your image background to `assets/media/`.
-    #      filename: bg-triangles.svg
-    #      filters:
-    #        brightness: 0.5
-
-  ## ------- SECTION: research vision -------
-  - block: collection
-    content:
-      title: Research Initiatives
-      subtitle: ""
-      text: |-
-        My research focuses on expanding how we answer the question, "What's possible?"--not just "What's most likely?" I draw on the strengths of both classical statistics and machine learning, building probabilistic models of complex, interdependent systems. My work often centers on understanding extremes in climate and hydrology, where I bridge theoretical innovation with practical application.   
-        
-        The following are research initiatives I'm leading.
-      count: 4
-      filters:
-        author: ""
-        category: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-        tag: ""
-      offset: 0
-      order: desc
-      page_type: research
+      title: "Probabilistic Insights for a Changing World"
+      text: "Specialized probabilistic modeling for complex systems, informing critical decisions for environmental and operational risk."
+      primary_action:
+        text: Work With Me
+        url: "#contact"
+        icon: user-group
+      secondary_action:
+        text: See My Work
+        url: "#projects"
     design:
       spacing:
-        padding:
-        - 10rm
-        - 0
-        - 0
-        - 0
-      view: card #card showcase article-grid compact citation list
-    id: news
+        padding: ["5rem", 0, "5rem", 0]
+      # For full-screen, add `min-h-screen` below
+      css_class: "dark min-h-screen"
+      background:
+        color: "navy"
+        image:
+          # Add your mountain or hazard map image to `assets/media/`
+          # For now using a placeholder - you'll need to add appropriate image
+          filename: network_cloud.jpeg
+          filters:
+            brightness: 0.5
+          parallax: true
+          position: center
+          size: cover
 
-  ## ------- SECTION: bullets -------
+  ## ------- SECTION: WHAT I DO -------
   - block: features
-    id: features
+    id: what-i-do
     content:
-      title: Approach
-      #text: 
+      title: What I Do
       items:
-        - name: Innovative Statistical Solutions
-          icon: hero/light-bulb
-          description: Leverage a robust foundation in probability theory, extreme value modeling, and machine learning to craft novel methods tailored to real-world challenges.
-        - name: Comprehensive Uncertainty Analysis
-          icon: hero/presentation-chart-line
-          description: Isolate and communicate multiple sources of uncertainty using a tailored mix of approaches.
-        - name: Practical Data Science
-          icon: hero/wrench-screwdriver
-          description: Ensure that all models are grounded in reality, considering data availability, domain expertise, and end-user needs, avoiding over-engineered solutions.
-        - name: Reproducible and Efficient Code
-          icon: code-bracket
-          description: Uphold best practices in computation, using version control, defensive programming, and clear documentation to deliver projects that are both reproducible and scalable.
-        - name: Dynamic Communication and Collaboration
-          icon: hero/chat-bubble-left-right
-          description: Foster knowledge exchange with domain experts to understand the problem space deeply, ensuring that model results are interpretable, actionable, and presented clearly.
-        - name: Cutting-Edge Software Development
-          icon: hero/computer-desktop
-          description: Design intuitive R packages and Shiny applications, making complex analyses accessible and empowering teams to conduct probabilistic modeling seamlessly.
+        - name: Custom Risk Models
+          icon: chart-bar
+          description: I build custom models of complex stochastic systems, capturing meaningful structure and rare events for grounded decision making.
+          css_class: bg-blue-100
+        - name: Integrate with a team
+          icon: user-plus
+          description: Join your team as a statistical data science collaborator — contributing review, model development, and documented workflows your team can trust, reuse, and extend.
+          css_class: bg-green-100
+        - name: Insightful Reporting
+          icon: puzzle-piece
+          description: Even complex models can be clearly explained. I focus on conveying the essential ideas simply, delivering reports that are clear, practical, and backed by detail when needed.
+          css_class: bg-red-100
 
-
+  ## ------- SECTION: HOW WE CAN PARTNER -------
+  - block: features
+    id: how-we-partner
+    content:
+      title: How We Can Partner
+      text: "I offer flexible engagement models to best suit your project needs, from targeted advice to integrated project support. Here are common ways I collaborate:"
+      items:
+        - name: Targeted Advice & Expert Review
+          icon: lightbulb
+          description: "Need a second opinion, specialized statistical guidance on a complex problem, or a rigorous review of an existing model? Engage me for short, focused consultations by the hour or project."
+        - name: Project-Based Model Development
+          icon: tools
+          description: "For defined projects requiring custom probabilistic model development, deep data analysis, or in-depth risk assessments, we can scope a clear deliverable-based agreement."
+        - name: Integrated Team Augmentation
+          icon: users
+          description: "I can join your existing technical team as a specialized statistical data science collaborator, providing ongoing support, enhancing workflows, and building internal capabilities."
+    design:
+      spacing:
+        padding: ["4rem", 0, "4rem", 0]
 
   ## ------- SECTION: featured work -------
   - block: collection
@@ -158,79 +103,38 @@ sections:
         - 0
         - 0
       view: article-grid
-    id: news
+    id: projects
 
-  ## ------- SECTION: Publications -------
-  - block: collection
+  ## ------- SECTION: WHO I COLLABORATE WITH -------
+  - block: features
+    id: collaborators
     content:
-      title: Scholarly Publications
-      text: "Articles in scientific journals, proceedings, and preprints."
-      filters:
-        folders:
-          - publication
-        #exclude_featured: false
-        #featured_only: true
-    design:
-      view: citation
+      title: Who I Collaborate With
+      text: "My focus is on providing flexible support to:"
+      items:
+        - name: Consulting & Engineering Firms
+          icon: building-office
+          description: "Firms seeking advanced statistical validation, extreme event analysis, or custom risk models to enhance their project deliverables for clients in mining, infrastructure, and water management."
+        - name: Corporate Data Science & R&D Teams
+          icon: chart-line
+          description: "Internal teams developing new methodologies for risk assessment, climate adaptation, or resource management who require deep statistical insight for complex data."
+        - name: Entities Requiring Expert Validation
+          icon: search
+          description: "Any organization needing independent peer review of their existing risk models, statistical analyses, or environmental assessments for scientific soundness and defensibility."
 
-  ## ------- SECTION: Experience -------
-  - block: resume-experience
-    content:
-      username: admin
-    design:
-      date_format: January 2006
-      is_education_first: false
 
-  ## ------ SECTION: work with me ------
+  ## ------ SECTION: CONTACT / WORK WITH ME ------
   - block: cta-image-paragraph
-    id: solutions
+    id: contact
     content:
       items:
-        - title: Have a unique challenge or project?
-          text: I'm curious about projects that push boundaries and could benefit from a fresh, statistically-driven approach. If that sounds like what you have in mind, I encourage you to connect with me.
-          feature_icon: check
-          #features:
-          #  - "Multivariate extremes"
-          #  - "Risk-informed decision making"
-          #  - "Mutliple application areas"
+        - title: Let's Discuss Your Project.
+          text: "If your project demands advanced statistical insight for environmental or operational risk, I'm keen to hear about it. Reach out, and let's discuss how I can help."
+          feature_icon: envelope
           # Upload image to `assets/media/` and reference the filename here
           image: network_city.jpeg
           button:
-            text: Email
+            text: Work With Me
             url: mailto:vincenzo.coia@gmail.com
-            
-  #  - block: stats
-  #  content:
-  #    items:
-  #      - statistic: "1M+"
-  #        description: |
-  #          Websites built  
-  #          with Hugo Blox
-  #      - statistic: "10k+"
-  #        description: |
-  #          GitHub stars  
-  #          since 2016
-  #      - statistic: "3k+"
-  #        description: |
-  #          Discord community  
-  #          for support
-  #  design:
-  #    # Section background color (CSS class)
-  #    css_class: "bg-gray-100 dark:bg-gray-900"
-  #    # Reduce spacing
-  #    spacing:
-  #      padding: ["1rem", 0, "1rem", 0]
-  
-  #- block: cta-card
-  #  content:
-  #    title: Build your future-proof website
-  #    text: As easy as 1, 2, 3!
-  #    button:
-  #      text: Get Started
-  #      url: https://hugoblox.com/templates/
-  #  design:
-  #    card:
-  #      # Card background color (CSS class)
-  #      css_class: "bg-primary-700"
-  #      css_style: ""
+
 ---
