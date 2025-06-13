@@ -12,8 +12,8 @@ sections:
   - block: hero
     id: hero
     content:
-      title: "Modeling compound climate risks"
-      text: "Specialized probabilistic modelling expertise for complex systems to manage environmental risks."
+      title: "Probabilistic Insights for a Changing World"
+      text: "Specialized probabilistic modeling for complex systems, informing critical decisions for environmental and operational risk."
       primary_action:
         text: Work With Me
         url: "#contact"
@@ -128,47 +128,13 @@ sections:
     id: contact
     content:
       items:
-        - title: Have a question, a project idea, or want a proposal?
-          text: I'm curious about projects that push boundaries and could benefit from a fresh, statistically-driven approach. If that sounds like what you have in mind, I encourage you to connect with me.
+        - title: Let's Discuss Your Project.
+          text: "If your project demands advanced statistical insight for environmental or operational risk, I'm keen to hear about it. Reach out, and let's discuss how I can help."
           feature_icon: envelope
           # Upload image to `assets/media/` and reference the filename here
           image: network_city.jpeg
           button:
             text: Work With Me
             url: mailto:vincenzo.coia@gmail.com
-            
-  #  - block: stats
-  #  content:
-  #    items:
-  #      - statistic: "1M+"
-  #        description: |
-  #          Websites built  
-  #          with Hugo Blox
-  #      - statistic: "10k+"
-  #        description: |
-  #          GitHub stars  
-  #          since 2016
-  #      - statistic: "3k+"
-  #        description: |
-  #          Discord community  
-  #          for support
-  #  design:
-  #    # Section background color (CSS class)
-  #    css_class: "bg-gray-100 dark:bg-gray-900"
-  #    # Reduce spacing
-  #    spacing:
-  #      padding: ["1rem", 0, "1rem", 0]
-  
-  #- block: cta-card
-  #  content:
-  #    title: Build your future-proof website
-  #    text: As easy as 1, 2, 3!
-  #    button:
-  #      text: Get Started
-  #      url: https://hugoblox.com/templates/
-  #  design:
-  #    card:
-  #      # Card background color (CSS class)
-  #      css_class: "bg-primary-700"
-  #      css_style: ""
+
 ---

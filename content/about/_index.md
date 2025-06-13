@@ -13,7 +13,7 @@ sections:
     id: intro
     content:
       items:
-        - title: Vincenzo Coia, Ph.D., P.Stat. (Canada)
+        - title: Vincenzo Coia, Ph.D., P.Stat.
           text: Statistician, combining research and practice for probabilistic and risk modelling in the earth sciences.
           # Upload image to `assets/media/` and reference the filename here
           image: vincenzo-smiley-short.jpg
