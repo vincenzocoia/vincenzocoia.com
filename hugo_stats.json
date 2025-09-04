@@ -503,6 +503,7 @@
       "example-using-the-volcano-data",
       "general-scenario",
       "generalized-additive-models",
+      "grid-size",
       "hero",
       "hide-button",
       "higher-or-lower-quantiles",
@@ -510,8 +511,8 @@
       "intro",
       "intuition",
       "learning-points",
-      "method-1-approximate-a-bivariate-density-geom_density2d",
-      "method-2-general-contour-plots-geom_contour",
+      "method-1-general-contour-plots-geom_contour",
+      "method-2-approximate-a-bivariate-density-geom_density2d",
       "moon",
       "more-sample-code",
       "nav-menu",
@@ -537,8 +538,7 @@
       "the-mean",
       "the-median",
       "top",
-      "what-i-do",
-      "what-is-a-contour-plot"
+      "what-i-do"
     ]
   }
 }
