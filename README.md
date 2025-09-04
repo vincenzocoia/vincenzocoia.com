@@ -34,7 +34,8 @@ academic import pubs-featured.bib publication/ --featured
 academic import pubs-not_feat.bib publication/
 ```
 
-3. Edit the `index.md` markdown, especially removing that final line of canned markdown that only appears for featured publications.
+3. Edit the `index.md` markdown for each new publication folder that gets created to make sure there's no boilerplate.
+	- Last time, had to get rid of the boilerplate "Add the **full text** or **supplementary notes** for the publication here using Markdown formatting."
 
 Notes: 
 
