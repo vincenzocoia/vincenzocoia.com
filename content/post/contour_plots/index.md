@@ -2,6 +2,8 @@
 title: "Contour Plots with ggplot2"
 author: "Vincenzo Coia"
 date: '2025-07-10'
+categories:
+- Note
 output: 
     html_document:
         toc: true

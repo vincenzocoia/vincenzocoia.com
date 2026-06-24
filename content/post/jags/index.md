@@ -1,6 +1,8 @@
 ---
 title: "JAGS Tutorial"
 date: "2018-03-03"
+categories:
+- Note
 output: github_document
 ---
 

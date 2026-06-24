@@ -1,6 +1,8 @@
 ---
 title: The missing question in supervised learning
-summary: 
+summary: "Supervised learning almost always predicts the mean. But the question that usually matters is the whole conditional distribution — what's possible, not just what's expected."
+categories:
+- Essay
 tags:
 - supervised learning
 - mean

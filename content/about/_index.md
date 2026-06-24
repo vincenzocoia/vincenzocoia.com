@@ -28,7 +28,12 @@ sections:
   - block: hero
     content:
       title: About Me
-      text: I am a statistician and data scientist specializing in practical and innovative probabilistic modeling. With a background spanning statistics, data science, and earth sciences, I'm dedicated to bridging the gap between theoretical statistical methods and practical solutions for complex environmental challenges.
+      text: |-
+        I'm a statistician working at the intersection of probability, data, and real-world systems. My work focuses on problems where uncertainty is high, data is imperfect, and the consequences of modeling decisions are significant — particularly in climate and hydrology.
+
+        I'm drawn to a single question that runs through everything I do: what's *possible*, not just what's most likely? That question leads naturally to compound risk, dependence between hazards, and the behavior of extremes — the regimes where standard statistical methods tend to break down.
+
+        For the full record, the CV above has the details.
 
   ## ------- SECTION: Innovation Vision -------
   - block: collection
@@ -60,31 +65,6 @@ sections:
         - 0
       view: card
     id: research
-
-  ## ------- SECTION: Personal Approach -------
-  - block: features
-    id: approach
-    content:
-      title: My Approach
-      items:
-        - name: Innovative Statistical Solutions
-          icon: hero/light-bulb
-          description: Leverage a robust foundation in probability theory, extreme value modeling, and machine learning to craft novel methods tailored to real-world challenges.
-        - name: Comprehensive Uncertainty Analysis
-          icon: hero/presentation-chart-line
-          description: Isolate and communicate multiple sources of uncertainty using a tailored mix of approaches.
-        - name: Practical Data Science
-          icon: hero/wrench-screwdriver
-          description: Ensure that all models are grounded in reality, considering data availability, domain expertise, and end-user needs, avoiding over-engineered solutions.
-        - name: Reproducible and Efficient Code
-          icon: code-bracket
-          description: Uphold best practices in computation, using version control, defensive programming, and clear documentation to deliver projects that are both reproducible and scalable.
-        - name: Dynamic Communication and Collaboration
-          icon: hero/chat-bubble-left-right
-          description: Foster knowledge exchange with domain experts to understand the problem space deeply, ensuring that model results are interpretable, actionable, and presented clearly.
-        - name: Cutting-Edge Software Development
-          icon: hero/computer-desktop
-          description: Design intuitive R packages and Shiny applications, making complex analyses accessible and empowering teams to conduct probabilistic modeling seamlessly.
 
   ## ------- SECTION: Publications -------
   - block: collection

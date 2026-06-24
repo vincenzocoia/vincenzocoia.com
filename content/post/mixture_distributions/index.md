@@ -2,6 +2,8 @@
 title: "Mixture distributions"
 author: "Vincenzo Coia"
 date: '2017-02-22'
+categories:
+- Note
 output: pdf_document
 ---
 

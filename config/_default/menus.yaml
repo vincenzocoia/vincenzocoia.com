@@ -6,15 +6,12 @@ main:
   - name: Home
     url: /#top
     weight: 10
-  - name: About Vincenzo
-    url: /about
+  - name: Writing
+    url: /writing
     weight: 20
-  #- name: Probaverse
-  #  url: /probaverse
-  #  weight: 40
-  #- name: Resources
-  #  weight: 40
-  #  hasChildren: true
-  #- parent: Resources
-  #  name: Blog
-  #  url: blog/
+  - name: Probaverse
+    url: https://probaverse.com
+    weight: 30
+  - name: About
+    url: /about
+    weight: 40
