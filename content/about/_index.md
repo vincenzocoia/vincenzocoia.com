@@ -19,7 +19,7 @@ sections:
           image: vincenzo-smiley-short.jpg
           button:
             text: View CV
-            url: ../Vincenzo-Coia-public.pdf
+            url: ../Vincenzo-Coia.pdf
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
