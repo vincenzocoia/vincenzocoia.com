@@ -4,3 +4,8 @@
 .Ruserdata
 public/*
 .DS_Store
+
+# Hugo build cache — regenerated on every build (incl. Netlify)
+resources/_gen/
+.hugo_build.lock
+hugo_stats.json
