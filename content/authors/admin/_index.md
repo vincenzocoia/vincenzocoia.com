@@ -6,7 +6,7 @@ title: Vincenzo Coia, Ph.D., P.Stat. (Canada)
 #name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Vincenzo Coia
+first_name: Vincenzo
 last_name: Coia
 
 # Status emoji
@@ -74,8 +74,6 @@ education:
   date_end: "2011-06-15"
   date_start: "2005-09-01"
   institution: Brock University
-first_name: Vincenzo
-highlight_name: true
 interests:
 - Extreme Hazard and Risk Modelling
 - Dependence Modelling
